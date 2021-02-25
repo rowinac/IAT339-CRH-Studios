@@ -1,0 +1,328 @@
+<!doctype html> 
+
+<html lang="en"> 
+
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<title>Design Docs</title>
+
+		<!-- CSS Style Sheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/pattern.css">
+
+		<!-- KARLA Google Fonts Reference -->
+		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+	</head>
+
+
+	<body>
+		<header>
+			<nav>
+				<div id="menu-toggle" class="menu-tgl">
+				    <input aria-label="nav" id="nav-checkbox" type="checkbox" checked>
+
+				    	<!-- hamburger icon -->
+					    <span></span>
+					    <span></span>
+					    <span></span>
+
+				    <ul id="menu" class="target-menu overflow-scroll-gradient">
+						<div class="overflow-scroll-gradient-scroller">
+
+					    	<!-- Main navigation -->
+					    	<h3>PAGES</h3>
+					    	<a href="index.html"><li>BASIC STYLES</li></a>
+							<a href="ui_pattern_elements.html"><li>UI PATTERN ELEMENTS</li></a>
+							<a href="design_docs.html"><li>DESIGN DOCS</li></a>
+							<a href="citations.html"><li>CITATIONS</li></a>
+							<hr>
+
+							<!-- Site Map -->
+							<h3>INFORMATION HIERARCHY</h3>
+							<a href="#site-map"><li>SITE MAP</li></a>
+
+							<!-- Target links -->
+							<h3>WIREFRAMES</h3>
+						    <a href="#wireframe-home"><li>HOME</li></a>
+							<a href="#wireframe-about"><li>ABOUT</li></a>
+							<a href="#wireframe-ceramics"><li>CERAMICS</li></a>
+							<a href="#wireframe-product-listing"><li>PRODUCT LISTING</li></a>
+							<a href="#wireframe-cart"><li>CART</li></a>
+
+							<h3>MOCKUPS</h3>
+							<a href="#mockup-home"><li>HOME</li></a>
+							<a href="#mockup-about"><li>ABOUT</li></a>
+							<a href="#mockup-ceramics"><li>CERAMICS</li></a>
+							<a href="#mockup-product-listing"><li>PRODUCT LISTING</li></a>
+							<a href="#mockup-cart" class="last-target"><li>CART</li></a>
+						</div>
+				    </ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="grid-container"> 
+			<div class="pattern-container">
+				<h1>DESIGN DOCS</h1>
+
+				<!-- SITE-MAP -->
+				<div>
+					<h2>INFORMATION HIERARCHY</h2>
+					<button id="site-map" class="accordion">SITE-MAP</button>
+					<div class="panel">
+						<img src="img/site-map.png" alt="Information hierarchy of CRH Studios site architecture." class="accordion-content desktop-img">
+					</div>
+					<hr class="accordion-hr">
+				</div>
+
+
+
+				<!-- WIREFRAMES -->
+				<div id="wireframes">
+					<h2>WIREFRAMES</h2>
+
+					<!-- HOME WIREFRAME -->
+					<button id="wireframe-home" class="accordion">HOME</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- desktop -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/wireframe-home-desktop.png" alt="Wireframes for desktop home page of CRH Studios.">
+						</div>
+						<div>
+							<!-- mobile -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/wireframe-home-mobile.png" alt="Wireframes for mobile home page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- ABOUT WIREFRAME -->
+					<button id="wireframe-about" class="accordion">ABOUT</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- desktop -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/wireframe-about-desktop.png" alt="Wireframes for desktop about page of CRH Studios.">
+						</div>
+						<div>
+							<!-- mobile -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/wireframe-about-mobile.png" alt="Wireframes for mobile about page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- CERAMICS WIREFRAME -->
+					<button id="wireframe-ceramics" class="accordion">CERAMICS</button>
+					<div class="panel doc-img-container">
+						<div>
+						<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/wireframe-products-desktop.png" alt="Wireframes for desktop products page of CRH Studios.">
+						</div>
+						<div>
+						<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/wireframe-products-mobile.png" alt="Wireframes for mobile products page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- PRODUCT DETAILS WIREFRAME -->
+					<button id="wireframe-product-listing" class="accordion">PRODUCT LISTING</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/wireframe-product-details-desktop.png" alt="Wireframes for desktop product details page of CRH Studios.">
+						</div>
+						<div>
+							<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/wireframe-product-details-mobile.png" alt="Wireframes for mobile product details page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- CART WIREFRAME -->
+					<button id="wireframe-cart" class="accordion">CART</button>
+					<div class="panel doc-img-container">
+						<div>
+						<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/wireframe-cart-desktop.png" alt="Wireframes for desktop cart page of CRH Studios.">
+						</div>
+						<div>
+						<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/wireframe-cart-mobile.png" alt="Wireframes for mobile cart page of CRH Studios.">
+						</div>	
+					</div>
+
+					<!-- CHECKOUT WIREFRAME -->
+					<button id="wireframe-checkout" class="accordion">CHECKOUT</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-container" src="img/wireframe-checkout-desktop.png" alt="Wireframes for desktop checkout page of CRH Studios.">
+						</div>
+						<div>
+							<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/wireframe-checkout-mobile.png" alt="Wireframes for mobile checkout page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- ORDER REVIEW WIREFRAME -->
+					<button id="wireframe-order-review" class="accordion">ORDER REVIEW</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/wireframe-review-desktop.png" alt="Wireframes for desktop order review page of CRH Studios.">
+						</div>
+						<div>
+							<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/wireframe-review-mobile.png" alt="Wireframes for mobile order review page of CRH Studios.">
+						</div>
+					</div>
+					<hr class="accordion-hr">
+				</div>
+
+
+
+				<!-- MOCKUPS -->
+				<div id="mockups">
+					<h2>MOCKUPS</h2>
+
+					<!-- HOME mockup -->
+					<button id="mockup-home" class="accordion">HOME</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- desktop -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/mockup-home-desktop.png" alt="Mockups for desktop home page of CRH Studios.">
+						</div>
+						<div>
+							<!-- mobile -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/mockup-home-mobile.png" alt="Mockups for mobile home page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- ABOUT mockup -->
+					<button id="mockup-about" class="accordion">ABOUT</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- desktop -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/mockup-about-desktop.png" alt="Mockups for desktop about page of CRH Studios.">
+						</div>
+						<div>
+							<!-- mobile -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/mockup-about-mobile.png" alt="Mockups for mobile about page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- CERAMICS mockup -->
+					<button id="mockup-ceramics" class="accordion">CERAMICS</button>
+					<div class="panel">
+						<div class="mc doc-img-container">
+							<div>
+								<!-- DESKTOP -->
+								<h3>DESKTOP</h3>
+								<img class="desktop-img accordion-content" src="img/mockup-products-desktop.png" alt="Mockups for desktop products page of CRH Studios; Tom Crews' ceramics.">
+							</div>
+							<div>
+								<img class="desktop-img accordion-content mc doc-sec-img" src="img/mockup-products-desktop-oriento.png" alt="Mockups for desktop products page of CRH Studios; Oriento's ceramics.">
+							</div>
+						</div>
+						<div class="mcm doc-img-container">
+							<div>
+								<!-- MOBILE -->
+								<h3>MOBILE</h3>
+								<img class="accordion-content" src="img/mockup-products2-mobile.png" alt="Mockups for mobile products page of CRH Studios with the accordion closed.">
+							</div>
+							<div>
+								<img class="accordion-content doc-sec-img" src="img/mockup-products-mobile.png" alt="Mockups for mobile products page of CRH Studios with the accordion open.">
+							</div>
+						</div>
+					</div>
+
+					<!-- PRODUCT DETAILS mockup -->
+					<button id="mockup-product-listing" class="accordion">PRODUCT LISTING</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/mockup-product-details-desktop.png" alt="Mockups for desktop product details page of CRH Studios.">
+						</div>
+						<div>
+							<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/mockup-product-details-mobile.png" alt="Mockups for mobile product details page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- CART mockup -->
+					<button id="mockup-cart" class="accordion">CART</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/mockup-cart-desktop.png" alt="Mockups for desktop cart page of CRH Studios.">
+						</div>
+						<div>
+							<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/mockup-cart-mobile.png" alt="Mockups for mobile cart page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- CHECKOUT mockup -->
+					<button id="mockup-checkout" class="accordion">CHECKOUT</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/mockup-checkout-desktop.png" alt="Mockups for desktop checkout page of CRH Studios.">
+						</div>
+						<div>
+							<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/mockup-checkout-mobile.png" alt="Mockups for mobile checkout page of CRH Studios.">
+						</div>
+					</div>
+
+					<!-- ORDER REVIEW mockup -->
+					<button id="mockup-order-review" class="accordion">ORDER REVIEW</button>
+					<div class="panel doc-img-container">
+						<div>
+							<!-- DESKTOP -->
+							<h3>DESKTOP</h3>
+							<img class="desktop-img accordion-content" src="img/mockup-review-desktop.png" alt="Mockups for desktop order review page of CRH Studios.">
+						</div>
+						<div>
+							<!-- MOBILE -->
+							<h3>MOBILE</h3>
+							<img class="accordion-content" src="img/mockup-review-mobile.png" alt="Mockups for mobile order review page of CRH Studios.">
+						</div>
+					</div>
+					<hr class="accordion-hr">
+				</div>
+			</div>
+		</div>
+
+		<!-- link to javascript -->
+		<script src="js/elements.js"></script>
+		<script src="js/target-nav.js"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	</body>
+</html>
+

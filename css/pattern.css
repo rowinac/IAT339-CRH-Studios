@@ -1,0 +1,948 @@
+/* boxes around color swatch figures */
+figure.text-container, figcaption {
+	padding: 1rem 0.6rem;
+	padding-right: 0.8rem;
+	overflow: hidden;
+}
+
+figure.text-container {
+	padding-bottom: 2em;
+	height: 40rem;
+
+	color: #6D716F;
+	transition-property: color; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+}
+
+footer {
+	background-color: #A9A2A1; 
+	color: #FFFFFF;
+	padding: 2rem;
+}
+
+footer a {
+	color: #FFFFFF;
+	display: block;
+}
+
+footer a.social {
+	display: inline-block;
+}
+
+form {
+	background-color: #F4F4F4;
+	padding: 2rem 4rem;
+}
+
+label {
+	display: inline-block;
+	color: #7E7E7E;
+	margin-bottom: 0.4rem;
+}
+
+input#form-input {
+	width: 100%;
+	border-radius: 0.5rem;
+	border: 1.8px solid #A9A2A1;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+select {
+	width: 100%;
+	border-radius: 0.5rem;
+	border: 1.8px solid #A9A2A1;
+	padding: 0.25rem 0.25rem;
+	margin-bottom: 1rem;
+	color: #C98F7D;
+}
+
+/* BREADCRUMB REFERENCED FROM 
+https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-lines*/
+#breadcrumb-bar ul {
+	padding-left: 0.5rem;
+}
+
+/* list elements in the breadcrumb nav example */
+#breadcrumb-bar li {
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+	
+	text-align: center;
+	line-height: 2.7rem;
+
+	border-radius: 50%;
+	background-color: white; 
+	border: 2px solid #A9A2A1;
+	
+	margin: 0 14vw 0 14vw;
+	color: #6D716F;
+	position: relative;
+}
+
+/* breadcrumb line before li element*/
+#breadcrumb-bar li::before {
+	content: '';
+	position: absolute;
+	top: 1.5rem;
+	width: 26vw;
+	left: -15vw;
+	height: 0.1rem;
+	background: #A9A2A1;
+	z-index: -1;
+}
+
+/* breadcrumb line after li element*/
+#breadcrumb-bar li::after {
+	content: '';
+	position: absolute;
+	top: 1.5rem;
+	width: 26vw;
+	right: -15vw;
+	height: 0.1rem;
+	background: #A9A2A1;
+	z-index: -1;
+}
+
+#breadcrumb-bar a {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #6D716F;
+}
+
+#breadcrumb-bar li:hover, #breadcrumb-bar li:active {
+	background: #C98F7D;
+	color: #FFFFFF;
+
+	transition-property: background; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+}
+
+#nav-bar nav {
+	background-color: #FFFFFF;
+	border: 1px solid #F4F4F4;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	margin-bottom: 1rem;
+}
+
+/* darker navigation bar*/
+#nav-bar .darker-nav {
+	background-color: #6D716F;
+}
+
+/* images within the nav bar; ie: logo + cart */
+#nav-bar img {
+	width: 80%;
+	height: auto;
+}
+
+/* positioning for logo in site nav example */
+#nav-bar .logo {
+	margin-right: auto;
+}
+
+#color-palette h2 {
+	margin-bottom: 0.5rem;
+}
+
+#list-examples .text-container {
+	margin-bottom: 0.2rem;
+}
+
+#type-examples h1, #type-examples h2{
+	color: #6D716F;
+	padding: 0;
+}
+
+/* form note container */
+#form-elements .side-note .text-container {
+	margin: 0;
+	height: 17rem;
+}
+
+/* order summary note container */
+#order-summary .side-note .text-container {
+	margin: 0;
+	min-height: 27.2rem;
+}
+
+/* header 2 in order summary container */
+#order-summary .order-sum-ex h2 {
+	padding: 1.7rem 0;
+	padding-bottom: 1.5rem;
+	margin: 0;
+	text-align: center;
+}
+
+
+#order-summary hr {
+	border-top: 0.01px solid #A9A2A1;
+	width: 15.5rem;
+	margin-bottom: 1rem;
+}
+
+#order-summary form {
+	align-items: center;
+}
+
+#order-summary .cta-button {
+	padding: 0.6rem 5.2rem;
+	margin-bottom: 2rem;
+}
+
+/* example headings for swatches & checkboxes*/
+#swatches-checkboxes .example-heading { 
+	margin-top: 0rem;
+}
+
+/* example headings for swatches & checkboxes*/
+#grid-structures .example-heading { 
+	margin-top: 1.7rem;
+	margin-bottom: 0.3rem;
+}
+
+/* hamburger menu position of overflow gradient - bottom */
+#menu-toggle .overflow-scroll-gradient::after {
+	bottom: 0%;
+	width: 98%;
+	height: 17%; 
+}
+
+/* hamburger menu scroll target area for gradient */
+#menu-toggle .overflow-scroll-gradient-scroller {
+	height: 102%;
+}
+
+/* hamburger menu position of overflow gradient - top */
+#menu-toggle .overflow-scroll-gradient::before  {
+	top: 5%;
+	height: 15%;
+}
+
+
+/* flexbox for order summary info */
+.order-summary-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* darker nav example */
+.darker-nav a{
+	padding-top: 1rem;
+	color: #FFFFFF;
+}
+
+/* call to action button */
+.cta-button {
+	border: 0.15rem solid #C98F7D;
+	background-color: #C98F7D;
+	padding: 0.6rem 3.2rem;
+	font-weight: bold;
+	color: white;
+	border-radius: 0.8rem;
+	margin-top: 1rem;
+}
+
+/* hover state for CTA button */
+.cta-button:active, .cta-button:hover, .cta-button:focus {
+	background-color: white;
+	color: #C98F7D;
+	text-decoration: none;
+	transition-property: background; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+} 
+
+.cta-margin {
+	margin-top: 3rem;
+	margin-bottom: 2.5rem;
+}
+
+/* flexbox container for cta on forms */
+.cta-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* swatch boxes */
+.swatch {
+	margin: 1rem 0.6rem;
+	margin-bottom: 0.5rem;
+	height: 9rem;
+}
+
+/* white color swatch */
+.swatch.white {
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+}
+
+/* light grey color swatch */
+.swatch.light-grey {
+	background-color: #F4F4F4;
+}
+
+/* grey brown color swatch */
+.swatch.grey-brown {
+	background-color: #A9A2A1;
+}
+
+/* warm beige color swatch */
+.swatch.warm-beige {
+	background-color: #C6B09D;
+}
+
+/* pink color swatch */
+.swatch.pink {
+	background-color: #C98F7D;
+}
+
+/* dark-grey color swatch */
+.swatch.dark-grey {
+	background-color: #6D716F;
+}
+
+/* font weight for color swatches*/
+.color-name {
+	font-weight: 700;
+}
+
+/* color swatch descriptions/usage */
+.swatch-container p {
+	margin: 0.2rem 0.6rem;
+	margin-bottom: 4rem;
+	font-size: 1rem;
+	padding-bottom: 5rem;
+}
+
+/* text within grid examples*/
+.grid-text {
+	text-align: center;
+	margin-top: 0.7rem;
+}
+
+/* accordion referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion */
+.accordion {
+	background-color: #FFFFFF;
+	color: #C98F7D;
+	cursor: pointer;
+	padding: 1rem;
+	width: 100%;
+	border: none;
+	border-top: 0.5px solid #A9A2A1;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+	font-size: 1.1rem;
+}
+
+/* padding for content within the accordion */
+.accordion-content {
+	padding-bottom: 1.5rem;
+}
+
+/* states for acccordion */
+.active, .accordion:hover {
+	color: #6D716F;
+	transition-property: color; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+}
+
+/* accordion decoratives (lines) */
+.accordion-hr {
+	border-bottom: 0.5px solid #A9A2A1;
+	margin-top: 0;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #C98F7D;
+  font-weight: bold;
+  float: right;
+  margin-left: 0.8rem;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+/* content for accordions */
+.panel {
+	display: grid;
+	padding: 0 1rem;
+	background-color: white;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+
+/* container for breadcrumb nav */
+.breadcrumb-container {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+}
+
+/* font weight for footer subheadings*/
+.footer-heading {
+	font-weight: 700;
+}
+
+/* contact info in footer */
+.footer-contact {
+	margin-top: 0rem;
+	margin-bottom: 0.2rem;
+}
+
+/* contact info in footer */
+.footer-line-height {
+	line-height: 1.5rem;
+}
+
+/* social media icons in the footer */
+.social img {
+	width: 85%;
+	height: auto;
+}
+
+/* IMAGE GALLERY REFERENCED FROM 
+https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
+
+/* gallery container for images */
+.gallery-container {
+	position: relative;
+}
+
+/* product thumbnails under gallery */
+.product-preview {
+	display: none;
+}
+
+/* images in gallery thumbnails */
+.product-preview img {
+	width: 100%;
+}
+
+.gallery-row img {
+	width: 100%;
+	height: 100%;
+}
+
+/* cursor pointer for gallery images*/
+.gallery-cursor {
+	cursor: pointer;
+}
+
+/* image number/position in preview gallery  */
+/*.number-text {
+  color: #A9A2A1;
+  font-size: 1.1rem;
+  padding: 1rem 1rem;
+  position: absolute;
+  top: 0;
+}*/
+
+/* make inactive thumbnails transparent */
+.demo {
+  opacity: 0.6;
+}
+
+/* hover / active thumbanils in the preview should be fully opaque */
+.thumbnail-active, .demo:hover {
+  opacity: 1;
+}
+
+/* active thumbnail in gallery preview */
+.thumbnail-active {
+	border: 2px solid #C98F7D;
+}
+
+/* artist label in product listing */
+.artist-name {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+/* product name in listing */
+.product-info h1 {
+	color: #6D716F;
+	font-size: 2.5rem;
+}
+
+/* pricing in product listing */
+.product-info h2 {
+	padding-top: 0;
+	padding-bottom: 1rem;
+	margin-top: 0.7rem;
+	font-weight: 300;
+}
+
+/* dimension blurb in product listing */
+.dimensions {
+	margin-top: 2rem;
+}
+
+/* customization accordion in product listing */
+.product-info .accordion {
+	margin-top: 2rem;
+}
+
+/* first label for finishes in product listing*/
+.first-cust-option {
+	padding-right: 0.3rem;
+}
+
+/* customization titles */
+.cust-heading {
+	color: #7E7E7E;
+	font-size: 1.1rem;
+	margin: 0.6rem 0;
+}
+
+/* CUSTOM RADIO BUTTONS REFERENCED FROM
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
+/* container for checkbox */
+.cust {
+  display: inline-block;
+  position: relative;
+  padding-left: 1.7rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* hide default radio button */
+.cust input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* blue swatch */
+.checkmark.blue {
+	background-color: #255481;
+}
+
+/* green swatch */
+.checkmark.green {
+	background-color: #C7CEB3;
+}
+
+/* grey swatch*/
+.checkmark.grey {
+	background-color: #949393;
+}
+
+/* radio hover state for color customization */
+.cust.color:hover input ~ .checkmark, .cust.color:focus input ~ .checkmark {
+  border: 2px solid #C98F7D;
+}
+
+/* when it's checked add a border for color customization */
+.cust.color input:checked ~ .checkmark {
+  border: 2px solid #C98F7D;
+}
+
+/* styling for 'finish' checkboxes under customization */
+.checkmark.finish {
+	height: 1rem;
+	width: 1rem;
+	margin-top: 0.1rem;
+	margin-right: 0.1rem;
+	background-color: #FFFFFF;
+	border: 2px solid #C98F7D;
+}
+
+/* customization finish labels */
+.product-finish label {
+	padding-left: 1.2rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+/* radio hover state for color customization */
+.cust.finish:hover input ~ .checkmark, .cust.finish:focus input ~ .checkmark {
+	background-color: #F4F4F4;
+}
+
+/* indicator, hide it when not checked; for finishes */
+.checkmark:after {
+  content: "";
+  position: relative;
+  display: none;
+}
+
+/* indicator, show when checked; for finishes  */
+.cust.finish input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* radio indicator; for finishes */
+.cust.finish .checkmark.finish:after {
+ 	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #C98F7D;
+}
+
+/* padding for checkboxes in the example section */
+.checkboxes .cust {
+	padding-left: 1.3rem;
+}
+
+/* padding for checkboxes in the example section */
+.checkboxes .first-cust-option {
+	padding-right: 1rem;
+}
+
+/* QUANTITY BOX REFERENCED FROM 
+http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx */
+
+/* quantity box position */
+.quantity {
+	position: relative;
+	width: 100%;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	display: flex;
+}
+
+/* hide number input arrows; firefox */
+.quantity input[type=number] {
+	-moz-appearance: none;
+}
+
+/* hide number input arrows; chrome, safari, edge, opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity input:focus {
+	outline: 0.5rem;
+}
+
+.quantity-button {
+	cursor: pointer;
+	border: solid 1px #eee;
+	width: 2rem;
+	text-align: center;
+	color: #333;
+
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/* quantity box border styling*/
+.quantity-button.quantity-up,
+.quantity-button.quantity-down,
+.quantity input {
+	border: solid 1px #ccc;
+	display: inline-block;
+	height: 2.5rem;
+	line-height: 2.3rem;
+}
+
+/* quantity input / number */
+.quantity input {
+	border-right-style: none;
+	border-left-style: none;
+	padding-left: 3rem;
+	padding-right: 2rem;
+	color: #6D716F;
+}
+
+/* "+" styling for quantity box */
+.quantity-button.quantity-up {
+	border-left-style: none;
+	color: #C98F7D;
+	font-size: 1.5rem;
+	padding-right: 0.75rem;
+}
+
+/* "-" styling for quantity box */
+.quantity-button.quantity-down {
+	float: left;
+	border-right-style: none;
+	color: #C98F7D;
+	font-size: 1.5rem;
+	padding-left: 0.75rem;
+}
+
+
+/* Style the tab in table examples  */
+.tab {
+	overflow: hidden;
+	border-bottom: 1.7px solid #A9A2A1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	color: #7E7E7E;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1rem 1.5rem 0.7rem 0;
+	transition: 0.3s;
+	font-size: 1.1rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover, .tab button:focus {
+	color: #C98F7D;
+	font-weight: bold;
+	transition-property: color; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+}
+
+/* Create an active/current tablink class */
+.tab button.tab-active {
+	color: #C98F7D;
+	padding-bottom: 0.5rem;
+	font-weight: bold;
+	border-bottom: 4px solid #C98F7D;
+}
+
+
+/* Style the tab content */
+.tab-content {
+  display: none;
+  padding: 2rem 0;
+  border-bottom: 1px solid #A9A2A1;
+  border-top: none;
+}
+
+/* image width for larger images in design docs */
+.desktop-img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* SCROLL GRADIENT REFERENCED FROM https://codepen.io/kidd1118/pen/qxQwvE */
+.overflow-scroll-gradient {
+	position: relative;
+}
+
+/* position of overflow gradient - top */
+.overflow-scroll-gradient::before  {
+	content: '';
+	position: absolute;
+	top: 0.2%;
+	margin-left: 1%;
+	width: 98%;
+	background: linear-gradient(white, rgba(255, 255, 255, 0.001));
+}
+
+/* position of overflow gradient - bottom */
+.overflow-scroll-gradient::after {
+	content: '';
+	position: absolute;
+	bottom: 3%;
+	margin-left: 1%;
+	width: 98%;
+	height: 35%; 
+	background: linear-gradient(rgba(255, 255, 255, 0.001), white);
+}
+
+/* scroll target area for gradient */
+.overflow-scroll-gradient-scroller {
+	overflow-y: scroll;
+	background: white;
+	width: 100%;
+	height: 100%;
+}
+
+/* last target/link in hamburger menu/nav*/
+.last-target {
+	margin-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
+
+/* ------------ MEDIA QUERIES --------- */
+
+@media screen and (max-width: 127em) {
+	#order-summary form {
+	padding: 2rem 6rem;
+	}
+}
+
+@media screen and (max-width: 119em) {
+	#order-summary form {
+		padding: 2rem 3rem;
+	}
+}
+
+@media screen and (max-width: 104em) {
+	#order-summary .order-sum-ex h2 {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 102em) {
+	#order-summary .order-sum-ex h2 {
+		padding: 2rem 2rem;
+	}
+}
+
+@media screen and (max-width: 101em) {
+	#order-summary .cta-button {
+		padding: 0.6rem 4rem;
+	}
+
+	#order-summary hr {
+		width: 13.5rem;
+	}
+
+	#order-summary form {
+		padding: 2rem 2rem;
+	}
+}
+
+@media screen and (max-width: 93em) {
+	#order-summary .order-sum-ex h2 {
+		padding: 2rem 2rem;
+	}
+
+	#order-summary form {
+		padding: 2rem 1rem;
+	}
+}
+
+@media screen and (max-width: 90rem) {
+	.product-finish .cust {
+	  display: block;
+	}
+}
+
+@media screen and (max-width: 89em) {
+	#breadcrumb-bar li {
+    	margin: 0 12vw 0 14vw;
+	}
+}
+
+@media screen and (max-width: 80em) {
+	#breadcrumb-bar li {
+   		margin: 0 14vw 0 14vw;
+	}
+
+	.product-finish .cust {
+	  display: inline-block;
+	}
+}
+
+@media screen and (max-width: 73em) {
+	.product-finish .cust {
+	  display: block;
+	}
+}
+
+@media screen and (max-width: 66em) {
+	.product-finish .cust {
+	  display: inline-block;
+	}
+}
+
+@media screen and (max-width: 63em) {
+	figure.text-container {
+		width: 100%;
+	}
+
+	/* swatch boxes */
+	.swatch {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 35em) {
+	#form-elements form {
+		padding: 2rem 2rem;
+	}
+
+	#nav-bar nav a {
+		font-size: 1rem;
+		/*padding: 0.7rem 1rem;*/
+	}
+}
+
+@media screen and (max-width: 34em) {
+	#nav-bar nav a {
+		padding: 0.7rem 1rem;
+	}
+}
+
+@media screen and (max-width: 29em) {
+	#nav-bar nav a {
+		padding: 0.7rem 0.8rem;
+	}
+
+	#type-examples h1 {
+		font-size: 2.4rem;
+	}
+
+	.tab button {
+		font-size: 1rem;
+		padding: 1rem 1rem 0.7rem 0;
+	}
+}
+
+@media screen and (max-width: 27em) {
+	#nav-bar nav a {
+		padding: 0.7rem 0.6rem;
+	}
+}
+
+@media screen and (max-width: 25em) {
+	#nav-bar .logo {
+		margin-right: 0;
+	}
+
+	.tab button {
+		font-size: 0.9rem;
+	}
+}
+
+
+
+
+
+
+

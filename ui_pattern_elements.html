@@ -1,0 +1,977 @@
+<!doctype html> 
+
+<html lang="en"> 
+
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<title>UI Pattern Elements</title>
+
+		<!-- CSS Style Sheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/pattern.css">
+
+		<!-- jQuery Link -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+		<!-- KARLA Google Fonts Reference -->
+		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Karla:wght@600;700&display=swap" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div id="menu-toggle" class="menu-tgl">
+				    <input aria-label="nav" id="nav-checkbox" type="checkbox" checked>
+
+				    <!-- hamburger icon -->
+				    <span></span>
+				    <span></span>
+				    <span></span>
+
+
+				    <ul id="menu" class="target-menu overflow-scroll-gradient">
+						<div class="overflow-scroll-gradient-scroller">
+
+					    	<!-- Main navigation -->
+					    	<h3>PAGES</h3>
+					    	<a href="index.html"><li>BASIC STYLES</li></a>
+							<a href="ui_pattern_elements.html"><li>UI PATTERN ELEMENTS</li></a>
+							<a href="design_docs.html"><li>DESIGN DOCS</li></a>
+							<a href="citations.html"><li>CITATIONS</li></a>
+							<hr>
+
+							<!-- Target links -->
+							<h3>JUMP TO</h3>
+						    <a href="#accordion"><li>ACCORDION</li></a>
+							<a href="#breadcrumb-bar"><li>BREADCRUMB BAR</li></a>
+							<a href="#footer"><li>FOOTER</li></a>
+							<a href="#form-elements"><li>FORM ELEMENTS</li></a>
+							<a href="#nav-bar"><li>NAV BAR</li></a>
+							<a href="#order-summary"><li>ORDER SUMMARY</li></a>
+							<a href="#product-listing"><li>PRODUCT LISTING</li></a>
+							<a href="#quantity-box"><li>QUANTITY BOX</li></a>
+							<a href="#swatches-checkboxes"><li>SWATCHES & CHECKBOXES</li></a>
+							<a href="#tabs" class="last-target"><li>TABS</li></a>
+						</div>
+ 				 	</ul>
+				</div>
+			</nav>
+		</header>
+
+
+		<div class="grid-container"> 
+		<div class="pattern-container">
+		
+		<h1>UI PATTERN ELEMENTS</h1>
+
+			<!-- Accordion Section -->
+			<section id="accordion">
+				<h2>ACCORDION</h2>
+				
+				<!-- Accordion Example -->
+				<!-- ACCORDION REFERENCED FROM https://www.w3schools.com/howto/howto_js_accordion.asp -->
+				<button class="accordion">Accordion</button>
+				<div class="panel">
+					<p class="accordion-content">Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.</p>
+				</div>
+				<hr class="accordion-hr">
+
+
+				<!-- Notes for Accordions -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>Accordions are a collapsible content module. They should be implemented in mobile settings when organisms get too lengthy for default display, or for customization menus in product detail pages.</p>
+
+					<!-- Owner information -->
+					<p>For additional inquiries contact the designer, Rowina Chan.</p>
+				</div>
+
+				<!-- Sample code for accordion-->
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+						<!-- <div class="text-container"> -->
+							<h3>CODE SNIPPET</h3>
+							<code>
+								<!-- HTML code snippet -->
+								&lt;!-- HTML --&gt;<br>
+								&lt;button class="accordion&gt;Accordion&lt;/button&gt;<br>
+								&lt;div class="panel"&gt;<br>
+									&lt;p&gt;Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.&lt;p&gt;<br>
+								&lt;/div&gt;<br>
+
+								&lt;p&gt;Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.&lt;/p&gt;<br>
+
+								<!-- JS code snippet -->
+								//JAVASCRIPT referenced from https://www.w3schools.com/howto/howto_js_accordion.asp;<br>
+								var numOfAccs = document.getElementsByClassName("accordion");<br>
+								var i;<br>
+								for (i = 0; i &lt; numOfAccs.length; i++) {<br>
+								numOfAccs[i].addEventListener("click", function() {<br>
+								this.classList.toggle("active");<br>
+								var panel = this.nextElementSibling;<br>
+								if (panel.style.display === "block") {<br>
+								panel.style.display = "none";<br>
+								} else {<br>
+								panel.style.display = "block";<br>
+								}<br>
+								});<br>
+								}
+							</code>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<!-- Breadcrumb Bar Section -->
+			<section id="breadcrumb-bar">
+				<h2>BREADCRUMB BAR</h2>
+
+				 <div class="">
+					 <ul>
+					 	<a href=""><li>1</li></a>
+					 	<a href=""><li>2</li></a>
+					 </ul>
+				</div>
+
+				<!-- Notes for breadcrumb bar -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>The breadcrumb bar is a navigation tool that enables a user to jump to sections in a process otherwise unaccessible by the regular navigation bar. They should always be sticky on the pages they appear on to be visible at all times.</p>
+
+					<!-- Owner information -->
+					<p>For additional inquiries contact the designer, Rowina Chan.</p>
+				</div>
+
+				<!-- Sample code for breadcrumb bar-->
+				<div class="text-container">
+					<h3>CODE SNIPPET</h3>
+					<code>
+						&lt;nav&gt;<br>
+						&lt;a href=""&gt;Target 1&lt;/a&gt;<br>
+						&lt;a href=""&gt;Target 2&lt;/a&gt;<br>
+						&lt;/nav&gt;<br>
+
+						&lt;p&gt;Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.&lt;/p&gt;<br>
+					</code>
+				</div>
+			</section>
+
+
+
+
+			<!-- Footer Section -->
+			<section id="footer">
+				<h2>FOOTER</h2>
+
+				<!-- Footer example -->
+				<footer class="footer-container">
+					<div>
+						<p class="footer-heading">Our Studio is Open</p>
+						<p class="footer-line-height">2485 Broadway W<br>Vancouver, BC<br>V6K 2E8</p>
+					</div>
+					<div>
+						<p class="footer-heading">Get in Touch</p>
+						<p class="footer-line-height footer-contact">(604) 555-5555</p>
+						<p class="footer-contact">crh@gmail.com</p>
+					</div>
+					<div>
+						<p class="footer-heading">Navigate</p>
+						<a href="" class="footer-line-height">Home</a>
+						<a href="" class="footer-line-height">Ceramics</a>
+						<a href="" class="footer-line-height">About</a>
+					</div>
+					<div>
+						<p class="footer-heading">Resources</p>
+						<a href="" class="footer-line-height">Citations</a>
+						<a href="" class="footer-line-height">Style Guide</a>
+					</div>
+					<div>
+						<p class="footer-heading">Social Media</p>
+						<a href="" class="social"><img src="img/facebook.png" alt="facebook logo"></a>
+						<a href="" class="social"><img src="img/instagram.png" alt="instagram logo"></a>
+						<a href="" class="social"><img src="img/twitter.png" alt="twitter logo"></a>
+					</div>
+				</footer>
+
+				<!-- Notes for footer -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>The footer always appears at the bottom of the page and adheres to the #A9A2A1 swatch outlined under the color palette section. It contains quick access to information regarding the studio location, contact methods, access to navigation bar links, resources that link to citations and the style guide, as well as social media links. </p>
+
+					<!-- Owner information -->
+					<p>For additional inquiries contact the designer, Rowina Chan.</p>
+				</div>
+
+				<!-- Sample code for footer-->
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+							<h3>CODE SNIPPET</h3>
+							<code>
+								&lt;footer class="footer-container&gt;<br>
+
+									&lt;!-- Location --&gt;<br>
+									&lt;div&gt;<br>
+										&lt;p class="footer-heading"&gt;Our Studio is Open&lt;/p&gt;<br>
+										&lt;p&gt;2485 Broadway W&lt;br&gt;Vancouver, BC&lt;br&gt;V6K 2E8&lt;/p&gt;<br>
+									&lt;/div&gt;<br>
+
+									&lt;!-- Contact --&gt;<br>
+									&lt;div&gt;<br>
+										&lt;p class="footer-heading"&gt;Get in Touch&lt;/p&gt;<br>
+										&lt;p&gt;(604) 555-5555&lt;/p&gt;<br>
+										&lt;p&gt;crh@gmail.com&lt;/p&gt;<br>
+									&lt;/div&gt;<br>
+
+									&lt;!-- Navigation --&gt;<br>
+									&lt;div&gt;<br>
+										&lt;p& class="footer-heading"gt;Navigation&lt;/p&gt;<br>
+										&lt;a href="index.html"&gt;Home&lt;/a&gt;<br>
+										&lt;a href="ceramics.html"&gt;Ceramics&lt;/a&gt;<br>
+										&lt;a href="about.html"&gt;About&lt;/a&gt;<br>
+									&lt;/div&gt;<br>
+
+									&lt;!-- Resources --&gt;<br>
+									&lt;div&gt;<br>
+										&lt;p class="footer-heading"&gt;Resources&lt;/p&gt;<br>
+										&lt;a href=""&gt;Citations&lt;/a&gt;<br>
+										&lt;a href=""&gt;Style Guide&lt;/a&gt;<br>
+									&lt;/div&gt;<br>
+
+									&lt;!-- Social Media --&gt;<br>
+									&lt;div class="footer-heading"&gt;<br>
+										&lt;p&gt;Social Media&lt;/p&gt;<br>
+										&lt;a href=""&gt;&lt;img src="img/facebook.png"&gt;&lt;/a&gt;<br>
+										&lt;a href=""&gt;&lt;img src="img/instagram.png"&gt;&lt;/a&gt;<br>
+										&lt;a href=""&gt;&lt;img src="img/twitter.png"&gt;&lt;/a&gt;<br>
+									&lt;/div&gt;<br>
+								&lt;/footer&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<!--  Form Elements Section -->
+			<section id="form-elements">
+				<!-- Form Element Examples -->
+				<!-- FORMS REFERENCED FROM https://www.w3schools.com/html/html_forms.asp -->
+				
+				<h2>FORM ELEMENTS</h2>
+				<h3>TEXT INPUT, DROP-DOWN, & SUBMIT BUTTON</h3>
+				<div class="two-pattern-container">
+					<div class="first-pattern-ex">
+						<form>
+							<!-- Form Label Example -->
+							<label for="form-input">First Name</label><br>
+							<!-- Form Input Example -->
+							<input type="text" id="form-input" name="form-input"><br>
+							
+							<!-- Form Label -->
+							<label for="country">Country</label><br>
+							<!-- Form Drop down -->
+							<select id="country" name="country">
+								<option value="canada">Canada</option>
+							</select><br>
+
+							<!-- Submit Button -->
+							<div class="cta-container">
+								<input class="cta-button" type="submit" value="Submit">
+							</div>
+						</form>
+					</div>
+
+					<div class="side-note">
+						<!-- Notes for form -->
+						<div class="text-container">
+							<h3>NOTE</h3>
+							<p>Forms are a way of storing user submitted information. Form containers should always adhere to the #F4F4F4 color swatch while interactives such as the call-to-action button as well as drop downs follow the #C98F7D color swatch, all listed under the Basic Styles Guide.</p>
+
+							<!-- Owner information -->
+							<p>For additional inquiries contact the designer, Chantal Huang.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sample code for form implementation -->
+				<div class="text-container">
+					<h3>CODE SNIPPET</h3>
+					<code>
+						&lt;!-- Text Label & Input --&gt;<br>
+						&lt;label for="name"&gt;First Name&lt;/label&gt;<br>
+						&lt;input type="text" id="fname" name="fname"&gt;<br>
+
+						&lt;!-- Drop-down --&gt;<br>
+						&lt;label for="country"&gt;Country&lt;/label&gt;<br>
+						&lt;select id="country" name="country"&gt;<br>
+						&lt;option value="canada"&gt;Canada&lt;/option&gt;<br>
+						&lt;/select&gt;<br>
+
+						&lt;!-- Submit Button --&gt;<br>
+						&lt;input type="submit" value="Submit"&gt;
+					</code>
+				</div>
+			</section>
+
+
+
+
+			<!-- Navigation Section -->
+			<section id="nav-bar">
+				<h2>NAV BAR</h2>
+				<!-- Lighter Nav Example -->
+				<nav>
+					<div class="logo">
+					<a href="" class="logo"><img src="img/grey-logo.png" alt="grey CRH Studios logo"></a>
+					</div>
+					<a href="">HOME</a>
+					<a href="">CERAMICS</a>
+					<a href="">ABOUT</a>
+					<a href=""><img src="img/grey-cart.png" alt="grey cart icon"></a>
+				</nav>
+				<!-- Darker Nav Example -->
+				<nav class="darker-nav">
+					<a href="" class="logo"><img src="img/white-logo.png" alt="white CRH studios logo"></a>
+					<a href="">HOME</a>
+					<a href="">CERAMICS</a>
+					<a href="">ABOUT</a>
+					<a href=""><img src="img/white-cart.png" alt="white cart icon"></a>
+				</nav>
+
+
+				<!-- Notes for nav -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>The navigation bar provides a method for users to jump from page to page on the website. It must always remain at the top of the site and active pages should have their corresponding links in a bold weight and the #C98F7D swatch. For any darker backgrounds the navigation bar may appear over, an inversion from grey to white links is allowed.</p>
+
+					<!-- Owner information -->
+					<p>For additional inquiries contact the designer, Chantal Huang.</p>
+				</div>
+
+				<!-- Sample code for form implementation -->
+				<div class="text-container">
+					<h3>CODE SNIPPET</h3>
+					<code>
+						&lt;nav&gt;<br>
+							&lt;a href="index.html"&gt;&lt;img src="img/grey-logo.png" alt="grey CRH Studios logo"&gt;&lt;/a&gt;<br>
+							&lt;a href="index.html"&gt;HOME&lt;/a&gt;<br>
+							&lt;a href="ceramics.html"&gt;CERAMIC&lt;/a&gt;<br>
+							&lt;a href="about.html"&gt;ABOUT&lt;/a&gt;<br>
+							&lt;a href="cart.html"&gt;&lt;img src="img/grey-cart.png" alt="grey cart icon"&gt;&lt;/a&gt;<br>
+						&lt;/nav&gt;
+					</code>
+				</div>
+			</section>
+
+
+
+
+			<!-- Order Summary -->
+			<section id="order-summary">
+				<h2>ORDER SUMMARY</h2>
+
+				<div class="two-pattern-container">
+					<!-- Order Summary Example -->
+					<div class="first-pattern-ex">
+						<form class="order-sum-ex">
+							<h2>ORDER SUMMARY</h2>
+
+							<div class="order-summary-info">
+								<div class="order-summary-grid">
+									
+									<div class="order-summary-labels">
+										<p>Subtotal:</p>
+										<p>Shipping:</p>
+										<p>PST/GST:</p>
+										<p>Total:</p>
+									</div>
+									
+									<div class="order-summary-prices">
+										<p>C$128.00</p>
+										<p>-</p>
+										<p>-</p>
+										<p>C$128.00</p>
+									</div>
+								</div>
+								<hr>
+							</div>
+							
+							<div class="cta-container">
+								<!-- Submit Button -->
+								<input class="cta-button" type="submit" value="Place Order">
+							</div>
+						</form>
+					</div>
+
+
+					<div class="side-note">
+						<div class="overflow-scroll-gradient"> 
+							<div class="text-container">
+								<div class="overflow-scroll-gradient-scroller">
+									<!-- Sample code for order summary module -->
+									<h3>CODE SNIPPET</h3>
+									<code>
+										&lt;form&gt;<br>
+											&lt;h2&gt;ORDER SUMMARY&lt;/h2&gt;<br>
+											
+											&lt;div class="order-summary-info"&gt;<br>
+												&lt;div class="order-summary-grid"&gt;<br>
+													
+													&lt;div class="order-summary-labels"&gt;<br>
+														&lt;p&gt;Subtotal:&lt;/p&gt;<br>
+														&lt;p&gt;Shipping:&lt;/p&gt;<br>
+														&lt;p&gt;PST/GST:&lt;/p&gt;<br>
+														&lt;p&gt;Total:&lt;/p&gt;<br>
+													&lt;/div&gt;<br>
+													
+													&lt;div class="order-summary-prices"&gt;<br>
+														&lt;p&gt;C$128.00&lt;/p&gt;<br>
+														&lt;p&gt;-&lt;/p&gt;<br>
+														&lt;p&gt;-&lt;/p&gt;<br>
+														&lt;p&gt;C$128.00&lt;/p&gt;<br>
+													&lt;/div&gt;<br>
+												&lt;/div&gt;<br>
+												&lt;hr&gt;<br>
+											&lt;/div&gt;<br>
+											
+											&lt;div class="cta-container"&gt;<br>
+												<!-- Submit Button -->
+												&lt;input class="cta-button" type="submit" value="Place Order"&gt;<br>
+											&lt;/div&gt;<br>
+										&lt;/form&gt;<br>
+									</code>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Notes for Order Summary -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>The order summary is displayed in the checkout and review pages, outlining the subtotal, shipping expenses, tax, and the total after the calculated amounts. In a two column grid structure, the order summary is sticky when the user starts scrolling and should be in view at all times.</p>
+
+					<!-- Owner information -->
+					<p>For additional inquiries contact the designer, Helen Nguyen.</p>
+				</div>
+				
+			</section>
+
+
+
+
+			<!-- Product Listing Section -->
+			<section id="product-listing">
+				<h2>PRODUCT LISTING</h2>
+
+				<!-- Product Listing Example -->
+
+				<!-- Product image grid -->
+				<div class="product-listing-grid">
+					<div class="gallery-container">
+						<!-- full-width images with number text -->
+						<div class="product-preview">
+							<!-- <div class="number-text">1 / 3</div> -->
+							<img src="img/vase-wideshot.png" alt="a wideshot of a blue vase">
+						</div>
+
+						<div class="product-preview">
+							<!-- <div class="number-text">2 / 3</div> -->
+							<img src="img/vase-staged.png" alt="a closeup of a blue vase with white flowers in it">
+						</div>
+
+						<div class="product-preview">
+							<!-- div class="number-text">3 / 3</div> -->
+							<img src="img/vase-cu.png" alt="a closeup of the neck of a blue vase">
+						</div>
+
+						<!-- thumbnail images -->
+						<div class="gallery-row">
+							<div class="gallery-column">
+								<img class="demo gallery-cursor" src="img/vase-wideshot.png" onclick="currentSlide(1)" alt="a wideshot of a blue vase">
+						
+								<img class="demo gallery-cursor" src="img/vase-staged.png" onclick="currentSlide(2)" alt="a closeup of a blue vase with white flowers in it">
+							
+								<img class="demo gallery-cursor" src="img/vase-cu.png" onclick="currentSlide(3)" alt="a closeup of the neck of a blue vase">
+							</div>
+						</div>
+					</div>
+				
+					
+					<div class="product-info">
+						<!-- Product Information -->
+						<div>
+							<p class="artist-name">ORIENTO</p>
+							<h1>Cry Me a River</h1>
+							<h2>C$75</h2>
+
+							<p>Orci quis quam facilisis molestie moi. Donec sitae amet diam a velit efficitur venenatis. In dictu  nunc libero, euste pharetra magna laoreet sitarm amet. Morbi quis semper mi.</p>
+							<p class="dimensions">Dimensions: 16cm x 40.3 cm</p>
+						</div>
+
+						<!-- Customization -->
+						<div>
+							<button class="accordion">Want to Customize?</button>
+							
+							<div class="panel">
+								<div class="product-color">
+									<!-- Swatches -->
+									<h3 class="cust-heading">Color</h3>
+									<!-- blue -->
+									<label class="cust color" aria-label="blue">
+										<input type="radio" id="blue" name="swatch1" value="blue" checked="checked">
+										<span class="checkmark blue"></span>
+									</label>
+									<!-- green -->
+									<label class="cust color" aria-label="green">
+										<input type="radio" id="green" name="swatch1" value="green">
+										<span class="checkmark green"></span>
+									</label>
+									<!-- grey -->
+									<label class="cust color" aria-label="grey">
+										<input type="radio" id="grey" name="swatch1" value="grey">
+										<span class="checkmark grey"></span>
+									</label>
+								</div>
+							
+								<div class="product-finish">
+									<!-- Checkboxes-->
+									<h3 class="cust-heading">Finish</h3>
+									<label class="cust finish first-cust-option" for="glossy">
+										<input type="radio" id="glossy" name="finish1" value="glossy" checked="checked">
+										<span class="checkmark finish"></span>
+										Glossy
+									</label>
+									<label class="cust finish" for="matte">
+										<input type="radio" id="matte" name="finish1" value="matte">
+										Matte
+										<span class="checkmark finish"></span>
+									</label>
+								</div>
+							</div>
+							<hr class="accordion-hr">
+						</div>
+
+						<a href="" class="cta-button cta-container">Add to Cart</a>
+					</div>
+				</div>
+
+				<!-- Notes for Product Listing -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>A detailed product listing provides information relating to it's artist, item name, price, dimensions, and options for customization. On desktop sizes, it is constructed with a larger two column mixed grid, with an image gallery on the left and product information on the right. Active images on display should be outlined in the #C98F7D swatch in the preview gallery. At smaller screen sizes, the grid will flow into one column.</p>
+
+					<!-- Owner information -->
+					<p>For additional inquiries contact the designer, Chantal Huang.</p>
+				</div>
+
+				<!-- Sample code for order summary module -->
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+							<h3>CODE SNIPPET</h3>
+							<code>
+								&lt;!-- Product image grid --&gt;
+								&lt;div class="product-listing-grid"&gt;<br>
+									&lt;div class="gallery-container"&gt;<br>
+										<!-- full-width images with number text -->
+										&lt;div class="product-preview"&gt;<br>
+											<!-- <div class="number-text">1 / 3</div> -->
+											&lt;img src="img/vase-wideshot.png" alt="a wideshot of a blue vase"&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;div class="product-preview"&gt;<br>
+											<!-- <div class="number-text">2 / 3</div> -->
+											&lt;img src="img/vase-staged.png" alt="a closeup of a blue vase with white flowers in it"&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;div class="product-preview"&gt;<br>
+											<!-- div class="number-text">3 / 3</div> -->
+											&lt;img src="img/vase-cu.png" alt="a closeup of the neck of a blue vase"&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;!-- thumbnail images --&gt;
+										&lt;div class="gallery-row"&gt;<br>
+											&lt;div class="gallery-column"&gt;<br>
+												&lt;img class="demo gallery-cursor" src="img/vase-wideshot.png" onclick="currentSlide(1)" alt="a wideshot of a blue vase"&gt;<br>
+										
+												&lt;img class="demo gallery-cursor" src="img/vase-staged.png" onclick="currentSlide(2)" alt="a closeup of a blue vase with white flowers in it"&gt;<br>
+											
+												&lt;img class="demo gallery-cursor" src="img/vase-cu.png" onclick="currentSlide(3)" alt="a closeup of the neck of a blue vase"&gt;<br>
+											&lt;/div&gt;<br>
+										&lt;/div&gt;<br>
+									&lt;/div&gt;<br>
+								
+									
+									&lt;div class="product-info"&gt;<br>
+										&lt;!-- Product Information --&gt;
+										&lt;div&gt;<br>
+											&lt;p class="artist-name"&gt;ORIENTO&lt;/p&gt;<br>
+											&lt;h1&gt;Cry Me a River&lt;/h1&gt;<br>
+											&lt;h2&gt;C$75&lt;/h2&gt;<br>
+
+											&lt;p&gt;Orci quis quam facilisis molestie moi. Donec sitae amet diam a velit efficitur venenatis. In dictu  nunc libero, euste pharetra magna laoreet sitarm amet. Morbi quis semper mi.&lt;/p&gt;<br>
+											&lt;p class="dimensions"&gt;Dimensions: 16cm x 40.3 cm&lt;/p&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;!-- Customization --&gt;
+										&lt;div&gt;<br>
+											&lt;button class="accordion"&gt;Want to Customize?&lt;/button&gt;<br>
+											
+											&lt;div class="panel"&gt;<br>
+												&lt;div class="product-color"&gt;<br>
+													&lt;!-- Swatches --&gt;
+													&lt;h3 class="cust-heading"&gt;Color&lt;/h3&gt;<br>
+													<!-- blue -->
+													&lt;label class="cust color" aria-label="blue"&gt;<br>
+														&lt;input type="radio" id="blue" name="swatch" value="blue" checked="checked"&gt;<br>
+														&lt;span class="checkmark blue"&gt;&lt;/span&gt;<br>
+													&lt;/label&gt;<br>
+													<!-- green -->
+													&lt;label class="cust color" aria-label="green"&gt;<br>
+														&lt;input type="radio" id="green" name="swatch" value="green"&gt;<br>
+														&lt;span class="checkmark green"&gt;&lt;/span&gt;<br>
+													&lt;/label&gt;<br>
+													<!-- grey -->
+													&lt;label class="cust color" aria-label="grey"&gt;<br>
+														&lt;input type="radio" id="grey" name="swatch" value="grey"&gt;<br>
+														&lt;span class="checkmark grey"&gt;&lt;/span&gt;<br>
+													&lt;/label&gt;<br>
+												&lt;/div&gt;<br>
+											
+												&lt;div class="product-finish"&gt;<br>
+													&lt;!-- Checkboxes--&gt;
+													&lt;h3 class="cust-heading"&gt;Finish&lt;/h3&gt;<br>
+													&lt;label class="cust finish first-cust-option" for="glossy"&gt;<br>
+														&lt;input type="radio" id="glossy" name="finish" value="glossy" checked="checked"&gt;<br>
+														&lt;span class="checkmark finish"&gt;&lt;/span&gt;<br>
+														Glossy
+													&lt;/label&gt;<br>
+													&lt;label class="cust finish" for="matte"&gt;<br>
+														&lt;input type="radio" id="matte" name="finish" value="matte"&gt;<br>
+														Matte
+														&lt;span class="checkmark finish"&gt;&lt;/span&gt;<br>
+													&lt;/label&gt;<br>
+												&lt;/div&gt;<br>
+											&lt;/div&gt;<br>
+											&lt;hr class="accordion-hr"&gt;<br>
+										&lt;/div&gt;<br>
+
+										&lt;a href="" class="cta-button cta-container"&gt;Add to Cart&lt;/a&gt;<br>
+									&lt;/div&gt;<br>
+								&lt;/div&gt;<br>
+
+								//JAVASCRIPT <br>
+								var slideIndex = 1;<br>
+								showSlides(slideIndex);<br>
+
+								// Thumbnail image controls<br>
+								function currentSlide(n) {<br>
+								  showSlides(slideIndex = n);<br>
+								}<br>
+
+								function showSlides(n) {<br>
+								  var i;<br>
+								  var slides = <br>document.getElementsByClassName("product-preview");<br>
+								  var dots = document.getElementsByClassName("demo");<br>
+								 
+								 if (n &gt; slides.length) {<br>
+								    slideIndex = 1<br>
+								  }<br>
+								  
+								  if (n &lt; 1) {<br>
+								    slideIndex = slides.length<br>
+								  }<br>
+								  
+								  for (i = 0; i &lt; slides.length; i++) {<br>
+								    slides[i].style.display = "none";<br>
+								  }<br>
+
+								  for (i = 0; i &lt; dots.length; i++) {<br>
+								    dots[i].className = dots[i].className.replace(" <br>thumbnail-active", "");<br>
+								  }<br>
+
+								  slides[slideIndex-1].style.display = "block";<br>
+								  dots[slideIndex-1].className += " thumbnail-active";<br>
+								}
+							</code>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<!-- Quantity Box Section -->
+			<section id="quantity-box">
+				<h2>QUANTITY BOX</h2>
+
+				<!-- QUANTITY BOX REFERENCED FROM http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx -->
+
+				<div class="quantity">
+					<div class="quantity-button quantity-down">-</div>
+					<input aria-label="quantity" type="number" min="0" max="20" step="1" value="0">
+					<div class="quantity-button quantity-up">+</div>
+				</div>
+
+
+				<!-- Notes for Quantity Box -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>The quantity box enables the user to increase or decrease the amount of a product in the cart module. If the quantity is set to 0, the product should be automatically removed from the cart.</p>
+
+					<!-- Owner information -->
+					<p>For additional inquiries contact the designer, Helen Nguyen.</p>
+				</div>
+
+				<!-- Sample code for Quantity Box -->
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+							<h3>CODE SNIPPET</h3>
+							<code>
+								&lt;!--HTML--&gt;<br>
+								&lt;div class="quantity"&gt;<br>
+									&lt;div class="quantity-button quantity-down"&gt;-&lt;/div&gt;<br>
+									&lt;input type="number" min="0" max="20" step="1" value="0"&gt;<br>
+									&lt;div class="quantity-button quantity-up"&gt;+&lt;/div&gt;<br>
+								&lt;/div&gt;<br>
+								//JAVASCRIPT<br>
+								jQuery('.quantity').each(function () {<br>
+								    var spinner = jQuery(this),<br>
+								    input = spinner.find('input[type="number"]'),<br>
+								    buttonUp = spinner.find('.quantity-up'),<br>
+								    buttonDown = spinner.find('.quantity-down'),<br>
+								    min = input.attr('min'),<br>
+								    max = input.attr('max');<br>
+
+								    buttonUp.click(function () {<br>
+								        var oldValue = parseFloat(input.val());<br>
+								        if (oldValue &gt;= max) {<br>
+								            var newVal = oldValue;<br>
+								        } else {<br>
+								            var newVal = oldValue + 1;<br>
+								        }<br>
+								        spinner.find("input").val(newVal);<br>
+								        spinner.find("input").trigger("change");<br>
+								    });<br>
+
+								    buttonDown.click(function () {<br>
+								        var oldValue = parseFloat(input.val());<br>
+								        if (oldValue &lt;= min) {<br>
+								            var newVal = oldValue;<br>
+								        } else {<br>
+								            var newVal = oldValue - 1;<br>
+								        }<br>
+								        spinner.find("input").val(newVal);<br>
+								        spinner.find("input").trigger("change");<br>
+								    });<br>
+
+								});
+							</code>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<!-- Swatches & Checkboxes Section -->
+			<section id="swatches-checkboxes">
+				<h2>SWATCHES & CHECKBOXES</h2>
+				<!-- CHECKBOXES REFERENCED FROM REFERENCED FROM https://www.w3schools.com/tags/att_input_type_checkbox.asp  --> 
+
+				<div class="two-pattern-container">
+					<!-- Swatch example -->
+					<div class="swatches">
+						<!-- style to look like swatches -->
+						<h3 class="example-heading">SWATCHES</h3>
+							<!-- blue -->
+							<label class="cust color" aria-label="blue">
+								<input type="radio" id="blue" name="swatch" value="blue" checked="checked">
+								<span class="checkmark blue"></span>
+							</label>
+							<!-- green -->
+							<label class="cust color" aria-label="green">
+								<input type="radio" id="green" name="swatch" value="green">
+								<span class="checkmark green"></span>
+							</label>
+							<!-- grey -->
+							<label class="cust color" aria-label="grey">
+								<input type="radio" id="grey" name="swatch" value="grey">
+								<span class="checkmark grey"></span>
+							</label>
+					</div>
+
+					<!-- Checkbox Example -->
+					<div class="checkboxes">
+						<h3 class="example-heading">CHECKBOXES</h3>
+						<label class="cust finish first-cust-option" for="glossy-ex">
+							<input type="radio" id="glossy-ex" name="finish" value="glossy-ex" checked="checked">
+							<span class="checkmark finish"></span>
+							Glossy
+						</label>
+						<label class="cust finish" for="matte-ex">
+							<input type="radio" id="matte-ex" name="finish" value="matte-ex">
+							Matte
+							<span class="checkmark finish"></span>
+						</label>
+					</div>
+				</div>
+
+
+				<!-- Notes for Quantity Box -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>Swatches and checkboxes allow users to customize a product if they wish and appear in product detail pages under the content for accordions. Swatches are styled radio buttons to show color options while also working in a form, and selected swatches should have a stroke of #C98F7D to show it's active state. Checkboxes should also have a stroke of #C98F7D as it is an interactive, also outlined under the color palette section.</p>
+
+					<!-- Owner information -->
+					<p>For additional inquiries contact the designer, Helen Nguyen.</p>
+				</div>
+
+				<!-- Sample code for Swatches and Checkboxes -->
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+							<h3>CODE SNIPPET</h3>
+							
+							<code>
+								&lt;div class="swatches"&gt;<br>
+								&lt;!-- style to look like swatches --&gt;<br>
+									&lt;h3 class="example-heading"&gt;SWATCHES&lt;/h3&gt;<br>
+									<!-- blue -->
+									&lt;label class="cust color" aria-label="blue"&gt;<br>
+										&lt;input type="radio" id="blue" name="radio" value="blue" checked="checked"&gt;<br>
+										&lt;span class="checkmark blue"&gt;&lt;/span&gt;<br>
+									&lt;/label&gt;<br>
+									<!-- green -->
+									&lt;label class="cust color" aria-label="green"&gt;<br>
+										&lt;input type="radio" id="green" name="radio" value="green"&gt;<br>
+										&lt;span class="checkmark green"&gt;&lt;/span&gt;<br>
+									&lt;/label&gt;<br>
+									<!-- grey -->
+									&lt;label class="cust color" aria-label="grey"&gt;<br>
+										&lt;input type="radio" id="grey" name="radio" value="grey"&gt;<br>
+										&lt;span class="checkmark grey"&gt;&lt;/span&gt;<br>
+									&lt;/label&gt;<br>
+								&lt;/div&gt;<br>
+
+								&lt;!-- Checkbox Example --&gt;<br>
+								&lt;div class="checkboxes"&gt;<br>
+									&lt;h3 class="example-heading"&gt;CHECKBOXES&lt;/h3&gt;<br>
+									&lt;label class="cust finish first-cust-option" for="glossy-ex"&gt;<br>
+										&lt;input type="radio" id="glossy-ex" name="radio" value="glossy-ex" checked="checked"&gt;<br>
+										&lt;span class="checkmark finish"&gt;&lt;/span&gt;<br>
+										Glossy<br>
+									&lt;/label&gt;<br>
+									&lt;label class="cust finish" for="matte-ex"&gt;<br>
+										&lt;input type="radio" id="matte-ex" name="radio" value="matte-ex"&gt;<br>
+										Matte<br>
+										&lt;span class="checkmark finish"&gt;&lt;/span&gt;<br>
+									&lt;/label&gt;<br>
+								&lt;/div&gt;<br>
+							</code>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+			<!-- Tabs Section  -->
+			<section id="tabs">
+				<h2>TABS</h2>
+
+				<!-- Tabs Example -->
+				<!-- TABS REFERENCED FROM https://www.w3schools.com/howto/howto_js_tabs.asp -->
+
+				<!-- tab buttons -->
+				<div class="tab">
+					<button class="tab-links" onclick="openContent(event, 'careInstructions')">Care Instructions</button>
+					<button class="tab-links" onclick="openContent(event, 'additionalInformation')">Additional Information</button>
+				</div>
+
+				<!-- care instructions info -->
+				<div class="tab-content" id="careInstructions">
+					As this item is rather delicate, we highly recommend handwashing only with hot soapy water. 
+				</div>
+				<!-- additional info -->
+				<div class="tab-content" id="additionalInformation">
+					At CRH Studios, the little quirks are what make our ceramics work, thus every piece is unique in their own way due to their handcrafted nature. 
+				</div>
+
+				<!-- Notes for Tabs -->
+				<div class="text-container">
+					<h3>NOTE</h3>
+					<p>Tabs are used for toggling between snippets of information or sections of a page. They are the primary means of organization on the Ceramics page for switching between the artists' collection, but should be swapped out for an accordion pattern on mobile sizes. Active tabs should also adhere to the #C98F7D swatch for interactives as outlined under the color palette section.</p>
+				</div>
+
+				<!-- Sample code for Tabs -->
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+							<h3>CODE SNIPPET</h3>
+							<code>
+								//HTML<br>
+								&lt;!-- Tab Buttons --&gt;<br>
+								&lt;div&gt;<br>
+									&lt;button class="tab-links"&gt;Care Instructions&lt;/button&gt;<br>
+									&lt;button class="tab-links"&gt;Additional Information&lt;/button&gt;<br>
+								&lt;/div&gt;<br>
+								&lt;!-- Tab Information --&gt;<br>
+								&lt;div class="tab-content"&gt;<br>
+									&lt;p&gt;As this item is rather delicate, we highly recommend handwashing only with hot soapy water.&lt;/p&gt;<br>
+									&lt;p&gt;Tabs are used for toggling between snippets of information or sections of a page. They are the primary means of organization on the Ceramics page for switching between the artists' collections, but should be swapped out for an accordion pattern on mobile sizes. Active tabs should also adhere to the #C98F7D swatch for interactives as outlined under the color palette section.&lt;/p&gt;<br>
+								&lt;/div&gt;<br>
+
+
+								<!-- JS Snippet -->
+								//JAVASCRIPT<br>
+								// TABS JS REFERENCED FROM https://www.w3schools.com/howto/howto_js_tabs.asp<br>
+								function openContent(event, tabName) {<br>
+									var i, tabContent, tabLinks;<br>
+
+									tabContent = document.getElementsByClassName("tab-content");<br>
+									for (i = 0; i &lt; tabContent.length; i++) {<br>
+										tabContent[i].style.display = "none";<br>
+									}<br>
+
+									tabLinks = document.getElementsByClassName("tab-links");<br>
+									for (i = 0; i &lt tabLinks.length; i++) {<br>
+										tabLinks[i].className = tabLinks[i].className.replace(" active","");<br>
+									}<br>
+
+									document.getElementById(tabName).style.display = "block";<br>
+									event.currentTarget.className += " active";<br>
+								}
+							</code>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		</div>
+
+		<!-- link to javascript -->
+		<script src="js/elements.js"></script>
+		<script src="js/target-nav.js"></script>
+		<script src="js/image-gallery.js"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	</body>
+</html>

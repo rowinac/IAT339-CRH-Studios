@@ -1,0 +1,94 @@
+<!doctype html> 
+
+<html lang="en"> 
+
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<title>Conventions</title>
+
+		<!-- CSS Style Sheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/pattern.css">
+
+		<!-- KARLA Google Fonts Reference -->
+		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<div id="menu-toggle" class="menu-tgl">
+				    <input aria-label="nav" id="nav-checkbox" type="checkbox" checked>
+
+				    	<!-- hamburger icon  -->
+					    <span></span>
+					    <span></span>
+					    <span></span>
+
+				    <ul id="menu" class="target-menu">
+
+				    	<!-- Main navigation -->
+				    	<h3>PAGES</h3>
+				    	<a href="index.html"><li>BASIC STYLES</li></a>
+						<a href="ui_pattern_elements.html"><li>UI PATTERN ELEMENTS</li></a>
+						<a href="design_docs.html"><li>DESIGN DOCS</li></a>
+						<a href="citations.html"><li>CITATIONS</li></a>
+				    </ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Citations -->
+		<div class="grid-container"> 
+			<div class="pattern-container">
+				<h1>Conventions</h1>
+                <h2>NAMING CONVENTIONS:</h2>
+                <p class="convention-spacing"><strong>HTML & CSS: Dashes</strong></p>
+                <div class="text-container">
+                    <h3>EXAMPLE</h3>
+                    <code>
+                        &lt;a href="" class="cta-button"&gt;CTA Button&lt;/a&gt;
+                    </code>
+                </div>
+
+                <p class="convention-spacing"><strong>JavaScript: camelCase</strong></p>
+                <div class="text-container">
+                    <h3>EXAMPLE</h3>
+                    <code>
+                        function currentSlide(n) { ... }
+                    </code>
+                </div>
+
+                <p class="convention-spacing"><strong>File Naming: Underscores</strong></p>
+                <div class="text-container">
+                    <h3>EXAMPLE</h3>
+                    <p>
+                        design_docs.html
+                    </p>
+                </div>
+
+                <p class="convention-spacing"><strong>CSS File Arrangement:</strong></p>
+                <div class="text-container">
+                    <h3>ORDER</h3>
+                    <ul>
+                        <li>Elements</li>
+                        <li>IDs</li>
+                        <li>Classes</li>
+                        <li>Media queries</li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+
+		<!-- link to javascript -->
+		<script src="js/elements.js"></script>
+		<script src="js/target-nav.js"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		
+	</body>
+</html>

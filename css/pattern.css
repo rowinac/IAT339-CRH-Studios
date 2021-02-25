@@ -789,7 +789,9 @@ input::-webkit-inner-spin-button {
 	margin-bottom: 4rem;
 }
 
-
+.convention-spacing{
+	padding-top: 1.2rem;
+}
 
 
 

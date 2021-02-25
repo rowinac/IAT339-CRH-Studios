@@ -202,6 +202,18 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 	margin-top: 0rem;
 }
 
+/* control labels for swatches & checkboxes*/
+/*#swatches-checkboxes label { 
+	display: none;
+}*/
+
+/* control labels for swatches & checkboxes*/
+/*#swatches-checkboxes label:hover,  #swatches-checkboxes label:active, #swatches-checkboxes label:focus { 
+	display: block;
+	font-size: 0.8rem;
+}
+*/
+
 /* example headings for swatches & checkboxes*/
 #grid-structures .example-heading { 
 	margin-top: 1.7rem;

@@ -60,24 +60,44 @@
 /* 2 column grid example */
 .grid-example-container.two {
 	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 0;
 }
 
 /* 3 column grid example */
 .grid-example-container.three {
 	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 0;
 }
 
 /* 12 column grid example */
 .grid-example-container.twelve {
 	grid-template-columns: repeat(12, 1fr); 
+	grid-column-gap: 0;
+	grid-row-gap: 0;
 }
 
 /* grid example content */
 .grid-child {
 	background-color: #F4F4F4;
 	width: auto;
-/*	height: 2.5rem;
-*/	margin: 1rem 0.5rem 1rem 0.5rem;
+/*	height: 2.5rem; */	
+	margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.grid-child:first-of-type {
+	margin-left: 1rem;
+}
+
+.grid-child:last-of-type {
+ 	margin-right: 1rem;
+}
+
+.grid-child-12 {
+	background-color: #F4F4F4;
+	width: auto;
+	margin: 0.75rem;
+	height: 3.4rem;
+	padding-top: 0.4rem;
 }
 
 /* text lists grid example*/

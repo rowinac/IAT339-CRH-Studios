@@ -564,20 +564,32 @@
 								<div class="product-color">
 									<!-- Swatches -->
 									<h3 class="cust-heading">Color</h3>
-									<!-- blue -->
-									<label class="cust color" aria-label="blue">
-										<input type="radio" id="blue" name="swatch1" value="blue" checked="checked">
-										<span class="checkmark blue"></span>
-									</label>
+
 									<!-- green -->
-									<label class="cust color" aria-label="green">
+									<label class="cust color" for="green" aria-label="green-swatch">
 										<input type="radio" id="green" name="swatch1" value="green">
+										<span class="color-name">Sage Green</span>
 										<span class="checkmark green"></span>
+										<!-- for the sake of style guide validation, do not implement in live site -->
+										<span class="hidden">label differentiation</span>
 									</label>
+
+									<!-- blue -->
+									<label class="cust color" for="blue" aria-label="blue-swatch">
+										<input type="radio" id="blue" name="swatch1" value="blue" checked="checked">
+										<span class="color-name">Ocean Blue</span>
+										<span class="checkmark blue"></span> 
+										<!-- for the sake of style guide validation, do not implement in live site -->
+										<span class="hidden">label differentiation</span>
+									</label>
+									
 									<!-- grey -->
-									<label class="cust color" aria-label="grey">
+									<label class="cust color" for="grey" aria-label="grey-swatch">
 										<input type="radio" id="grey" name="swatch1" value="grey">
+										<span class="color-name">Dark Grey</span>
 										<span class="checkmark grey"></span>
+										<!-- for the sake of style guide validation, do not implement in live site -->
+										<span class="hidden">label differentiation</span>
 									</label>
 								</div>
 							
@@ -587,12 +599,16 @@
 									<label class="cust finish first-cust-option" for="glossy" aria-label="glossy finish">
 										<input type="radio" id="glossy" name="finish1" value="glossy" checked="checked">
 										<span class="checkmark finish"></span>
+										<!-- for the sake of style guide validation, do not implement in live site -->
+										<span class="hidden">label differentiation</span>
 										Glossy
 									</label>
 									<label class="cust finish" for="matte" aria-label="matte finish">
 										<input type="radio" id="matte" name="finish1" value="matte">
-										Matte
 										<span class="checkmark finish"></span>
+										<!-- for the sake of style guide validation, do not implement in live site -->
+										<span class="hidden">label differentiation</span>
+										Matte
 									</label>
 								</div>
 							</div>
@@ -834,37 +850,44 @@
 					<div class="swatches">
 						<!-- style to look like swatches -->
 						<h3 class="example-heading">SWATCHES</h3>
-							<!-- blue -->
-							<label class="cust color" aria-label="blue" for="blue-ex">
-								<input type="radio" id="blue-ex" name="swatch" value="blue" checked="checked">
-								<span class="checkmark blue"></span>
-							</label>
+
 							<!-- green -->
-							<label class="cust color" aria-label="green" for="green-ex">
+							<label class="cust color" for="green-ex" aria-label="green-example">
 								<input type="radio" id="green-ex" name="swatch" value="green">
+								<span class="color-name">Sage Green</span>
 								<span class="checkmark green"></span>
 							</label>
+
+							<!-- blue -->
+							<label class="cust color" for="blue-ex" aria-label="blue-example">
+								<input type="radio" id="blue-ex" name="swatch" value="blue" checked="checked">
+								<span class="color-name">Ocean Blue</span>
+								<span class="checkmark blue"></span>
+							</label>
+
 							<!-- grey -->
-							<label class="cust color" aria-label="grey" for="grey-ex">
+							<label class="cust color" for="grey-ex" aria-label="grey-example">
 								<input type="radio" id="grey-ex" name="swatch" value="grey">
+								<span class="color-name">Dark Grey</span>
 								<span class="checkmark grey"></span>
 							</label>
 
-							<!-- <label class="cust color" aria-label="blue" for="blue-ex">Ocean Blue</label>
-							<label class="cust color" aria-label="green" for="green-ex">Sage Green</label>
-							<label class="cust color" aria-label="grey" for="grey-ex">Dark Grey</label> -->
+							<!-- <label  aria-label="blue" class="color-name" for="blue-ex">Ocean Blue</label>
+							<label aria-label="green" class="color-name" for="green-ex">Sage Green</label>
+							<label aria-label="grey" class="color-name" for="grey-ex">Dark Grey</label> -->
 					</div>
 
 					<!-- Checkbox Example -->
 					<div class="checkboxes">
 						<h3 class="example-heading">CHECKBOXES</h3>
-						<label class="cust finish first-cust-option" for="glossy-ex" aria-label="glossy finish example">
-							<input type="radio" id="glossy-ex" name="glossy-finish" value="glossy-ex" checked="checked">
+						<!-- Checkboxes-->
+						<label class="cust finish first-cust-option" for="glossy-ex" aria-label="glossy finish">
+							<input type="radio" id="glossy-ex" name="finish" value="glossy" checked="checked">
 							<span class="checkmark finish"></span>
 							Glossy
 						</label>
-						<label class="cust finish" for="matte-ex" aria-label="matte finish example">
-							<input type="radio" id="matte-ex" name="matte-finish" value="matte-ex">
+						<label class="cust finish" for="matte-ex" aria-label="matte finish">
+							<input type="radio" id="matte-ex" name="finish" value="matte">
 							Matte
 							<span class="checkmark finish"></span>
 						</label>

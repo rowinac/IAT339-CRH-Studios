@@ -148,6 +148,7 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 	margin-right: auto;
 }
 
+
 #color-palette h2 {
 	margin-bottom: 0.5rem;
 }
@@ -831,6 +832,8 @@ input::-webkit-inner-spin-button {
 .container {
 	display: inline-block;
 }
+
+/* overlay images for icon links */
 .overlay{
 	position: absolute;
 	transition: 0.3s;
@@ -838,6 +841,7 @@ input::-webkit-inner-spin-button {
 	transform: translate(0, -2.75rem);
 }
 
+/* icon overlay opacity during hover*/
 .container:hover .overlay {
 	opacity: 1;
 }
@@ -848,7 +852,7 @@ input::-webkit-inner-spin-button {
 }
 
 .overlay.grey-nav{
-	transform: translate(0, -3.427rem);
+	transform: translate(0, -3.36rem);
 }
 
 
@@ -965,6 +969,11 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 34em) {
 	#nav-bar nav a {
 		padding: 0.7rem 1rem;
+	}
+
+
+	.overlay.grey-nav{
+		transform: translate(0, -3.06rem);
 	}
 }
 

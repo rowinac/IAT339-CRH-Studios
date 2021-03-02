@@ -199,6 +199,7 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
   background-color: #FFFFFF;
   /*border-right: solid 0.1rem #F4F4F4;*/
   overflow: auto;
+  overflow-x: hidden;
   
 
   list-style-type: none;

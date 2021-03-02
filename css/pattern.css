@@ -203,7 +203,7 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 
 /* hamburger menu scroll target area for gradient */
 #menu-toggle .overflow-scroll-gradient-scroller {
-	height: 102%;
+	height: 110%;
 }
 
 /* hamburger menu position of overflow gradient - top */
@@ -767,7 +767,7 @@ input::-webkit-inner-spin-button {
 	bottom: 3%;
 	margin-left: 1%;
 	width: 98%;
-	height: 35%; 
+	height: 55%; 
 	background: linear-gradient(rgba(255, 255, 255, 0.001), white);
 }
 

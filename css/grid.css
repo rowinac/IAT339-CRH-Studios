@@ -89,12 +89,28 @@
 }
 
 .footer-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/*grid-template-columns: 11rem 10rem 7rem 7rem 12rem;*/
+	/*grid-template-columns: repeat(5, auto);*/
+	/*padding-left: 10%;
+	padding-right: 10%;*/
+}
+
+/* container for footer example in UI elements */
+.footer-ex-container {
 	grid-column: 4 / 9;
-	display: grid;
-	grid-template-columns: 11rem 10rem 7rem 7rem 12rem;
-	grid-column-gap: 4rem;
-	padding-left: 10%;
-	padding-right: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* content within the footer for different sections*/
+.footer-content {
+	padding: 0 1rem 0 1rem;
 }
 
 /* two column grid for patterns */
@@ -214,30 +230,6 @@
 	}
 }
 
-@media screen and (max-width: 118em) {
-	.footer-container {
-		grid-column-gap: 4rem;
-		padding-left: 7%;
-		padding-right: 7%;
-	}
-}
-
-@media screen and (max-width: 108em) {
-	.footer-container {
-		grid-column-gap: 3rem;
-		padding-left: 8%;
-		padding-right: 8%;
-	}
-}
-
-@media screen and (max-width: 105em) {
-	.footer-container {
-		grid-column-gap: 2rem;
-		padding-left: 7%;
-		padding-right: 7%;
-	}
-}
-
 @media screen and (max-width: 101em) {
 	.order-summary-grid {
 		grid-column-gap: 4rem;
@@ -245,11 +237,6 @@
 }
 
 @media screen and (max-width: 94em) {
-	.footer-container {
-		grid-column-gap: 1.3rem;
-		padding-left: 6%;
-		padding-right: 6%;
-	}
 }
 @media screen and (max-width: 90em) {
 	#product-listing .panel {
@@ -265,12 +252,9 @@
 	#order-summary .first-pattern-ex {
 		grid-column: 1 / 5;
 	}
-	.footer-container {
-		grid-template-columns: 10rem 11rem 5rem;
-		grid-column-gap: 5rem;
-		grid-template-rows: 3fr;
-		grid-row-gap: 2rem;
-		padding: 5% 10%;
+
+	.footer-ex-container {
+
 	}
 }
 
@@ -327,10 +311,6 @@
 }
 
 @media screen and (max-width: 66em) {
-	.footer-container {
-		grid-column-gap: 3rem;
-		padding: 5% 10%;
-	}
 
 	.product-listing-grid {
 		grid-template-columns: 1fr;
@@ -425,16 +405,13 @@
 	.doc-img-container {
 		grid-template-columns: 20rem 3rem;
 	}
+
+	.footer-ex-container {
+		justify-content: flex-start;
+	}
 }
 
 @media screen and (max-width: 45em) {
-	.footer-container {
-		grid-template-columns: 12rem 1fr;
-		grid-column-gap: 2rem;
-		grid-template-rows: 3fr;
-		grid-row-gap: 1.5rem;
-		padding: 5% 15%;
-	}
 
 	#order-summary .two-pattern-container {
 		display: grid;
@@ -462,6 +439,12 @@
 	/* two column grid for patterns */
 	.doc-img-container {
 		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 40.4em) {
+	.footer-container {
+		justify-content: flex-start;
 	}
 }
 
@@ -494,14 +477,6 @@
 }
 
 @media screen and (max-width: 35em) {
-	.footer-container {
-		text-align: center;
-		grid-template-columns: 1fr;
-		grid-template-rows: 5fr;
-		grid-row-gap: 1.5rem;
-		padding: 6% 15%;
-	}
-
 	.mcm.doc-img-container {
 		grid-template-columns: 12rem 12rem;
 		grid-column-gap: 1rem;
@@ -519,5 +494,25 @@
 
 	.checkboxes {
 		grid-column: 1 / 10;
+	}
+
+	.footer-ex-container {
+		justify-content: space-around;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	.footer-ex-container {
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.footer-content {
+		text-align: center;
+	}
+
+	.footer-container {
+		flex-direction: column;
+		align-content: center;
 	}
 }

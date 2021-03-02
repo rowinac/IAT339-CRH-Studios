@@ -12,7 +12,7 @@
 #product-listing .panel {
 	display: grid;
 	grid-template-columns: 7rem 10rem;
-	grid-column-gap: 0.5rem;
+	grid-column-gap: 0.8rem;
 }
 
 /* style guide grid container */
@@ -49,7 +49,6 @@
 	margin-bottom: 1rem;
 	background-color: #C4C4C4;
 	width: 100%;
-	height: 5rem;
 }
 
 /* 1 column grid example */
@@ -69,15 +68,15 @@
 
 /* 12 column grid example */
 .grid-example-container.twelve {
-	grid-template-columns: repeat(12, 1fr); 
+	grid-template-columns: repeat(12, 1fr);
 }
 
 /* grid example content */
 .grid-child {
 	background-color: #F4F4F4;
 	width: auto;
-/*	height: 2.5rem;
-*/	margin: 1rem 0.5rem 1rem 0.5rem;
+/*	height: 2.5rem; */	
+	margin: 1rem 0.5rem 1rem 0.5rem;
 }
 
 /* text lists grid example*/
@@ -252,6 +251,11 @@
 		padding-right: 6%;
 	}
 }
+@media screen and (max-width: 90em) {
+	#product-listing .panel {
+		grid-column-gap: 1rem;
+	}
+}
 
 @media screen and (max-width: 88em) {
 	#order-summary .side-note {
@@ -406,14 +410,12 @@
 
 	.grid-example-container.twelve {
 		grid-template-columns: 1fr;
-		grid-template-rows: 12fr;
 		height: 62rem;
 	}
 
 	/* 3 column grid example */
 	.grid-example-container.three {
 		grid-template-columns: 1fr;
-		grid-template-rows: 3fr;
 		height: 16rem;
 	}
 }

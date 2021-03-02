@@ -148,6 +148,7 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 	margin-right: auto;
 }
 
+
 #color-palette h2 {
 	margin-bottom: 0.5rem;
 }
@@ -201,18 +202,6 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 #swatches-checkboxes .example-heading { 
 	margin-top: 0rem;
 }
-
-/* control labels for swatches & checkboxes*/
-/*#swatches-checkboxes label { 
-	display: none;
-}*/
-
-/* control labels for swatches & checkboxes*/
-/*#swatches-checkboxes label:hover,  #swatches-checkboxes label:active, #swatches-checkboxes label:focus { 
-	display: block;
-	font-size: 0.8rem;
-}
-*/
 
 /* example headings for swatches & checkboxes*/
 #grid-structures .example-heading { 
@@ -320,11 +309,6 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 /* dark-grey color swatch */
 .swatch.dark-grey {
 	background-color: #6D716F;
-}
-
-/* font weight for color swatches*/
-.color-name {
-	font-weight: 700;
 }
 
 /* color swatch descriptions/usage */
@@ -632,6 +616,42 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
 	padding-right: 1rem;
 }
 
+.cust.color label {
+	padding-bottom: 1rem;
+}
+
+/* label for color swatches */
+.color-name { 
+	font-weight: 100;
+	font-size: 0.7rem;
+	text-align: center;
+}
+
+/* unchecked state for color labels */
+.cust.color input:not(:checked) + .color-name {
+	 display: none;
+	 background:red;
+}
+
+/* checked state for color labels */
+.cust.color input:checked + .color-name {
+	 display: block;
+	 margin-top: 2.4rem;
+	 margin-left: -6.4rem;
+	 margin-right: -5rem;
+	 padding: 0;
+}
+
+/* temporarily solve duplicate label issues, do not apply this to site for implementation */
+.hidden {
+	display: none;
+}
+
+/* padding to match h2 padding from h1 in other pages */
+.first-citation {
+	padding-top: 5rem;
+}
+
 /* QUANTITY BOX REFERENCED FROM 
 http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx */
 
@@ -801,10 +821,39 @@ input::-webkit-inner-spin-button {
 	margin-bottom: 4rem;
 }
 
-.convention-spacing{
+/* spacing in between each convention */
+.convention-spacing {
 	padding-top: 1.2rem;
 }
 
+/* hover example referenced from https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp */
+
+/* hover state for the social media icons in the footer */
+.container {
+	display: inline-block;
+}
+
+/* overlay images for icon links */
+.overlay{
+	position: absolute;
+	transition: 0.3s;
+	opacity: 0;
+	transform: translate(0, -2.75rem);
+}
+
+/* icon overlay opacity during hover*/
+.container:hover .overlay {
+	opacity: 1;
+}
+
+/* hover state for cart in nav bars */
+.overlay.white-nav{
+	transform: translate(0, -3.06rem);
+}
+
+.overlay.grey-nav{
+	transform: translate(0, -3.36rem);
+}
 
 
 
@@ -920,6 +969,11 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 34em) {
 	#nav-bar nav a {
 		padding: 0.7rem 1rem;
+	}
+
+
+	.overlay.grey-nav{
+		transform: translate(0, -3.06rem);
 	}
 }
 

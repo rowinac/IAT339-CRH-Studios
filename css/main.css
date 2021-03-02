@@ -98,6 +98,21 @@ a:hover, a:focus {
 	transition-timing-function: ease-out;
 }
 
+footer {
+	background-color: #A9A2A1; 
+	color: #FFFFFF;
+	padding: 2rem;
+}
+
+footer a {
+	color: #FFFFFF;
+	display: block;
+}
+
+footer a.social {
+	display: inline-block;
+}
+
 /* override main nav a styling for hamburger menu */
 #menu a {
 	display: block;
@@ -256,6 +271,28 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 /* subheadings in grid settings */
 .grid-subheading {
 	margin-top: 0;
+}
+
+/* font weight for footer subheadings*/
+.footer-heading {
+	font-weight: 700;
+}
+
+/* contact info in footer */
+.footer-contact {
+	margin-top: 0rem;
+	margin-bottom: 0.2rem;
+}
+
+/* contact info in footer */
+.footer-line-height {
+	line-height: 1.5rem;
+}
+
+/* social media icons in the footer */
+.social img {
+	width: 85%;
+	height: auto;
 }
 
 

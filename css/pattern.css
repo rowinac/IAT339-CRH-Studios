@@ -43,6 +43,303 @@ select {
 	color: #C98F7D;
 }
 
+#color-palette h2 {
+	margin-bottom: 0.5rem;
+}
+
+#list-examples .text-container {
+	margin-bottom: 0.2rem;
+}
+
+#type-examples h1, #type-examples h2{
+	color: #6D716F;
+	padding: 0;
+}
+
+/* form note container */
+#form-elements .side-note .text-container {
+	margin: 0;
+	height: 17rem;
+}
+
+/* -------- UI PATTERN ELEMENTS: Order Summary -------- */
+
+
+/* order summary note container */
+#order-summary .side-note .text-container {
+	margin: 0;
+	min-height: 27.2rem;
+}
+
+/* header 2 in order summary container */
+#order-summary .order-sum-ex h2 {
+	padding: 1.7rem 0;
+	padding-bottom: 1.5rem;
+	margin: 0;
+	text-align: center;
+}
+
+#order-summary hr {
+	border-top: 0.01px solid #A9A2A1;
+	width: 15.5rem;
+	margin-bottom: 1rem;
+}
+
+#order-summary form {
+	align-items: center;
+}
+
+#order-summary .cta-button {
+	padding: 0.6rem 5.2rem;
+	margin-bottom: 2rem;
+}
+
+/* ------------------------------------------ */
+
+
+/* example headings for swatches & checkboxes*/
+#swatches-checkboxes .example-heading { 
+	margin-top: 0rem;
+}
+
+/* example headings for swatches & checkboxes*/
+#grid-structures .example-heading { 
+	margin-top: 1.7rem;
+	margin-bottom: 0.3rem;
+}
+
+/* ----------- Navigation Bar -------------- */
+
+
+#nav-bar nav {
+	background-color: #FFFFFF;
+	border: 1px solid #F4F4F4;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	margin-bottom: 1rem;
+}
+
+/* darker navigation bar*/
+#nav-bar .darker-nav {
+	background-color: #6D716F;
+}
+
+/* images within the nav bar; ie: logo + cart */
+#nav-bar img {
+	width: 80%;
+	height: auto;
+}
+
+/* positioning for logo in site nav example */
+#nav-bar .logo {
+	margin-right: auto;
+}
+
+
+/* hamburger menu position of overflow gradient - bottom */
+#menu-toggle .overflow-scroll-gradient::after {
+	bottom: 0%;
+	width: 98%;
+	height: 17%; 
+}
+
+/* hamburger menu scroll target area for gradient */
+#menu-toggle .overflow-scroll-gradient-scroller {
+	height: 102%;
+}
+
+/* hamburger menu position of overflow gradient - top */
+#menu-toggle .overflow-scroll-gradient::before  {
+	top: 5%;
+	height: 15%;
+}
+
+/* --------------------------------------- */
+
+
+/* flexbox for order summary info */
+.order-summary-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* darker nav example */
+.darker-nav a{
+	padding-top: 1rem;
+	color: #FFFFFF;
+}
+
+
+
+/* ------- BASIC STYLES: Call-to-Action ------- */
+
+
+/* call to action button */
+.cta-button {
+	border: 0.15rem solid #C98F7D;
+	background-color: #C98F7D;
+	padding: 0.6rem 3.2rem;
+	font-weight: bold;
+	color: white;
+	border-radius: 0.8rem;
+	margin-top: 1rem;
+}
+
+/* hover state for CTA button */
+.cta-button:active, .cta-button:hover, .cta-button:focus {
+	background-color: white;
+	color: #C98F7D;
+	text-decoration: none;
+	transition-property: background; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+} 
+
+.cta-margin {
+	margin-top: 3rem;
+	margin-bottom: 2.5rem;
+}
+
+/* flexbox container for cta on forms */
+.cta-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* ------------------------------------------------ */
+
+
+
+/* --------- BASIC STYLES: Color Palette ---------- */
+
+/* swatch boxes */
+.swatch {
+	margin: 1rem 0.6rem;
+	margin-bottom: 0.5rem;
+	height: 9rem;
+}
+
+/* white color swatch */
+.swatch.white {
+	background-color: #FFFFFF;
+	border: 2px solid #F4F4F4;
+}
+
+/* light grey color swatch */
+.swatch.light-grey {
+	background-color: #F4F4F4;
+}
+
+/* grey brown color swatch */
+.swatch.grey-brown {
+	background-color: #A9A2A1;
+}
+
+/* warm beige color swatch */
+.swatch.warm-beige {
+	background-color: #C6B09D;
+}
+
+/* pink color swatch */
+.swatch.pink {
+	background-color: #C98F7D;
+}
+
+/* dark-grey color swatch */
+.swatch.dark-grey {
+	background-color: #6D716F;
+}
+
+
+/* color swatch descriptions/usage */
+.swatch-container p {
+	margin: 0.2rem 0.6rem;
+	margin-bottom: 4rem;
+	font-size: 1rem;
+	padding-bottom: 5rem;
+}
+
+/* ------------------------------------------------ */
+
+
+/* text within grid examples*/
+.grid-text {
+	text-align: center;
+	margin-top: 0.7rem;
+}
+
+
+/* -------- UI PATTERN ELEMENTS: Accordion -------- */
+
+
+/* accordion referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion */
+.accordion {
+	background-color: #FFFFFF;
+	color: #C98F7D;
+	cursor: pointer;
+	padding: 1rem;
+	width: 100%;
+	border: none;
+	border-top: 0.5px solid #A9A2A1;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+	font-size: 1.1rem;
+}
+
+/* padding for content within the accordion */
+.accordion-content {
+	padding-bottom: 1.5rem;
+}
+
+/* states for acccordion */
+.active, .accordion:hover {
+	color: #6D716F;
+	transition-property: color; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+}
+
+/* accordion decoratives (lines) */
+.accordion-hr {
+	border-bottom: 0.5px solid #A9A2A1;
+	margin-top: 0;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #C98F7D;
+  font-weight: bold;
+  float: right;
+  margin-left: 0.8rem;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+/* content for accordions */
+.panel {
+	display: grid;
+	padding: 0 1rem;
+	background-color: white;
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+
+
+/* ------------------------------------------------ */
+
+
+
+/* -------- UI PATTERN ELEMENTS: Breadcrumb -------- */
+
 /* BREADCRUMB REFERENCED FROM 
 https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-lines*/
 #breadcrumb-bar ul {
@@ -106,265 +403,6 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 	transition-timing-function: ease-out;
 }
 
-#nav-bar nav {
-	background-color: #FFFFFF;
-	border: 1px solid #F4F4F4;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	margin-bottom: 1rem;
-}
-
-/* darker navigation bar*/
-#nav-bar .darker-nav {
-	background-color: #6D716F;
-}
-
-/* images within the nav bar; ie: logo + cart */
-#nav-bar img {
-	width: 80%;
-	height: auto;
-}
-
-/* positioning for logo in site nav example */
-#nav-bar .logo {
-	margin-right: auto;
-}
-
-
-#color-palette h2 {
-	margin-bottom: 0.5rem;
-}
-
-#list-examples .text-container {
-	margin-bottom: 0.2rem;
-}
-
-#type-examples h1, #type-examples h2{
-	color: #6D716F;
-	padding: 0;
-}
-
-/* form note container */
-#form-elements .side-note .text-container {
-	margin: 0;
-	height: 17rem;
-}
-
-/* order summary note container */
-#order-summary .side-note .text-container {
-	margin: 0;
-	min-height: 27.2rem;
-}
-
-/* header 2 in order summary container */
-#order-summary .order-sum-ex h2 {
-	padding: 1.7rem 0;
-	padding-bottom: 1.5rem;
-	margin: 0;
-	text-align: center;
-}
-
-
-#order-summary hr {
-	border-top: 0.01px solid #A9A2A1;
-	width: 15.5rem;
-	margin-bottom: 1rem;
-}
-
-#order-summary form {
-	align-items: center;
-}
-
-#order-summary .cta-button {
-	padding: 0.6rem 5.2rem;
-	margin-bottom: 2rem;
-}
-
-/* example headings for swatches & checkboxes*/
-#swatches-checkboxes .example-heading { 
-	margin-top: 0rem;
-}
-
-/* example headings for swatches & checkboxes*/
-#grid-structures .example-heading { 
-	margin-top: 1.7rem;
-	margin-bottom: 0.3rem;
-}
-
-/* hamburger menu position of overflow gradient - bottom */
-#menu-toggle .overflow-scroll-gradient::after {
-	bottom: 0%;
-	width: 98%;
-	height: 17%; 
-}
-
-/* hamburger menu scroll target area for gradient */
-#menu-toggle .overflow-scroll-gradient-scroller {
-	height: 102%;
-}
-
-/* hamburger menu position of overflow gradient - top */
-#menu-toggle .overflow-scroll-gradient::before  {
-	top: 5%;
-	height: 15%;
-}
-
-
-/* flexbox for order summary info */
-.order-summary-info {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-/* darker nav example */
-.darker-nav a{
-	padding-top: 1rem;
-	color: #FFFFFF;
-}
-
-/* call to action button */
-.cta-button {
-	border: 0.15rem solid #C98F7D;
-	background-color: #C98F7D;
-	padding: 0.6rem 3.2rem;
-	font-weight: bold;
-	color: white;
-	border-radius: 0.8rem;
-	margin-top: 1rem;
-}
-
-/* hover state for CTA button */
-.cta-button:active, .cta-button:hover, .cta-button:focus {
-	background-color: white;
-	color: #C98F7D;
-	text-decoration: none;
-	transition-property: background; 
-	transition-duration: 0.3s; 
-	transition-timing-function: ease-out;
-} 
-
-.cta-margin {
-	margin-top: 3rem;
-	margin-bottom: 2.5rem;
-}
-
-/* flexbox container for cta on forms */
-.cta-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-/* swatch boxes */
-.swatch {
-	margin: 1rem 0.6rem;
-	margin-bottom: 0.5rem;
-	height: 9rem;
-}
-
-/* white color swatch */
-.swatch.white {
-	background-color: #FFFFFF;
-	border: 2px solid #F4F4F4;
-}
-
-/* light grey color swatch */
-.swatch.light-grey {
-	background-color: #F4F4F4;
-}
-
-/* grey brown color swatch */
-.swatch.grey-brown {
-	background-color: #A9A2A1;
-}
-
-/* warm beige color swatch */
-.swatch.warm-beige {
-	background-color: #C6B09D;
-}
-
-/* pink color swatch */
-.swatch.pink {
-	background-color: #C98F7D;
-}
-
-/* dark-grey color swatch */
-.swatch.dark-grey {
-	background-color: #6D716F;
-}
-
-/* color swatch descriptions/usage */
-.swatch-container p {
-	margin: 0.2rem 0.6rem;
-	margin-bottom: 4rem;
-	font-size: 1rem;
-	padding-bottom: 5rem;
-}
-
-/* text within grid examples*/
-.grid-text {
-	text-align: center;
-	margin-top: 0.7rem;
-}
-
-/* accordion referenced from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion */
-.accordion {
-	background-color: #FFFFFF;
-	color: #C98F7D;
-	cursor: pointer;
-	padding: 1rem;
-	width: 100%;
-	border: none;
-	border-top: 0.5px solid #A9A2A1;
-	text-align: left;
-	outline: none;
-	transition: 0.4s;
-	font-size: 1.1rem;
-}
-
-/* padding for content within the accordion */
-.accordion-content {
-	padding-bottom: 1.5rem;
-}
-
-/* states for acccordion */
-.active, .accordion:hover {
-	color: #6D716F;
-	transition-property: color; 
-	transition-duration: 0.3s; 
-	transition-timing-function: ease-out;
-}
-
-/* accordion decoratives (lines) */
-.accordion-hr {
-	border-bottom: 0.5px solid #A9A2A1;
-	margin-top: 0;
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #C98F7D;
-  font-weight: bold;
-  float: right;
-  margin-left: 0.8rem;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-/* content for accordions */
-.panel {
-	display: grid;
-	padding: 0 1rem;
-	background-color: white;
-	overflow: hidden;
-	max-height: 0;
-	transition: max-height 0.2s ease-out;
-}
 
 /* container for breadcrumb nav */
 .breadcrumb-container {
@@ -372,6 +410,82 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 	flex-direction: row;
 	justify-items: center;
 }
+
+
+/* ------------------------------------------------ */
+
+
+
+
+/* ---------- UI PATTERN ELEMENTS: Footer ----------- */
+
+
+footer {
+	background-color: #A9A2A1; 
+	color: #FFFFFF;
+	padding: 2rem;
+}
+
+footer a {
+	color: #FFFFFF;
+	display: block;
+}
+
+footer a.social {
+	display: inline-block;
+}
+
+/* font weight for footer subheadings*/
+.footer-heading {
+	font-weight: 700;
+}
+
+/* contact info in footer */
+.footer-contact {
+	margin-top: 0rem;
+	margin-bottom: 0.2rem;
+}
+
+/* contact info in footer */
+.footer-line-height {
+	line-height: 1.5rem;
+}
+
+/* social media icons in the footer */
+.social img {
+	width: 85%;
+	height: auto;
+}
+
+
+/* hover example referenced from https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp */
+
+/* hover state for the social media icons in the footer */
+.container {
+	display: inline-block;
+}
+
+/* overlay images for icon links */
+.overlay{
+	position: absolute;
+	transition: 0.3s;
+	opacity: 0;
+	transform: translate(0, -2.75rem);
+}
+
+/* icon overlay opacity during hover*/
+.container:hover .overlay {
+	opacity: 1;
+}
+
+/* ------------------------------------------------ */
+
+
+
+
+
+/* ---------- UI PATTERN ELEMENTS: Product Listing ----------- */
+
 
 /* IMAGE GALLERY REFERENCED FROM 
 https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
@@ -454,6 +568,14 @@ https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 .product-info .accordion {
 	margin-top: 2rem;
 }
+
+
+/* ------------------------------------------------- */
+
+
+
+/* ---------- UI PATTERN ELEMENTS: Product Listing: Customize ----------- */
+
 
 /* first label for finishes in product listing*/
 .first-cust-option {
@@ -605,6 +727,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
 	 padding: 0;
 }
 
+
+/* -------------------------------------------------- */
+
+
+
 /* temporarily solve duplicate label issues, do not apply this to site for implementation */
 .hidden {
 	display: none;
@@ -614,6 +741,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
 .first-citation {
 	padding-top: 5rem;
 }
+
+
+/* ---------- UI PATTERN ELEMENTS: Quantity Box ----------- */
+
 
 /* QUANTITY BOX REFERENCED FROM 
 http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx */
@@ -692,6 +823,12 @@ input::-webkit-inner-spin-button {
 	padding-left: 0.75rem;
 }
 
+/* ------------------------------------------------- */
+
+
+
+
+/* ---------- UI PATTERN ELEMENTS: Tab ----------- */
 
 /* Style the tab in table examples  */
 .tab {
@@ -737,6 +874,11 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #A9A2A1;
   border-top: none;
 }
+
+
+/* -------------------------------------------------- */
+
+
 
 /* image width for larger images in design docs */
 .desktop-img {
@@ -789,25 +931,6 @@ input::-webkit-inner-spin-button {
 	padding-top: 1.2rem;
 }
 
-/* hover example referenced from https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp */
-
-/* hover state for the social media icons in the footer */
-.container {
-	display: inline-block;
-}
-
-/* overlay images for icon links */
-.overlay{
-	position: absolute;
-	transition: 0.3s;
-	opacity: 0;
-	transform: translate(0, -2.75rem);
-}
-
-/* icon overlay opacity during hover*/
-.container:hover .overlay {
-	opacity: 1;
-}
 
 /* hover state for cart in nav bars */
 .overlay.white-nav{

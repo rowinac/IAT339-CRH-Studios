@@ -64,6 +64,12 @@ select {
 
 /* -------- UI PATTERN ELEMENTS: Order Summary -------- */
 
+/* flexbox for order summary info */
+.order-summary-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
 /* order summary note container */
 #order-summary .side-note .text-container {
@@ -127,6 +133,21 @@ select {
 	background-color: #6D716F;
 }
 
+/* darker nav example */
+.darker-nav a{
+	padding-top: 0.5rem;
+	color: #FFFFFF;
+}
+
+/* main nav bar (for actual site) */
+.main-nav{
+	display: inline-flex;
+	text-align: right;
+
+	position: sticky;
+	top: 0;
+}
+
 /* images within the nav bar; ie: logo + cart */
 #nav-bar img {
 	width: 80%;
@@ -137,7 +158,6 @@ select {
 #nav-bar .logo {
 	margin-right: auto;
 }
-
 
 /* hamburger menu position of overflow gradient - bottom */
 #menu-toggle .overflow-scroll-gradient::after {
@@ -157,21 +177,16 @@ select {
 	height: 15%;
 }
 
+/* hover state for cart in nav bars */
+.overlay.white-nav{
+	transform: translate(0, -3.45rem);
+}
+
+.overlay.grey-nav{
+	transform: translate(0, -3.36rem);
+}
+
 /* --------------------------------------- */
-
-
-/* flexbox for order summary info */
-.order-summary-info {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-/* darker nav example */
-.darker-nav a{
-	padding-top: 1rem;
-	color: #FFFFFF;
-}
 
 
 
@@ -198,6 +213,7 @@ select {
 	transition-duration: 0.3s; 
 	transition-timing-function: ease-out;
 } 
+
 
 .cta-margin {
 	margin-top: 3rem;
@@ -574,6 +590,8 @@ https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 
 
 
+
+
 /* ---------- UI PATTERN ELEMENTS: Product Listing: Customize ----------- */
 
 
@@ -882,7 +900,7 @@ input::-webkit-inner-spin-button {
 
 /* image width for larger images in design docs */
 .desktop-img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -932,14 +950,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-/* hover state for cart in nav bars */
-.overlay.white-nav{
-	transform: translate(0, -3.06rem);
-}
 
-.overlay.grey-nav{
-	transform: translate(0, -3.36rem);
-}
 
 
 

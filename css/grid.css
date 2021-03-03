@@ -25,6 +25,7 @@
 	margin-top: 0;
 }
 
+
 /* all patterns */
 .pattern-container {
 	grid-column-start: 4;
@@ -40,6 +41,8 @@
 	grid-row-gap: 1rem;
 	margin-top: 0;
 }
+
+/* ----------- BASIC STYLES: Example Grid Structures -------------- */
 
 /* new grid container for grid examples */
 .grid-example-container {
@@ -87,6 +90,12 @@
 	grid-column-gap: 1rem;
 	margin: 0;
 }
+
+/* --------------------------------------------------------------- */
+
+
+
+
 
 .footer-container {
 	display: flex;
@@ -226,6 +235,26 @@
 }
 
 
+
+/* ------------- PRODUCT DETAIL PAGE GRID -------------*/
+.product-layout-container {
+	grid-column-start: 2;
+	grid-column-end: 12;
+	grid-row: 9 / 12;
+}
+
+/* .grid-container.prod-lay {
+	grid-template-rows: 30rem 2fr 1fr 5rem;
+} */
+
+.grid-container.prod-lay {
+	grid-template-rows: repeat(12, 1fr);
+}
+
+/* --------------------------------------------------- */
+
+
+
 /* -------- MEDIA QUERIES  --------- */
 @media screen and (max-width: 130em) {
 	.grid-example-container.twelve {
@@ -242,25 +271,9 @@
 	}
 }
 
-@media screen and (max-width: 94em) {
-}
 @media screen and (max-width: 90em) {
 	#product-listing .panel {
 		grid-column-gap: 1rem;
-	}
-}
-
-@media screen and (max-width: 88em) {
-	#order-summary .side-note {
-		grid-column: 5 / 9;
-	}
-
-	#order-summary .first-pattern-ex {
-		grid-column: 1 / 5;
-	}
-
-	.footer-ex-container {
-
 	}
 }
 
@@ -293,6 +306,7 @@
 	}
 }
 
+
 @media screen and (max-width: 71em) {
 	#form-elements .two-pattern-container {
 		grid-template-columns: 1fr;
@@ -306,6 +320,12 @@
 
 	#form-elements .side-note {
 		grid-column: 1 / 9;
+	}
+
+	.product-layout-container {
+		/* grid-column-start: 2;
+		grid-column-end: 12; */
+		grid-row: 8 / 12;
 	}
 }
 

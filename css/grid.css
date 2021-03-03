@@ -218,6 +218,12 @@
 }
 
 
+/* container to split content on citations page */
+/* referenced from https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/ */
+.citations-container{
+	overflow-wrap: break-word;
+	width: clamp(26rem, 80%, 75rem);
+}
 
 
 /* -------- MEDIA QUERIES  --------- */

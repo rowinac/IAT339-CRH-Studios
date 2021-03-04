@@ -1,11 +1,10 @@
+* {
+	box-sizing: border-box;
+}
 
 header {
 	height: 11vh;
 }
-
-/* .header-main {
-	height: 1.5vh;
-} */
 
 body {
 	font-family: 'Karla', Helvetica, Arial, sans-serif;
@@ -299,16 +298,6 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 	width: 85%;
 	height: auto;
 }
-
-
-
-/* ------- product listing h1 styling ------- */
-/* h1.pr-layout{
-	padding: 0 0 1rem 0;
-	color: #6D716F;
-} */
-
-/* --------------------------------------- */
 
 
 /* ------ MEDIA QUERIES ------- */

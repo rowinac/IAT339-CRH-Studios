@@ -127,6 +127,13 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 
 /* ----------- Navigation Bar -------------- */
 
+/* sticky settings for the nav/hamburger menu */
+.sticky {
+	display: block;
+	position: fixed;
+	top: 2rem;
+	max-width: 15rem;
+}
 
 /* Hamburger referenced from https://codepen.io/erikterwan/pen/grOZxx */
 /* hamburger icon position*/
@@ -134,7 +141,7 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
   display: block;
   position: absolute;
   top: 2rem;
-  left: 5rem;
+  left: 0rem;
   z-index: 1;
   
   -webkit-user-select: none;
@@ -147,6 +154,7 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
   height: 32px;
   position: absolute;
   top: -7px;
+  left: 3.1rem;
 
   cursor: pointer;
   
@@ -161,6 +169,7 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
   height: 4px;
   margin-bottom: 5px;
   position: relative;
+  left: 3.1rem;
   
   background: #C98F7D;
   border-radius: 3px;
@@ -205,18 +214,17 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 
 /* position this as an absolute in the top left of the screen */
 .target-menu {
-  position: absolute;
+  position: sticky;
   width: 20rem;
-  height: 104vh;
+  height: 106vh;
   margin: -100px 0 0 0;
   padding: 50px;
-  padding-top: 7rem;
+  padding-top: 8.5rem;
   margin-bottom:20rem;
   left: -5rem;
   background-color: #FFFFFF;
   /*border-right: solid 0.1rem #F4F4F4;*/
-  overflow: auto;
-  overflow-x: hidden;
+  /*overflow: hidden;*/
   
 
   list-style-type: none;
@@ -239,15 +247,6 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 .menu-tgl input:checked ~ ul {
   transform: none;
   opacity: 1;
-}
-
-
-/* sticky settings for the nav/hamburger menu */
-.sticky {
-	display: block;
-	position: fixed;
-	top: 2rem;
-	max-width: 15rem;
 }
 
 
@@ -303,13 +302,13 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 /* ------ MEDIA QUERIES ------- */
 @media screen and (max-width: 80em) {
 	.menu-tgl {
-	  left: 3rem;
+	  /*left: -3rem;*/
 	}
 }
 
 @media screen and (max-width: 39em) {
 	.menu-tgl {
-	  left: 2rem;
+	  left: -1rem;
 	}
 }
 

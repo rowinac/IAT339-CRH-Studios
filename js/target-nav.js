@@ -6,16 +6,32 @@ window.onscroll = function() {
 };
 
 // grab target-nav from document
-var targetNav = document.getElementById("menu-toggle");
+var navPos = document.getElementById("nav-pos");
+var menu = document.getElementById("menu");
 // find where the target nav is originally positioned
-var sticky = targetNav.offsetTop; 
+var menuHeight = menu.offsetHeight;
+var footerTop = document.getElementById("main-footer");
+var unstick = footerTop.offsetTop;
+
+var scrollOffset = window.pageYOffSet
 
 function make_sticky() {
 	// when the nav is less than where it originally was, make it sticky
-	if (window.pageYOffset >= sticky) {
-		targetNav.classList.add("sticky")
+	// if (window.pageYOffset >= sticky) {
+	// 	targetNav.classList.add("sticky")
+	// } else {
+	// 	targetNav.classList.remove("sticky");
+	// }
+
+	// window.alert(window.pageYOffset + targetNavHeight);
+
+
+	// if the height of the nav + the positioned you scroll is greater than
+	// the position of the footer, remove the sticky class from the nav
+	if (window.pageYOffset + menuHeight >= unstick) {
+		navPos.classList.remove("sticky");
 	} else {
-		targetNav.classList.remove("sticky");
+		navPos.classList.add("sticky");
 	}
 }
 
@@ -23,7 +39,7 @@ function make_sticky() {
 // detecting pixels in js dynamically referenced from https://techstacker.com/javascript-detect-if-screen-width-is-greater-or-less-than/
 window.addEventListener("resize", function() {
   // if the window is at least a certain size, expand the hamburger 
-  if (window.matchMedia("(min-width: 1362px)").matches) {
+  if (window.matchMedia("(min-width: 1355px)").matches) {
   	document.getElementById("nav-checkbox").checked = true;
   } else {
   	// if the window is smaller than a certain size, collapse the hamburger 

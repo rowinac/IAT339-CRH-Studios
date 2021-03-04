@@ -25,6 +25,7 @@
 
 			<nav>
 				<div id="menu-toggle" class="menu-tgl">
+					<div id="nav-pos" class="sticky">
 				    <input aria-label="nav" id="nav-checkbox" type="checkbox" checked>
 
 				    	<!-- hamburger icon -->
@@ -32,28 +33,36 @@
 					    <span></span>
 					    <span></span>
 
-				    <ul id="menu" class="target-menu overflow-scroll-gradient">
-						<div class="overflow-scroll-gradient-scroller">
+				    <ul id="menu" class="target-menu">
 
-					    	<!-- Main navigation -->
-					    	<h3>PAGES</h3>
+				    	<!-- Main navigation -->
+						<button class="accordion">PAGES</button>
+						<div class="panel">
+							<div class="accordion-content">
 					    	<li><a href="index.html">BASIC STYLES</a></li>
 							<li><a href="ui_pattern_elements.html">UI PATTERN ELEMENTS</a></li>
 							<li><a href="design_docs.html">DESIGN DOCS</a></li>
 							<li><a href="citations.html">CITATIONS</a></li>
 							<li><a href="conventions.html">CONVENTIONS</a></li>
-							<hr>
+							</div>
+						</div>
+						
 
-							<!-- Target links -->
-							<h3>JUMP TO</h3>
+						<!-- Target links -->
+						<button class="accordion">JUMP TO</button>
+						<div class="panel">
+							<div class="accordion-content">
 						    <li><a href="#call-to-action-button">CALL-TO-ACTION BUTTON</a></li>
 							<li><a href="#color-palette">COLOR PALETTE</a></li>
 							<li><a href="#grid-structures">GRID STRUCTURES</a></li>
 							<li><a href="#text-link">TEXT LINK</a></li>
 							<li><a href="#text-lists">TEXT LISTS</a></li>
-							<li><a href="#typography" class="last-target">TYPOGRAPHY</a></li>
+							<li><a href="#typography">TYPOGRAPHY</a></li>
+							</div>
 						</div>
+						<hr class="accordion-hr">
 				    </ul>
+
 				</div>
 			</nav>
 		</header>
@@ -423,7 +432,7 @@
 		</div>
 
 		<!-- Footer -->
-		<footer class="footer-container">
+		<footer id="main-footer" class="footer-container">
 			<div class="footer-content">
 				<p class="footer-heading">Our Studio is Open</p>
 				<p class="footer-line-height">2485 Broadway W<br>Vancouver, BC<br>V6K 2E8</p>
@@ -491,6 +500,7 @@
 
 		<!-- link to javascript -->
 		<script src="js/target-nav.js"></script>
+		<script src="js/elements.js"></script>
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 	</body>

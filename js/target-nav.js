@@ -13,19 +13,7 @@ var menuHeight = menu.offsetHeight;
 var footerTop = document.getElementById("main-footer");
 var unstick = footerTop.offsetTop;
 
-var scrollOffset = window.pageYOffSet
-
 function make_sticky() {
-	// when the nav is less than where it originally was, make it sticky
-	// if (window.pageYOffset >= sticky) {
-	// 	targetNav.classList.add("sticky")
-	// } else {
-	// 	targetNav.classList.remove("sticky");
-	// }
-
-	// window.alert(window.pageYOffset + targetNavHeight);
-
-
 	// if the height of the nav + the positioned you scroll is greater than
 	// the position of the footer, remove the sticky class from the nav
 	if (window.pageYOffset + menuHeight >= unstick) {

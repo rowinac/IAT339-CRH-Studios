@@ -24,6 +24,7 @@
 		<header>
 			<nav>
 				<div id="menu-toggle" class="menu-tgl">
+					<div id="nav-pos" class="sticky">
 				    <input aria-label="nav" id="nav-checkbox" type="checkbox" checked>
 
 				    	<!-- hamburger icon -->
@@ -31,37 +32,53 @@
 					    <span></span>
 					    <span></span>
 
-				    <ul id="menu" class="target-menu overflow-scroll-gradient">
-						<div class="overflow-scroll-gradient-scroller">
+				    <ul id="menu" class="target-menu">
 
-					    	<!-- Main navigation -->
-					    	<h3>PAGES</h3>
+				    	<!-- Main navigation -->
+						<button class="accordion">PAGES</button>
+						<div class="panel">
+							<div class="accordion-content">
 					    	<li><a href="index.html">BASIC STYLES</a></li>
 							<li><a href="ui_pattern_elements.html">UI PATTERN ELEMENTS</a></li>
 							<li><a href="design_docs.html">DESIGN DOCS</a></li>
 							<li><a href="citations.html">CITATIONS</a></li>
 							<li><a href="conventions.html">CONVENTIONS</a></li>
-							<hr>
+							</div>
+						</div>
 
-							<!-- Site Map -->
-							<h3>INFORMATION HIERARCHY</h3>
+						<!-- Site Map -->
+						<button class="accordion">INFORMATION HIERARCHY</button>
+						<div class="panel">
+							<div class="accordion-content">
 							<a href="#site-map"><li>SITE MAP</li></a>
+							</div>
+						</div>
 
-							<!-- Target links -->
-							<h3>WIREFRAMES</h3>
+						<!-- Target links -->
+						<!-- Wireframes -->
+						<button class="accordion">WIREFRAMES</button>
+						<div class="panel">
+							<div class="accordion-content">
 						    <li><a href="#wireframe-home">HOME</a></li>
 							<li><a href="#wireframe-about">ABOUT</a></li>
 							<li><a href="#wireframe-ceramics">CERAMICS</a></li>
 							<li><a href="#wireframe-product-listing">PRODUCT LISTING</a></li>
 							<li><a href="#wireframe-cart">CART</a></li>
+							</div>
+						</div>
 
-							<h3>MOCKUPS</h3>
+						<!-- Mockups -->
+						<button class="accordion">MOCKUPS</button>
+						<div class="panel">
+							<div class="accordion-content">
 							<li><a href="#mockup-home">HOME</a></li>
 							<li><a href="#mockup-about">ABOUT</a></li>
 							<li><a href="#mockup-ceramics">CERAMICS</a></li>
 							<li><a href="#mockup-product-listing">PRODUCT LISTING</a></li>
-							<li><a href="#mockup-cart" class="last-target">CART</a></li>
+							<li><a href="#mockup-cart">CART</a></li>
+							</div>
 						</div>
+						<hr class="accordion-hr">
 				    </ul>
 				</div>
 			</nav>
@@ -320,7 +337,7 @@
 		</div>
 
 		<!-- Footer -->
-		<footer class="footer-container">
+		<footer id="main-footer" class="footer-container">
 			<div class="footer-content">
 				<p class="footer-heading">Our Studio is Open</p>
 				<p class="footer-line-height">2485 Broadway W<br>Vancouver, BC<br>V6K 2E8</p>

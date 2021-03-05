@@ -57,6 +57,11 @@ a:hover, a:focus {
 	grid-column: 2 / 12;
 }
 
+/* container for all content excluding the nav */
+.content-wrapper {
+	margin-top: 3rem;
+}
+
 /*  ------------- END OF GENERAL STYLING ------------- */
 
 
@@ -164,12 +169,54 @@ nav a:hover, nav a:active, nav a:focus {
 /*---------------------------------------*/
 
 
+/* ------ PRODUCT CARDS ----------- */
+/* product card images */
+.product-card-img {
+	width: 100%;
+	height: auto;
+}
+
+/* product card header */
+.product-card-header {
+	margin-top: 4rem;
+}
+
+/* product name in product card layouts */
+.product-name {
+	color: #6D716F;
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+/* product price in product card layouts */
+.product-price {
+	color: #6D716F;
+	font-weight: 200;
+	margin-top: 0.5rem;
+}
+
+/* image + product name combination for product cards */
+a.product-link {
+	text-decoration: none;
+}
+
+a.product-link:hover, a.product-link:focus, a.product-link:active {
+	/*text-decoration: none;
+	color: #C98F7D;*/
+}
+/* --------------------------------- */
+
+
 
 /* ----------- MEDIA QUERIES ----------  */
 @media screen and (max-width: 37em) {
 	.body-wrapper {
 		grid-column: 1 / 13;
 		margin: 0 1rem 0 1rem;
+	}
+
+	.content-wrapper {
+		margin-top: 1rem;
 	}
 }
 

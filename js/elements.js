@@ -41,9 +41,17 @@ function openContent(event, tabName) {
 		tabLinks[i].className = tabLinks[i].className.replace(" tab-active","");
 	}
 
+    tabActive = document.getElementsByClassName("tab-active");
+    for (i = 0; i < tabActive.length; i++) {
+        document.getElementById(tabName).style.display = "block";
+    }
+
 	document.getElementById(tabName).style.display = "block";
 	event.currentTarget.className += " tab-active";
+
 }
+
+document.getElementById("default-open").click();
 
 
 // QUANTITY BOX referenced from http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx

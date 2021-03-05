@@ -15,9 +15,9 @@
 /* three column grid for product cards in general company website */
 .product-card-container {
 	display: grid; 
-	grid-column: 2 / 12;
+	grid-column: 1 / 13;
 	grid-template-columns: repeat(3, 1fr); 
-	grid-column-gap: 1rem; 
+	grid-column-gap: 2rem; 
 	/* grid-template-rows:  */
 	margin: 0;
 }
@@ -94,7 +94,7 @@
 	display: grid;
 	grid-column: 4/ 13;
 	grid-template-columns: repeat(9, 1fr);
-	grid-column-gap: 2rem;
+	grid-column-gap: 4rem;
 	grid-row-gap: 1rem;
 }
 
@@ -372,6 +372,11 @@
 		grid-column-end: 12; */
 		grid-row: 8 / 12;
 	}
+
+	.product-listing-grid {
+		grid-column-gap: 2rem;
+	}
+
 }
 
 @media screen and (max-width: 68em) {
@@ -382,27 +387,14 @@
 }
 
 @media screen and (max-width: 66em) {
-
-	.product-listing-grid {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
-		grid-row-gap: 1rem;
-	}
-
 	/* image gallery for product listing */
 	.gallery-container {
-		grid-column: 1 / 10;
+		grid-column: 1 / 6;
 	}
 
 	/* info for product, ie: name, artist, descpription, etc. */
 	.product-info {
-		grid-column: 1 / 10;
-	}
-
-	/* two column grid for patterns */
-	.doc-img-container {
-		grid-template-columns: 30rem 10rem;
-		grid-column-gap: 2rem;
+		grid-column: 6 / 10;
 	}
 }
 
@@ -420,6 +412,30 @@
 	/* two column grid for patterns */
 	.doc-img-container {
 		grid-template-columns: 25rem 5rem;
+		grid-column-gap: 2rem;
+	}
+
+
+	.product-listing-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-row-gap: 1rem;
+		grid-column: 1 / 10;
+	}
+
+	/* image gallery for product listing */
+	.gallery-container {
+		grid-column: 1 / 2;
+	}
+
+	/* info for product, ie: name, artist, descpription, etc. */
+	.product-info {
+		grid-column: 1 / 2;
+	}
+
+	/* two column grid for patterns */
+	.doc-img-container {
+		grid-template-columns: 30rem 10rem;
 		grid-column-gap: 2rem;
 	}
 }

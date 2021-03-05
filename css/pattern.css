@@ -565,6 +565,7 @@ https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 .product-info h1 {
 	color: #6D716F;
 	font-size: 2.5rem;
+	margin-bottom: 0.7rem;
 }
 
 /* pricing in product listing */

@@ -1,0 +1,27 @@
+#tabs {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+
+/* -------- MEDIA QUERIES ----------- */
+@media screen and (max-width: 90rem) {
+	.product-finish .cust {
+	  display: inline-block;
+	}
+}
+
+@media screen and (max-width: 76em) {
+	.product-finish .cust {
+	  display: block;
+	}
+}
+
+@media screen and (max-width: 66rem) {
+	.product-finish .cust {
+	  display: inline-block;
+	}
+}
+
+/* ----- END OF MEDIA QUERIES -------- */
+

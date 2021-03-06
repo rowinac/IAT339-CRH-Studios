@@ -9,11 +9,12 @@ window.onscroll = function() {
 var navPos = document.getElementById("nav-pos");
 var menu = document.getElementById("menu");
 // find where the target nav is originally positioned
-var menuHeight = menu.offsetHeight;
+
 var footerTop = document.getElementById("main-footer");
 var unstick = footerTop.offsetTop;
 
 function make_sticky() {
+	var menuHeight = menu.offsetHeight;
 	// if the height of the nav + the positioned you scroll is greater than
 	// the position of the footer, remove the sticky class from the nav
 	if (window.pageYOffset + menuHeight >= unstick) {

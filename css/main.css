@@ -38,6 +38,11 @@ p, ul, ol {
 	font-size: 1.1rem;
 }
 
+hr {
+	margin-bottom: 2rem;
+	border-top: solid 0.5px #F4F4F4;
+}
+
 a {
 	color: #C98F7D;
 	text-decoration: none;
@@ -71,6 +76,7 @@ footer {
 	background-color: #A9A2A1; 
 	color: #FFFFFF;
 	padding: 2rem;
+	margin-top: 3rem;
 }
 
 footer a {
@@ -200,15 +206,41 @@ a.product-link {
 	text-decoration: none;
 }
 
-a.product-link:hover, a.product-link:focus, a.product-link:active {
-	/*text-decoration: none;
-	color: #C98F7D;*/
+/* product name + price hover states in product grids */
+a.product-link:hover h3, a.product-link:focus h3, a.product-link:active h3 {
+	color: #C98F7D;
+}
+
+/* product image hover states in product grids */
+a.product-link:hover img, a.product-link:focus img, a.product-link:active img {
+	transform: scale(1.025);
+	transition-property: transform; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
 }
 /* --------------------------------- */
 
 
 
 /* ----------- MEDIA QUERIES ----------  */
+@media screen and (max-width: 60em) {
+	/* image + product name combination for product cards */
+	a.product-link h3 {
+		font-size: 1.1rem;
+	}
+
+	/* product price in product card layouts */
+	.product-price {
+		margin-top: 0.25rem;
+	}
+
+	/* product name in product card layouts */
+	.product-name {
+		margin-bottom: 0.25rem;
+	}
+}
+
+
 @media screen and (max-width: 37em) {
 	.body-wrapper {
 		grid-column: 1 / 13;

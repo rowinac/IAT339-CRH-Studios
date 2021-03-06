@@ -142,17 +142,6 @@ nav a:hover, nav a:active, nav a:focus {
 	margin-bottom: 1rem;
 }
 
-/* darker navigation bar
-#nav-bar .darker-nav {
-	background-color: #6D716F;
-}
-
-/* darker nav example */
-.darker-nav a{
-	padding-top: 0.5rem;
-	color: #FFFFFF;
-}
-
 /* images within the nav bar; ie: logo + cart */
 #nav-bar img {
 	width: 80%;
@@ -163,16 +152,9 @@ nav a:hover, nav a:active, nav a:focus {
 #nav-bar .logo {
 	margin-right: auto;
 }
-
-/* hover state for cart in nav bars */
-.overlay.white-nav{
-	transform: translate(0, -3.45rem);
-}
-
-.overlay.grey-nav{
-	transform: translate(0, -3.36rem);
-}
 /*---------------------------------------*/
+
+
 
 
 /* ------ PRODUCT CARDS ----------- */
@@ -192,6 +174,7 @@ nav a:hover, nav a:active, nav a:focus {
 	color: #6D716F;
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
+	font-weight: 700;
 }
 
 /* product price in product card layouts */
@@ -218,8 +201,7 @@ a.product-link:hover img, a.product-link:focus img, a.product-link:active img {
 	transition-duration: 0.3s; 
 	transition-timing-function: ease-out;
 }
-/* --------------------------------- */
-
+/* -------- END  OF PRODUCT CARDS ------------- */
 
 
 /* ----------- MEDIA QUERIES ----------  */

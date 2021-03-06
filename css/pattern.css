@@ -179,11 +179,11 @@ select {
 
 /* hover state for cart in nav bars */
 .overlay.white-nav{
-	transform: translate(0, -3.45rem);
+	transform: translate(0, -3.1rem);
 }
 
 .overlay.grey-nav{
-	transform: translate(0, -3.36rem);
+	transform: translate(0, -2.95rem);
 }
 
 /* --------------------------------------- */
@@ -1053,6 +1053,16 @@ input::-webkit-inner-spin-button {
 	}
 }
 
+@media (max-width: 50rem) {
+	.overlay.grey-nav{
+		transform: translate(0, -2.9rem);
+	}
+
+	.overlay.white-nav{
+		transform: translate(0, -3rem);
+	}
+}
+
 @media screen and (max-width: 35em) {
 	#form-elements form {
 		padding: 2rem 2rem;
@@ -1062,16 +1072,15 @@ input::-webkit-inner-spin-button {
 		font-size: 1rem;
 		/*padding: 0.7rem 1rem;*/
 	}
+
+	.overlay.grey-nav{
+		transform: translate(0, -3.05rem);
+	}
 }
 
 @media screen and (max-width: 34em) {
 	#nav-bar nav a {
 		padding: 0.7rem 1rem;
-	}
-
-
-	.overlay.grey-nav{
-		transform: translate(0, -3.06rem);
 	}
 }
 

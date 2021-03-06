@@ -22,6 +22,9 @@
 		<!-- Font Awesome Link -->
 		<!--  REFERENCED FROM https://www.youtube.com/watch?v=mrTwZmdfRVE&ab_channel=DarkCode -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+		<!-- jQuery link -->
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 	</head>
 
 	<body>
@@ -56,9 +59,14 @@
                 <h1>Ceramics</h1>
                 <!-- artist collection tabs -->
                 <div class="tab product-listing-grid-span">
-					<button id="default-open" class="tab-links" onclick="openContent(event, 'tomCrewCollection')">Tom Crew's Collection</button>
+					<div class="tom-crew-tab">
+						<button id="default-open" class="tab-links" onclick="openContent(event, 'tomCrewCollection')">Tom Crew's Collection</button>
+					</div>
 					
-					<button class="tab-links" onclick="openContent(event, 'orientoCollection')">ORIENTO's Collection</button>
+					<div class="oriento-tab">
+						<button class="tab-links" onclick="openContent(event, 'orientoCollection')">ORIENTO's Collection</button>
+					</div>
+					
                 </div>
 
                 <!-- Tom Crew's Collection -->
@@ -67,45 +75,57 @@
 					<!-- one column product -->
                     <div class="product-card-container">
 						<div class="layout-img-span-three">
-							<img class="product-card-img" src="img/my-o-my.png" alt="a circle shaped vase on a marble stand.">
-							<p class="product-name">My O' My!</p>
-							<p class="product-price">C$132</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/my-o-my.png" alt="a circle shaped vase on a marble stand.">
+								<h3 class="product-name">My O' My!</h3>
+								<h3 class="product-price">C$132</h3>
+							</a>
 						</div>
 					</div>
 
 					<!-- three column products -->
 					<div class="product-card-container">
 						<div>
-							<img class="product-card-img" src="img/the-dalmation.png" alt="a pair of white glossy ceramic bowls stacked together.">
-							<p class="product-name">The Dalmation</p>
-							<p class="product-price">C$48</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/the-dalmation.png" alt="a pair of white glossy ceramic bowls stacked together.">
+								<h3 class="product-name">The Dalmation</h3>
+								<h3 class="product-price">C$48</h3>
+							</a>
 						</div>
 						
 						<div>
-							<img class="product-card-img" src="img/rollin-in-the-deep.png" alt="two brown jars with lids.">
-							<p class="product-name">Rollin' in the Deep</p>
-							<p class="product-price">C$65</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/rollin-in-the-deep.png" alt="two brown jars with lids.">
+								<h3 class="product-name">Rollin' in the Deep</h3>
+								<h3 class="product-price">C$65</h3>
+							</a>
 						</div>
 						
 						<div>
-							<img class="product-card-img" src="img/got-milk.png" alt="three white ceramic bottles with varying heights.">
-							<p class="product-name">Got Milk?</p>
-							<p class="product-price">C$80</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/got-milk.png" alt="three white ceramic bottles with varying heights.">
+								<h3 class="product-name">Got Milk?</h3>
+								<h3 class="product-price">C$80</h3>
+							</a>
 						</div>
                     </div> 
 
 					<!-- mixed column product -->
 					<div class="product-card-container">
 						<div>
-							<img class="product-card-img" src="img/jerry-jar-504x504.png" alt="a single ceramic wide jar.">
-							<p class="product-name">Jerry Jar</p>
-							<p class="product-price">C$80</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/jerry-jar-504x504.png" alt="a single ceramic wide jar.">
+								<h3 class="product-name">Jerry Jar</h3>
+								<h3 class="product-price">C$80</h3>
+							</a>
 						</div>
 
 						<div class="layout-img-span-two">
-							<img class="product-card-img" src="img/straightforward-mug.png" alt="a pair of wide-mouthed mugs.">
-							<p class="product-name">The Straightforward Mug</p>
-							<p class="product-price">C$45</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/straightforward-mug.png" alt="a pair of wide-mouthed mugs.">
+								<h3 class="product-name">The Straightforward Mug</h3>
+								<h3 class="product-price">C$45</h3>
+							</a>
 						</div>
 					</div>
                 </div>
@@ -116,9 +136,11 @@
 					<!-- one column product -->
 					<div class="product-card-container">
 						<div class="layout-img-span-three">
-							<img class="product-card-img" src="img/balloon-bun.png" alt="two small bunny-shaped vases facing each other.">
-							<p class="product-name">Balloon Bun</p>
-							<p class="product-price">C$63</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/balloon-bun.png" alt="two small bunny-shaped vases facing each other.">
+								<h3 class="product-name">Balloon Bun</h3>
+								<h3 class="product-price">C$63</h3>
+							</a>
 						</div>
 					</div>
                         
@@ -127,35 +149,45 @@
 
 						<!-- two row product -->
 						<div class="layout-img-span-two-rows">
-							<img class="product-card-row-img" src="img/cry-me-a-river.png" alt="a black and blue marbled vase with an arrangement of flowers inside.">
-							<p class="product-name">Cry Me a River</p>
-							<p class="product-price">C$75</p>
+							<a href="" class="product-link">
+								<img class="product-card-row-img" src="img/cry-me-a-river.png" alt="a black and blue marbled vase with an arrangement of flowers inside.">
+								<h3 class="product-name">Cry Me a River</h3>
+								<h3 class="product-price">C$75</h3>
+							</a>
 						</div>
 
 						<!-- two column products -->
 						<div>
-							<img class="product-card-img" src="img/sleek-peak-504x504.png" alt="a tall glossy black thin-neck vase.">
-							<p class="product-name">Sleek Peak</p>
-							<p class="product-price">C$80</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/sleek-peak-504x504.png" alt="a tall glossy black thin-neck vase.">
+								<h3 class="product-name">Sleek Peak</h3>
+								<h3 class="product-price">C$80</h3>
+							</a>
 						</div>
 
 						<div>
-							<img class="product-card-img" src="img/black-white-birch-vase.png" alt="a black and white blended cylindrical vase.">
-							<p class="product-name">Black and White Birch</p>
-							<p class="product-price">C$79</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/black-white-birch-vase.png" alt="a black and white blended cylindrical vase.">
+								<h3 class="product-name">Black and White Birch</h3>
+								<h3 class="product-price">C$79</h3>
+							</a>
 						</div>
 
 						<!-- two column products -->
 						<div>
-							<img class="product-card-img" src="img/huangdi.png" alt="a tall glossy black thin-neck vase.">
-							<p class="product-name">Huangdi</p>
-							<p class="product-price">C$87</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/huangdi.png" alt="a tall glossy black thin-neck vase.">
+								<h3 class="product-name">Huangdi</h3>
+								<h3 class="product-price">C$87</h3>
+							</a>
 						</div>
 
 						<div>
-							<img class="product-card-img" src="img/gold-in-the-shell-504x504.png" alt="a black and white blended cylindrical vase.">
-							<p class="product-name">Gold in the Shell</p>
-							<p class="product-price">C$92</p>
+							<a href="" class="product-link">
+								<img class="product-card-img" src="img/gold-in-the-shell-504x504.png" alt="a black and white blended cylindrical vase.">
+								<h3 class="product-name">Gold in the Shell</h3>
+								<h3 class="product-price">C$92</h3>
+							</a>
 						</div>
 					</div>
                 </div>
@@ -232,7 +264,6 @@
 
 		<!-- link to javascript -->
 		<script src="js/elements.js"></script>
-		<!-- <script src="js/target-nav.js"></script> -->
-		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/target-nav.js"></script>
 	</body>
 </html>

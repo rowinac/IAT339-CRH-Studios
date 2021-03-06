@@ -13,61 +13,151 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/pattern.css">
-
+		<link rel="stylesheet" href="css/product-layout.css">
+		
 		<!-- KARLA Google Fonts Reference -->
 		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-		
+		<link href="https://fonts.googleapis.com/css2?family=Karla:wght@600;700&display=swap" rel="stylesheet">
+
+		<!-- Font Awesome Link -->
+		<!--  REFERENCED FROM https://www.youtube.com/watch?v=mrTwZmdfRVE&ab_channel=DarkCode -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	</head>
 
 	<body>
-		<header class="header-main">
-            <!-- header image -->
-            <img class="desktop-img" src="img/collection-of-mugs.png" alt="a group of white ceramic mugs placed on top of a surface.">
-        </header>
+		<div class="main-grid-container">
+            <div class="body-wrapper">
+                <header>
+                    <div id="nav-bar" class="nav-dark">
+                        <nav>
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="" class="logo"><img src="img/grey-logo.png" alt="white CRH Studios logo"></a>
+                            </div>
+                            <a href="">HOME</a>
+                            <a href="">CERAMICS</a>
+                            <a href="">ABOUT</a>
+                            <a href="" class="iconbtn fas fa-shopping-cart"></a>
+                        </nav>
+                    </div>
+                </header>
+            </div>
+        </div>
 
-        <!-- nav bar -->
-        <nav class="main-nav">
-            <!-- logo -->
-            <div class="logo">
-                <a href="" class="logo"><img src="img/white-logo.png" alt="white CRH Studios logo"></a>
-            </div>
-            <!-- home, product layout, about -->
-            <a href="home.html">HOME</a>
-            <a href="product-layout.html">CERAMICS</a>
-            <a href="about.html">ABOUT</a>
-            
-            <!-- cart -->
-            <div class="container">
-                <a href="cart.html"><img src="img/white-cart.png" alt="white cart icon"></a>
-                <div class="overlay white-nav">
-                    <a href="cart.html"><img src="img/pink-cart.png" alt="pink cart icon"></a>
-                </div>					
-            </div>
-        </nav>
-		
-        <div class="grid-container prod-lay"> 
+		<!-- first header image -->
+		<img class="header-img" src="img/collection-of-mugs.png" alt="a group of white ceramic mugs placed on top of a surface.">
+
+		<!-- second header image -->
+		<!-- <img class="header-img" src="img/collection-of-teacups.png" alt="a collection of white teacups lined up."> -->
+
+		<!-- tab content -->
+        <div class="main-grid-container"> 
             <div class="product-layout-container">
-                <h1 class="pr-layout">Ceramics</h1>
+                <h1>Ceramics</h1>
                 <!-- artist collection tabs -->
-                <div class="tab product-listing-grid">
-                    <button class="tab-links" onclick="openContent(event, 'tomCrewCollection')">Tom Crew's Collection</button>
-                    
-                    <button class="tab-links" onclick="openContent(event, 'orientoCollection')">ORIENTO's Collection</button>
+                <div class="tab product-listing-grid-span">
+					<button id="default-open" class="tab-links" onclick="openContent(event, 'tomCrewCollection')">Tom Crew's Collection</button>
+					
+					<button class="tab-links" onclick="openContent(event, 'orientoCollection')">ORIENTO's Collection</button>
                 </div>
 
                 <!-- Tom Crew's Collection -->
                 <div class="tab-content" id="tomCrewCollection">
-                    <div>
 
-                    </div>
-                    As this item is rather delicate, we highly recommend handwashing only with hot soapy water. 
+					<!-- one column product -->
+                    <div class="product-card-container">
+						<div class="layout-img-span-three">
+							<img class="product-card-img" src="img/my-o-my.png" alt="a circle shaped vase on a marble stand.">
+							<p class="product-name">My O' My!</p>
+							<p class="product-price">C$132</p>
+						</div>
+					</div>
+
+					<!-- three column products -->
+					<div class="product-card-container">
+						<div>
+							<img class="product-card-img" src="img/the-dalmation.png" alt="a pair of white glossy ceramic bowls stacked together.">
+							<p class="product-name">The Dalmation</p>
+							<p class="product-price">C$48</p>
+						</div>
+						
+						<div>
+							<img class="product-card-img" src="img/rollin-in-the-deep.png" alt="two brown jars with lids.">
+							<p class="product-name">Rollin' in the Deep</p>
+							<p class="product-price">C$65</p>
+						</div>
+						
+						<div>
+							<img class="product-card-img" src="img/got-milk.png" alt="three white ceramic bottles with varying heights.">
+							<p class="product-name">Got Milk?</p>
+							<p class="product-price">C$80</p>
+						</div>
+                    </div> 
+
+					<!-- mixed column product -->
+					<div class="product-card-container">
+						<div>
+							<img class="product-card-img" src="img/jerry-jar-504x504.png" alt="a single ceramic wide jar.">
+							<p class="product-name">Jerry Jar</p>
+							<p class="product-price">C$80</p>
+						</div>
+
+						<div class="layout-img-span-two">
+							<img class="product-card-img" src="img/straightforward-mug.png" alt="a pair of wide-mouthed mugs.">
+							<p class="product-name">The Straightforward Mug</p>
+							<p class="product-price">C$45</p>
+						</div>
+					</div>
                 </div>
+
                 <!-- ORIENTO's Collection -->
                 <div class="tab-content" id="orientoCollection">
-                    <div>
+
+					<!-- one column product -->
+					<div class="product-card-container">
+						<div class="layout-img-span-three">
+							<img class="product-card-img" src="img/balloon-bun.png" alt="two small bunny-shaped vases facing each other.">
+							<p class="product-name">Balloon Bun</p>
+							<p class="product-price">C$63</p>
+						</div>
+					</div>
                         
-                    </div>
-                    At CRH Studios, the little quirks are what make our ceramics work, thus every piece is unique in their own way due to their handcrafted nature. 
+                    <!-- mixed column/row products -->
+					<div class="product-card-container">
+
+						<!-- two row product -->
+						<div class="layout-img-span-two-rows">
+							<img class="product-card-row-img" src="img/cry-me-a-river.png" alt="a black and blue marbled vase with an arrangement of flowers inside.">
+							<p class="product-name">Cry Me a River</p>
+							<p class="product-price">C$75</p>
+						</div>
+
+						<!-- two column products -->
+						<div>
+							<img class="product-card-img" src="img/sleek-peak-504x504.png" alt="a tall glossy black thin-neck vase.">
+							<p class="product-name">Sleek Peak</p>
+							<p class="product-price">C$80</p>
+						</div>
+
+						<div>
+							<img class="product-card-img" src="img/black-white-birch-vase.png" alt="a black and white blended cylindrical vase.">
+							<p class="product-name">Black and White Birch</p>
+							<p class="product-price">C$79</p>
+						</div>
+
+						<!-- two column products -->
+						<div>
+							<img class="product-card-img" src="img/huangdi.png" alt="a tall glossy black thin-neck vase.">
+							<p class="product-name">Huangdi</p>
+							<p class="product-price">C$87</p>
+						</div>
+
+						<div>
+							<img class="product-card-img" src="img/gold-in-the-shell-504x504.png" alt="a black and white blended cylindrical vase.">
+							<p class="product-name">Gold in the Shell</p>
+							<p class="product-price">C$92</p>
+						</div>
+					</div>
                 </div>
             </div>
         </div>
@@ -142,8 +232,7 @@
 
 		<!-- link to javascript -->
 		<script src="js/elements.js"></script>
-		<script src="js/target-nav.js"></script>
+		<!-- <script src="js/target-nav.js"></script> -->
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-		
 	</body>
 </html>

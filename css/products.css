@@ -3,6 +3,16 @@
 	margin-bottom: 3rem;
 }
 
+/* grey swatch for customization */
+.checkmark.grey-gradient {
+	background-color: #8E989C;
+}
+
+/* black swatch for customization */
+.checkmark.black {
+	background-color: #252525;
+}
+
 /* -------- MEDIA QUERIES ----------- */
 @media screen and (max-width: 90rem) {
 	.product-finish .cust {

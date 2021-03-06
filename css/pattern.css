@@ -119,7 +119,7 @@ select {
 
 #nav-bar nav {
 	background-color: #FFFFFF;
-	border: 1px solid #F4F4F4;
+	/*border: 1px solid #F4F4F4;*/
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -548,6 +548,10 @@ https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 /* hover / active thumbanils in the preview should be fully opaque */
 .thumbnail-active, .demo:hover {
   opacity: 1;
+  transform: scale(1.025);
+  transition-property: transform; 
+  transition-duration: 0.3s; 
+  transition-timing-function: ease-out;
 }
 
 /* active thumbnail in gallery preview */

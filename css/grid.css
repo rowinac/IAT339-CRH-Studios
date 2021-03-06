@@ -22,6 +22,28 @@
 	margin: 0;
 }
 
+
+
+
+/* Home Page Grid for About Blurb */
+.home-grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 1.5rem;
+	grid-template-areas:
+	  "blurb rolling-pin rolling-pin";
+  }
+  
+  .blurb { 
+	grid-area: blurb; 
+	}
+  
+  .rolling-pin-img { 
+	grid-area: rolling-pin; 
+	}
+
+
 /*  ------ END OF GENERAL GRIDS FOR WEBSITE ------- */
 
 
@@ -99,6 +121,7 @@
 }
 
 /* ---------- END OF GENERAL GRIDS FOR STYLE GUIDE ---------  */
+
 
 
 

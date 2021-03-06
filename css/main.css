@@ -157,6 +157,54 @@ nav a:hover, nav a:active, nav a:focus {
 
 
 
+
+/* ------ HEADER SECTION ----------- */
+
+.header {
+	width: 100vw;
+	height: 100vh;
+
+	background: url(../img/landing-page.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.header .header-content {
+	padding-top: 5rem;
+	padding-right: 4.5rem;
+	padding-bottom: 3rem;
+	text-align: right;
+}
+
+.header .text-container {
+	margin-bottom: 3rem;
+}
+
+.header h1 {
+	/* 57.6px to rem */
+	font-size: 3.6rem;
+	margin-bottom: 2rem;
+}
+
+/* Home Page Quote */
+.quote {
+	text-align: center;
+}
+
+.quote h1 {
+	font-size: 1.5rem;
+	color: #C6B09D;
+	padding-top: 5rem;
+	padding-bottom:7rem;
+}
+/*---------------------------------------*/
+
+
+
+
+
+
 /* ------ PRODUCT CARDS ----------- */
 /* product card images */
 .product-card-img {

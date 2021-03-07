@@ -1,0 +1,321 @@
+<!doctype html> 
+
+<html lang="en"> 
+
+	<head>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+		<title>Checkout</title>
+
+		<!-- CSS Style Sheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/pattern.css">
+		<link rel="stylesheet" href="css/checkout.css">
+		
+		<!-- KARLA Google Fonts Reference -->
+		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Karla:wght@600;700&display=swap" rel="stylesheet">
+
+		<!-- Font Awesome Link -->
+		<!--  REFERENCED FROM https://www.youtube.com/watch?v=mrTwZmdfRVE&ab_channel=DarkCode -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+		<!-- jQuery link -->
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	</head>
+
+	<body>
+		<div class="main-grid-container">
+            <div class="body-wrapper">
+                <header>
+                    <div id="nav-bar" class="nav-dark">
+                        <nav>
+                            <!-- logo -->
+                            <div class="logo">
+                                <a href="" class="logo"><img src="img/grey-logo.png" alt="white CRH Studios logo"></a>
+                            </div>
+							<a href="index.html">HOME</a>
+                            <a href="product_layout.html">CERAMICS</a>
+                            <a href="about.html">ABOUT</a>
+                            <a href="checkout.html" class="iconbtn fas fa-shopping-cart"></a>
+                        </nav>
+                    </div>
+                </header>
+
+                <h1>Checkout</h1>
+
+            </div>
+
+            <!-- checkout module -->
+            <div id="checkout" class="checkout-container">
+
+                <!-- YOUR ORDER -->
+                <h2 class="checkout-h2-container">Your Order</h2>
+                <!-- product one -->
+                <div class="checkout-img-container">
+                    <img class="product-card-img" src="img/sleek-peak-504x504.png" alt="a tall black thin-neck vase.">
+                    <p class="checkout-quantity">QTY: 1</p>
+                </div>
+                <!-- product two -->
+                <div class="checkout-img-container-two">
+                    <img class="product-card-img" src="img/the-dalmation.png" alt="two white ceramic bowls stacked together.">  
+                    <p class="checkout-quantity">QTY: 1</p>     
+                </div>
+                <!-- <hr> -->
+                
+                <!-- SHIPPING -->
+                <h2 class="checkout-h2-container">Shipping Address</h2>
+                <div id="checkout-forms" class="form-container">
+                    <!-- labels + input boxes -->
+
+                    <!-- first name & last name -->
+                    <form class="half-span-forms-left">
+                        <label for="fname-input">First Name</label>
+                        <input type="text" id="fname-input" name="fname-input">
+                    </form> 
+
+                    <form class="half-span-forms-right">
+                        <label for="lname-input">Last Name</label>
+                        <input type="text" id="lname-input" name="lname-input">
+                    </form>
+                    
+                    <!-- address -->
+                    <form class="full-span-forms">
+                        <label for="address-input">Address</label>
+                        <input type="text" id="address-input" name="address-input">
+                    </form>
+
+                    <!-- country select -->
+                    <form class="full-span-forms">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="canada">Canada</option>
+                        </select>
+                    </form>
+
+                    <!-- city, province & postal code -->
+                    <form class="third-span-forms-left">
+                        <label for="city-input">City</label>
+                        <input type="text" id="city-input" name="city-input">
+                    </form> 
+
+                    <form class="third-span-forms-middle">
+                        <label for="province-input">Province</label>
+                        <select id="province-input" name="province-input">
+                            <option value="select">Select</option>
+                            <option value="ab">Alberta</option>
+                            <option value="bc">British Columbia</option>
+                            <option value="mb">Manitoba</option>
+                            <option value="nb">New Brunswick</option>
+                            <option value="on">Ontario</option>
+                            <option value="qc">Quebec</option>
+                        </select>
+                    </form>
+
+                    <form class="third-span-forms-right">
+                        <label for="postal-input">Postal Code</label>
+                        <input type="text" id="postal-input" name="postal-input">
+                    </form>
+
+                    <!-- phone number & email -->
+                    <form class="half-span-forms-left">
+                        <label for="phone-input">Phone Number</label>
+                        <input type="text" id="phone-input" name="phone-input">
+                    </form> 
+
+                    <form class="half-span-forms-right">
+                        <label for="email-input">Email</label>
+                        <input type="text" id="email-input" name="email-input">
+                    </form>
+
+                    <!-- BILLING -->
+                    <h2 class="checkout-h2-container bill">Billing</h2>
+
+                    <div>
+                        <img class="span-card-img" src="img/mastercard.png" alt="mastercard logo">
+                    </div>
+                    <div>
+                        <img class="span-card-img" src="img/pay-pal.png" alt="mastercard logo">
+                    </div>
+                    <div>
+                        <img class="span-card-img" src="img/visa.png" alt="mastercard logo">
+                    </div>
+                    <div>
+                        <img class="span-card-img" src="img/apple-pay.png" alt="mastercard logo">
+                    </div>
+                    
+
+                    <!-- card name -->
+                    <form class="full-span-forms">
+                        <label for="card-name-input">Name on Card</label>
+                        <input type="text" id="card-name-input" name="card-name-input">
+                    </form>
+
+                    <!-- card number -->
+                    <form class="full-span-forms">
+                        <label for="card-num-input">Card Number</label>
+                        <input type="text" id="card-num-input" name="card-num-input">
+                    </form>
+
+                    <!-- expiry date & CVV/CVC -->
+                    <form class="third-span-forms-left">
+                        <label for="montj-input">Expiry Date</label>
+                        <select id="month-input" name="month-input">
+                            <option value="month">Month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </form>
+
+                    <form class="third-span-forms-middle">
+                        <label for="year-input">&nbsp;</label>
+                        <select id="year-input" name="year-input">
+                            <option value="year">Year</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
+                    </form>
+
+                    <form class="third-span-forms-right">
+                        <label for="cvc-input">CVV/CVC</label>
+                        <input type="text" id="cvc-input" name="cvc-input">
+                    </form>
+                </div>                
+            </div>
+
+            <!-- order summary module -->
+            <div id="order-summary" class="checkout-order-summary-container">
+                <div class="first-pattern-ex">
+                    <form class="order-sum-ex">
+                        <h2>ORDER SUMMARY</h2>
+
+                        <div class="order-summary-info">
+                            <div class="order-summary-grid">
+                                
+                                <div class="order-summary-labels">
+                                    <p>Subtotal:</p>
+                                    <p>Shipping:</p>
+                                    <p>PST/GST:</p>
+                                    <p>Total:</p>
+                                </div>
+                                
+                                <div class="order-summary-prices">
+                                    <p>C$128.00</p>
+                                    <p>-</p>
+                                    <p>-</p>
+                                    <p>C$128.00</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        
+                        <div class="cta-container">
+                            <!-- Submit Button -->
+                            <input class="cta-button" type="submit" value="Place Order">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- breadcrumb bar -->
+                <div id="breadcrumb">
+                    <ul>
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+		
+
+		<!-- Footer -->
+		<footer class="footer-container">
+			<div class="footer-content">
+				<p class="footer-heading">Our Studio is Open</p>
+				<p class="footer-line-height">2485 Broadway W<br>Vancouver, BC<br>V6K 2E8</p>
+			</div>
+			<div class="footer-content">
+				<p class="footer-heading">Get in Touch</p>
+				<p class="footer-line-height footer-contact">(604) 555-5555</p>
+				<p class="footer-contact">crh@gmail.com</p>
+			</div>
+			<div class="footer-content">
+				<p class="footer-heading">Navigate</p>
+				<a href="" class="footer-line-height">Home</a>
+				<a href="" class="footer-line-height">Ceramics</a>
+				<a href="" class="footer-line-height">About</a>
+			</div>
+			<div class="footer-content">
+				<p class="footer-heading">Resources</p>
+				<a href="citations.html" class="footer-line-height">Citations</a>
+				<a href="basic_styles.html" class="footer-line-height">Style Guide</a>
+				<a href="https://github.com/rowinac/IAT339-CRH-Studios" target="_blank" class="footer-line-height">GitHub</a>
+			</div>
+			<div class="footer-content">
+				<p class="footer-heading">Social Media</p>
+
+				<!-- FACEBOOK -->
+				<div class="container">
+					<!-- inactive/not hovered state -->
+					<div class="social">
+						<img src="img/facebook.png" alt="facebook logo">
+					</div>
+
+					<!-- hovered state -->
+					<div class="overlay">
+						<a href="" class="social"><img src="img/facebook-hover.png" alt="facebook logo"></a>
+					</div>
+				</div>
+
+				<!-- INSTAGRAM -->
+				<div class="container">
+					<!-- inactive/not hovered state -->
+					<div class="social">
+						<img src="img/instagram.png" alt="instagram logo">
+					</div>
+
+					<!-- hovered state -->
+					<div class="overlay">
+						<a href="" class="social"><img src="img/instagram-hover.png" alt="instagram logo"></a>
+					</div>
+				</div>
+				
+				<!-- TWITTER -->
+				<div class="container">
+					<!-- inactive/not hovered state -->
+					<div class="social">
+						<img src="img/twitter.png" alt="twitter logo">
+					</div>
+
+					<!-- hovered state -->
+					<div class="overlay">
+						<a href="" class="social"><img src="img/twitter-hover.png" alt="twitter logo"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- link to javascript -->
+		<script src="js/elements.js"></script>
+	</body>
+</html>

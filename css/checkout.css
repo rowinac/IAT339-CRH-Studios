@@ -1,0 +1,242 @@
+
+/* main (grey) container for checkout */
+.checkout-container {
+    grid-column: 2 / 8;
+    background-color: #F4F4F4;
+    display: grid; 
+	grid-template-columns: repeat(10, 1fr);
+	grid-column-gap: 1rem; 
+	grid-template-rows: 6rem;  
+    grid-row-gap: 0;  
+    padding-bottom: 2rem;
+}
+
+/* checkout summary container */
+.checkout-order-summary-container{
+    padding-left: 3rem;
+    grid-column: 8 / 12;
+}
+
+/* container for checkout h2 */
+.checkout-h2-container{
+    grid-column: 2 / 8;
+}
+
+/* billing h2 */
+.checkout-h2-container.bill{
+    grid-column: 1 / 8;
+}
+
+/* grid for first checkout product */
+.checkout-img-container {
+    grid-column: 2 / 4;
+    /* grid-row: 2 / 3; */
+}
+
+/* grid for second checkout product */
+.checkout-img-container-two{
+    grid-column: 4 / 6;
+    /* grid-row: 2 / 3; */
+}
+
+/* checkout quantity value */
+.checkout-quantity{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* checkout divider */
+#checkout hr {
+	border-top: 0.01px solid #A9A2A1;
+	width: 35rem;
+	margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+/* container for form elements */
+.form-container {
+    display: grid;
+	grid-column: 2 / 10;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 0.75rem;
+}
+
+/* form boxes that span all the way */
+.full-span-forms {
+    grid-column: 1 / 7;
+}
+
+/* form boxes that span half way (left column) */
+.half-span-forms-left {
+    grid-column: 1 / 4;
+}
+
+/*  form boxes that span half way (right column) */
+.half-span-forms-right {
+    grid-column: 4 / 7;
+}
+
+/*  form boxes that span one third of the way (left column) */
+.third-span-forms-left {
+    grid-column: 1 / 3;
+}
+
+/*  form boxes that span one third of the way (middle column) */
+.third-span-forms-middle {
+    grid-column: 3 / 5;
+}
+
+/*  form boxes that span one third of the way (right column) */
+.third-span-forms-right {
+    grid-column: 5 / 7;
+}
+
+.span-card-img {
+    width: 100%;
+}
+
+/* input boxes */
+input#fname-input, input#lname-input, input#address-input, input#phone-input, input#email-input, input#city-input, input#province-input, input#postal-input, input#card-name-input, input#card-num-input, input#month-input, input#year-input, input#cvc-input {
+    border-radius: 0.5rem;
+	border: 1.8px solid #A9A2A1;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* checkout form element padding */
+#checkout-forms form{
+    padding: 0;
+}
+
+
+/* BREADCRUMB BAR FOR CHECKOUT REFERENCED FROM 
+https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-lines*/
+#breadcrumb ul {
+	padding-left: 0.5rem;
+}
+
+/* list elements in the breadcrumb nav example */
+#breadcrumb li {
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+	
+	text-align: center;
+	line-height: 2.7rem;
+
+	border-radius: 50%;
+	background-color: white; 
+	border: 2px solid #A9A2A1;
+	
+	margin: 0 14vw 0 14vw;
+	color: #6D716F;
+	position: relative;
+    
+
+    transform: translate(-30px, 0);
+    z-index: 2;
+}
+
+/* breadcrumb line before li element*/
+#breadcrumb li::before {
+	content: '';
+	position: absolute;
+	top: 1.5rem;
+	width: 20vw;
+	left: -12vw;
+	height: 0.1rem;
+	background: #A9A2A1;
+	z-index: -1;
+}
+
+/* breadcrumb line after li element*/
+#breadcrumb li::after {
+	content: '';
+	position: absolute;
+	top: 1.5rem;
+	width: 20vw;
+	right: -12vw;
+	height: 0.1rem;
+	background: #A9A2A1;
+	z-index: -1;
+}
+
+#breadcrumb a {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #6D716F;
+}
+
+#breadcrumb li:hover, #breadcrumb li:active {
+	background-color: #C98F7D;
+	color: #FFFFFF;
+
+	transition-property: background; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+}
+
+
+/* container for breadcrumb nav */
+/* .breadcrumb-container {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+} */
+
+
+/* ------------- MEDIA QUERIES --------------- */
+@media (max-width: 70rem){
+    .checkout-img-container {
+        grid-column: 2 / 5;
+    }
+    
+    .checkout-img-container-two{
+        grid-column: 5 / 8;
+    }
+}
+
+@media (max-width: 57rem){
+
+    .checkout-container {
+        grid-column: 2 / 12;
+    }
+
+    .checkout-order-summary-container{
+        grid-column: 2 / 12;
+    }
+
+    .checkout-img-container {
+        grid-column: 2 / 4;
+    }
+    
+    .checkout-img-container-two{
+        grid-column: 4 / 6;
+    }
+}
+
+@media (max-width: 55rem){
+    #checkout h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 45rem){
+    .checkout-quantity{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 40rem){
+    .checkout-img-container {
+        grid-column: 2 / 5;
+    }
+    
+    .checkout-img-container-two{
+        grid-column: 5 / 8;
+    }
+}
+
+
+/* ---------- END OF MEDIA QUERIES ----------- */

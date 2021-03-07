@@ -1,0 +1,153 @@
+/* H3 header for cart page */
+
+.cart h3 {
+	font-size: 1.4rem;
+	color: #C6B09D;
+}
+
+.cart p {
+	padding-bottom: 0.8rem;
+}
+
+
+/* this is the bigger grid overall for cart  */
+
+.cart-grid-container-big {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: fr;
+	grid-column-gap: 1rem;
+}
+
+/* general cart grid  */
+.cart-grid-container {
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr 1.4fr 0.8fr 1fr 1fr;
+	grid-template-rows: 0.2fr 0.1fr 0.9fr 0.1fr 0.9fr 0.1fr 0.9fr;
+	gap: 0px 0px;
+	grid-template-areas: "cart-product cart-cust cart-price cart-quantity cart-total" "hr-line1 hr-line1 hr-line1 hr-line1 hr-line1" "cart-product1-img cart-product1-cust cart-product1-price cart-product1-quantity cart-product1-total" "hr-line2 hr-line2 hr-line2 hr-line2 hr-line2" "cart-product2-img cart-product2-cust cart-product2-price cart-product2-quantity cart-product2-total" "hr-line3 hr-line3 hr-line3 hr-line3 hr-line3" ". . . cart-subtotal cart-subtotal";
+}
+
+
+/* Categories for my cart */
+
+/* cart product category */
+.cart-product {
+	grid-area: cart-product;
+	padding-right: 1.8rem;
+
+}
+
+/* cart customization category */
+.cart-cust {
+	grid-area: cart-cust;
+}
+
+/* cart price category */
+.cart-price {
+	grid-area: cart-price;
+}
+
+/* cart quantity category */
+.cart-quantity {
+	grid-area: cart-quantity;
+}
+
+/* cart total category */
+.cart-total {
+	grid-area: cart-total;
+}
+
+
+/* product 1 classes for grid */
+/* cart product 1 img */
+.cart-product1-img {
+	grid-area: cart-product1-img;
+	margin-bottom: 1rem;
+}
+
+.hr-line1 {
+	grid-area: hr-line1;
+}
+
+/* cart product 1 customize */
+.cart-product1-cust {
+	grid-area: cart-product1-cust;
+	padding-left: 5rem;
+	text-align: left;
+}
+
+/* cart product 1 price */
+.cart-product1-price {
+	grid-area: cart-product1-price;
+}
+
+/* cart product 1 quantity */
+.cart-product1-quantity {
+	grid-area: cart-product1-quantity;
+}
+
+/* cart product 1 total */
+.cart-product1-total {
+	grid-area: cart-product1-total;
+}
+
+.hr-line2 {
+	grid-area: hr-line2;
+}
+
+/* cart product 2 img */
+.cart-product2-img {
+	grid-area: cart-product2-img;
+	margin-bottom: 1rem;
+}
+
+/* cart product 2 customize */
+.cart-product2-cust {
+	grid-area: cart-product2-cust;
+}
+
+/* cart product 2 price */
+.cart-product2-price {
+	grid-area: cart-product2-price;
+}
+
+/* cart product 2 quantity */
+.cart-product2-quantity {
+	grid-area: cart-product2-quantity;
+}
+
+/* cart product 2 total */
+.cart-product2-total {
+	grid-area: cart-product2-total;
+}
+
+.hr-line3 {
+	grid-area: hr-line3;
+}
+
+/* cart product subtotal */
+.cart-subtotal {
+	grid-area: cart-subtotal;
+	text-align: right;
+}
+
+
+.text-cart {
+	padding-top: 2.6rem;
+	padding-left: 2.5rem;
+}
+
+/* hr line for my cart page */
+hr.style1 {
+	border-top: solid 0.5px #A9A2A1;
+}
+
+.cart-quantity {
+	padding-left: 3rem;
+}
+
+
+
+/* ------------ MEDIA QUERIES --------- */

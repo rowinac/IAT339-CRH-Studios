@@ -6,13 +6,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Home Page</title>
+	<title>My Cart</title>
 
 	<!-- CSS Style Sheets -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/cart.css">
 	<link rel="stylesheet" href="css/pattern.css">
+
+	<!-- jQuery Link -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
 
 	<!-- KARLA Google Fonts Reference -->
 	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
@@ -22,11 +28,6 @@
 	<!-- Font Awesome Link -->
 	<!--  REFERENCED FROM https://www.youtube.com/watch?v=mrTwZmdfRVE&ab_channel=DarkCode -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
-
-	<!-- jQuery link -->
-	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-
 </head>
 
 
@@ -51,90 +52,136 @@
 				</div>
 			</header>
 
+
+
+			<section id="my-cart">
+				<div class="cart">
+					<h1>My Cart</h1>
+					<div class="cart-grid-container">
+
+						<div class="cart-product">
+							<h3>Product</h3>
+						</div>
+
+						<div class="cart-cust">
+							<h3>Customization</h3>
+						</div>
+
+						<div class="cart-price">
+							<h3>Price</h3>
+						</div>
+
+						<div class="cart-quantity">
+							<h3>Quantity</h3>
+						</div>
+
+						<div class="cart-total">
+							<h3>Total</h3>
+						</div>
+
+						<!-- first HR line  -->
+						<div class="hr-line1">
+							<hr class="style1">
+						</div>
+
+
+						<!-- product 1 line -->
+						<div class="cart-product1-img">
+							<img src="img/sleek-peak.png" width="125" height="105"
+								alt="a tall black vase with skinny neck against white background.">
+						</div>
+
+						<div class="cart-product1-cust">
+							<p>Color: Black </p>
+							<p>Finish: Glossy</p>
+						</div>
+
+						<div class="cart-product1-price">
+							<p>C$80.00</p>
+						</div>
+
+						<div class="cart-product1-quantity">
+							<!-- QUANTITY BOX REFERENCED FROM http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx -->
+							<div class="quantity cart-quantity">
+								<div class="quantity-button quantity-down">-</div>
+								<input aria-label="quantity" type="number" min="0" max="20" step="1" value="1">
+								<div class="quantity-button quantity-up">+</div>
+							</div>
+						</div>
+
+						<div class="cart-product1-total">
+							<p>C$80.00</p>
+						</div>
+
+
+						<!-- second hr line -->
+						<div class="hr-line2">
+							<hr class="style1">
+						</div>
+
+
+						<!-- second product line -->
+						<div class="cart-product2-img">
+							<img src="img/three-white-cups.png" width="125" height="105"
+								alt="three white cups with speckles all over.">
+						</div>
+
+
+						<div class="cart-product2-cust">
+							<!-- nothing in here -->
+						</div>
+
+
+						<div class="cart-product2-price">
+							<p>C$48.00</p>
+						</div>
+
+
+						<div class="cart-product2-quantity">
+							<!-- QUANTITY BOX REFERENCED FROM http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx -->
+							<div class="quantity cart-quantity">
+								<div class="quantity-button quantity-down">-</div>
+								<input aria-label="quantity" type="number" min="0" max="20" step="1" value="1">
+								<div class="quantity-button quantity-up">+</div>
+							</div>
+						</div>
+
+
+						<div class="cart-product2-total">
+							<p>C$48.00</p>
+						</div>
+
+
+						<!-- third hr line -->
+						<div class="hr-line3">
+							<hr class="style1">
+						</div>
+
+
+						<div class="cart-subtotal">
+							<p>Subtotal: C$128.00</p>
+							<a href="" class="cta-button">Checkout</a>
+						</div>
+
+					</div>
+				</div>
+
+
 		</div>
+
+
+
+		</section>
+
+
+		<!-- end of body wrapper -->
+		</div>
+	<!-- end of main grid container -->
 	</div>
 
 
-	<!-- NOTE: HEADER SECTION does not include main-grid-wrapper and body-wrapper because it's a full bleed landing page -->
-	<!-- Header Section -->
-	<section id="header">
-		<div class="header">
-			<div class="header-content">
-				<div class="header-text-container">
-				
-					<h1>Little quirks are what make our handcrafted ceramics work.</h1>
-					<a href="" class="cta-button">Shop Now</a>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
-	<div class="main-grid-container">
-		<div class="body-wrapper">
-
-
-			<!-- Quote Section -->
-			<section id="home-page-quote">
-				<div class="quote">
-					<h1>Based in Vancouver, BC, CRH Studios curates timeless<br> pieces that embrance the elegance of a
-						home.</h1>
-				</div>
-			</section>
-
-
-			<!-- About CRH Studios Blurb -->
-			<section id="home-page-about-blurb">
-				<div class="home-grid-container">
-					<div class="blurb">
-						<h2>About CRH Studios</h2>
-						<p>Orci quis quam facilisis molestiene. Donec sitae amet diam a velit deroe efficitur venenatis. In dictu  nuncati libero, eu pharetra magna laoreet al sitarm amet. Morbi quis semper mi. Curabitur vitae ornare orci. Aliquam erat volutpat sitae donec. Orci quis quam molestiene. Doneces sitae amet diam a velit deroe efficit venenatis in dictu nuncati.</p>
-
-						<a href="">Meet the Artists →</a>
-
-					</div>
-
-					<div class="rolling-pin-img">
-						<img src="img/home-page-rolling-pin.png" alt="a person rolling out clay with a rolling pin">
-						
-					</div>
-				</div>
-			
-
-			</section>
-
-
-			<!-- Featured Items -->
-			<section id="featured-items">
-				<h2>Featured Items</h2>
-
-				<div class="product-card-container">
-					<a href="" class="product-link">
-						<img class="product-card-img" src="img/jerry-jar.png"
-							alt="A wide white vase with a skinny neck and grey specks.">
-						<h3 class="product-name">Jerry Jar</h3>
-						<h3 class="product-price">C$80</h3>
-					</a>
-
-					<a href="" class="product-link">
-						<img class="product-card-img" src="img/rolling-in-deep-jar.png"
-							alt="2 short brown vases with white lids and handle.">
-						<h3 class="product-name">Rollin' in the Deep</h3>
-						<h3 class="product-price">C$65</h3>
-					</a>
-
-
-					<a href="" class="product-link">
-						<img class="product-card-img" src="img/dalmatian-bowl.png"
-							alt="two speckled bowls stacked together.">
-						<h3 class="product-name">The Dalmatian</h3>
-						<h3 class="product-price">C$48</h3>
-					</a>
-				</div>
-			</section>
-
-		</div>
-	</div>
 
 
 
@@ -208,10 +255,8 @@
 
 
 
-
-
-
-
+	<!-- link to javascript -->
+	<script src="js/elements.js"></script>
 
 </body>
 

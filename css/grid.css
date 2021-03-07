@@ -6,6 +6,7 @@
 	grid-template-columns: repeat(12, 1fr);
 	grid-column-gap: 1rem; 
 	grid-template-rows: 1fr;
+	grid-row-gap: 4rem;
 	margin: 0; 
 
 	/* for all website layouts, leave 1 column on either side as a margin */
@@ -21,9 +22,11 @@
 	/* grid-template-rows:  */
 	margin: 0;
 }
+/*  ------ END OF GENERAL GRIDS FOR WEBSITE ------- */
 
 
 
+/* -------- WEBSITE LANDING PAGE --------- */
 
 /* Home Page Grid for About Blurb */
 .home-grid-container {
@@ -34,17 +37,64 @@
 	grid-template-areas:
 	  "blurb rolling-pin rolling-pin";
   }
-  
-  .blurb { 
+ 
+/* home page blurb */
+.blurb { 
 	grid-area: blurb; 
-	}
-  
-  .rolling-pin-img { 
+}
+
+/* home page about image */
+.rolling-pin-img { 
 	grid-area: rolling-pin; 
-	}
+}
+/* ----------- END OF WEBSITE LANDING PAGE --------------- */
 
 
-/*  ------ END OF GENERAL GRIDS FOR WEBSITE ------- */
+
+/* ----------------- ABOUT PAGE GRIDS ---------------------*/
+
+/* background for biographies */
+.background {
+	background: #F4F4F4;
+	grid-column: 1 / 13;
+	margin-left: 2rem;
+}
+
+/* background of artist biographies */
+.artist-bio-container {
+	grid-column: 1 / 13;
+	display: grid;
+	margin-left: 3rem;
+	margin-top: 2rem;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+/* grid container for artist biographies */
+.artist-bio-grid {
+	display: grid;
+	grid-column: 1 / 12;
+	margin-left: 6rem;
+	margin-top: 2rem;
+	margin-bottom: 7rem;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 4rem;
+	grid-template-rows: 2fr;
+	grid-row-gap: 5rem;
+}
+
+/* artist image */
+.artist {
+	grid-column: 1 / 2;
+}
+
+/* contact form container*/
+.contact-form-container {
+	grid-column: 7 / 12;
+}
+
+/* --------------------------------------------------------*/
+
+
 
 
 
@@ -367,6 +417,16 @@
 	.doc-img-container {
 		grid-template-columns: 33rem 8rem;
 	}
+
+	/* grid container for artist biographies */
+	.artist-bio-grid {
+		grid-column-gap: 2rem;
+	}
+
+	/* contact form container*/
+	.contact-form-container {
+		grid-column: 6 / 12;
+	}
 }
 
 @media screen and (max-width: 80em) {
@@ -400,6 +460,13 @@
 	.mc.doc-img-container {
 		grid-template-columns: 20rem 20rem;
 		grid-column-gap: 2rem;
+	}
+
+	/* grid container for artist biographies */
+	.artist-bio-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 4fr;
+		grid-row-gap: 2rem;
 	}
 }
 

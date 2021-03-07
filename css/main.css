@@ -57,6 +57,10 @@ a:hover, a:focus {
 	transition-timing-function: ease-out;
 }
 
+form {
+	display: block;
+}
+
 /* container for all body content to leave 1 column on either side */
 .body-wrapper {
 	grid-column: 2 / 12;
@@ -151,6 +155,11 @@ nav a:hover, nav a:active, nav a:focus {
 /* positioning for logo in site nav example */
 #nav-bar .logo {
 	margin-right: auto;
+	padding-left: 0;
+}
+
+a.fas { 
+	padding-right: 0;
 }
 /*---------------------------------------*/
 

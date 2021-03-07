@@ -24,6 +24,7 @@ label {
 	display: inline-block;
 	color: #7E7E7E;
 	margin-bottom: 0.4rem;
+	padding-top: 1rem;
 }
 
 input#form-input {
@@ -157,6 +158,12 @@ select {
 /* positioning for logo in site nav example */
 #nav-bar .logo {
 	margin-right: auto;
+	padding-left: 0.5;
+}
+
+/* shopping cart padding */
+a.fas { 
+	padding-right: 0.5;
 }
 
 /* hamburger menu position of overflow gradient - bottom */

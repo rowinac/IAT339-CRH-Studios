@@ -8,12 +8,14 @@
 /* background for biographies */
 .artist-bio-container {
 	background: #F4F4F4;
+	position: relative;
 }
 
 /* image of the artist */
 .artist {
 	width: 100%;
 	height: auto;
+	z-index: 5;
 }
 
 /* artist name and biography */
@@ -35,10 +37,6 @@
 
 aside {
 	display: block;
-	/*position: re;*/
-	/*margin-top: 54px;
-	margin-right: -20px;
-	margin-left: -2.5rem;*/
 	min-width: 10ch;
 	
 
@@ -62,7 +60,6 @@ aside p::after {
     height: 0.5em;
     vertical-align: bottom;
     width: 100%;
-   /* margin-right: -100%;*/
     margin-left: 0.5rem;
 	border-top: 0.5px solid #6D716F;
 
@@ -76,6 +73,24 @@ aside p::after {
 	align-items: flex-start;
 	max-width: 38rem;
 }
+
+.decorative-box {
+	content: '';
+	border: 0.5px solid #A9A2A1;
+	height: 110%;
+	width: 100%;
+	position: absolute;
+	margin-left: 5rem;
+	top: -7rem;
+	bottom: 5rem;
+}
+
+.container-cutoff {
+	background: #FFFFFF;
+	height: 100%;
+}
+
+
 /* ----------- END OF ARTIST SECTION -------------- */
 
 
@@ -92,8 +107,8 @@ aside p::after {
 
 /* 'get in touch' header */
 .answer {
-	line-height: 1.4rem;
 	margin: 20rem 0 0 1rem;
+	line-height: 2.2rem;
 }
 
 /* form headers: 'got any questions' and 'get in touch' */
@@ -104,7 +119,7 @@ aside p::after {
 	position: absolute;
 	z-index: 5;
 
-	bottom: -25rem;
+	bottom: -23rem;
 }
 
 /* 'have any questions' and 'get in touch' header overlap with container */
@@ -113,10 +128,8 @@ aside p::after {
 }
 
 /* contact form container */
-.form-container {
-	background: #F4F4F4;
-	margin-left: 3rem;
-	margin-top: 3rem;
+.contact-form-container {
+	z-index: 5;
 }
 
 textarea {
@@ -132,7 +145,6 @@ textarea {
 	margin-top: 2rem;
 }
 
-
 /* ------------------------------------------------- */
 
 
@@ -143,7 +155,13 @@ textarea {
 	/* 'get in touch' header */
 	.answer {
 		max-width: 12ch;
-		line-height: 2.2rem;
+	}
+}
+
+@media screen and (max-width: 70em) {
+	/* 'get in touch' header */
+	.answer {
+		max-width: 12ch;
 	}
 }
 
@@ -164,6 +182,99 @@ textarea {
 		margin-bottom: 4rem;
 	}
 }
+
+@media screen and (max-width: 66em) {
+	.decorative-box {
+		width: 95%;
+		right: 0;
+	}
+
+	.artist-bio {
+		margin-left: 5rem;
+		padding-right: 3rem;
+	}
+
+	/* 'have any questions' and 'get in touch' header overlap with container */
+	.overlap {
+		margin-left: 5.5rem;
+	}
+}
+
+@media screen and (max-width: 64em) {
+	.answer {
+		margin: 12rem 0 0 1rem;
+	}
+
+	.form-header {
+		bottom: -17rem;
+	}
+
+}
+
+@media screen and (max-width: 40.4em) {
+	.answer {
+		margin: 6rem 0 0 1rem;
+	}
+
+	.form-header {
+		bottom: -10rem;
+	}
+
+	.form-header h2 {
+		font-size: 1.5rem;
+	}
+
+	footer {
+		margin-top: 0;
+	}
+
+	.decorative-box {
+		height: 108%;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.artist-bio {
+		margin-left: 3rem;
+		padding-right: 2rem;
+	}
+
+	.artist-bio h2 {
+		margin-top: 0;
+	}
+
+	aside {
+		transform: rotate(0deg);
+		margin: 0;
+	}
+
+	/* container for verticle aside and biography */
+	.subheading-bio {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* 'have any questions' and 'get in touch' header overlap with container */
+	.overlap {
+		margin-left: 3rem;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	form {
+		padding: 1rem 2rem;
+	}
+
+	.answer {
+		margin: 4rem 0 0 1rem;
+	}
+
+	.form-header {
+		bottom: -7rem;
+	}
+
+}
+
 
 
 

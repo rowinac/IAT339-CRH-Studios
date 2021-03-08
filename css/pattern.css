@@ -26,7 +26,7 @@ label {
 	margin: 0.3rem 0;
 }
 
-input#form-input {
+form input{
 	width: 100%;
 	border-radius: 0.5rem;
 	border: 1.8px solid #A9A2A1;
@@ -140,7 +140,7 @@ select {
 }
 
 /* main nav bar (for actual site) */
-.main-nav{
+.main-nav {
 	display: inline-flex;
 	text-align: right;
 
@@ -851,6 +851,7 @@ input::-webkit-inner-spin-button {
 	font-size: 1.5rem;
 	padding-left: 0.75rem;
 }
+
 
 /* ------------------------------------------------- */
 

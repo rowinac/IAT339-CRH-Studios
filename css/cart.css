@@ -38,10 +38,16 @@
 	text-align: center;
 }
 
+/* class for price and total padding  */
+.price-padding {
+	padding-top: 4.2rem;
+}
+
 /* cart product details */
 .details {
 	display: inline-block;
 	text-align: left;
+	padding-top: 3.7rem;
 }
 
 /* override margin positioning for quantity box */
@@ -104,6 +110,14 @@
 
 	.price {
 		grid-row: 2 / 3;
+	}
+
+	.price-padding {
+		padding-top: 0;
+	}
+
+	.details {
+		padding-top: 0;
 	}
 
 	/* product name */

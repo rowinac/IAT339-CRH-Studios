@@ -116,6 +116,7 @@ footer a.social {
 /*  -------------- END OF FOOTER --------------- */
 
 
+
 /*------------ NAV BAR ---------------- */
 
 nav a {
@@ -133,6 +134,11 @@ nav a:hover, nav a:active, nav a:focus {
 	color: #C98F7D;
 	transition-duration: 0.1s; 
 	transition-timing-function: ease-out;
+}
+
+/* dark nav bar */
+#nav-bar nav.nav-dark {
+	background-color: inherit;
 }
 
 #nav-bar nav {

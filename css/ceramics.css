@@ -1,34 +1,30 @@
-/* work in progress (dark nav) */
-.nav-dark {
-	flex-direction: row;
-	align-items: center;
-	flex-wrap: nowrap;
-	/* margin-bottom: 1rem; */
+/* header image */
+.header-img {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	z-index: -4;
+	margin-bottom: 10rem;
 }
 
+/* margin spacing for h1 on ceramics page */
+.h1-ceramics {
+	margin-top: 37%;
+}
+
+/* dark nav a links */
 .nav-dark a {
 	display: inline-block;
-	/* color: white; */
-	color: #6D716F;
+	color: #FFFFFF;
 	text-decoration: none;
 	padding: 0.7rem 1.5rem;
 	box-sizing: border-box;
 }
 
-.nav-dark a:hover, .nav-dark a:active, .nav-dark a:focus {
-	text-decoration: none;
-	font-weight: 600;
-	transition-property: color; 
-	color: #C98F7D;
-	transition-duration: 0.1s; 
-	transition-timing-function: ease-out;
-}
-
-/* header image */
-.header-img {
-	max-width: 100%;
-	height: auto;
-	position: relative;
+/* padding for cart icon on ceramics page */
+a.cart{
+	padding-right: 0;
 }
 
 /* adjusts the spacing between h1 and header image */

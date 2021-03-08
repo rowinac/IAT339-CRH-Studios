@@ -2,262 +2,225 @@
 
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>My Cart</title>
+		<title>My Cart</title>
 
-	<!-- CSS Style Sheets -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/cart.css">
-	<link rel="stylesheet" href="css/pattern.css">
+		<!-- CSS Style Sheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/pattern.css">
+		<link rel="stylesheet" href="css/cart.css">
 
-	<!-- jQuery Link -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-
-
-	<!-- KARLA Google Fonts Reference -->
-	<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@600;700&display=swap" rel="stylesheet">
+		<!-- jQuery Link -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 
-	<!-- Font Awesome Link -->
-	<!--  REFERENCED FROM https://www.youtube.com/watch?v=mrTwZmdfRVE&ab_channel=DarkCode -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-</head>
+
+		<!-- KARLA Google Fonts Reference -->
+		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Karla:wght@600;700&display=swap" rel="stylesheet">
 
 
-<body>
+		<!-- Font Awesome Link -->
+		<!--  REFERENCED FROM https://www.youtube.com/watch?v=mrTwZmdfRVE&ab_channel=DarkCode -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	</head>
 
-	<div class="main-grid-container">
-		<div class="body-wrapper">
+
+	<body>
+
+		<div class="main-grid-container">
+			<div class="body-wrapper">
 
 
-			<!-- NAVIGATION  -->
-			<header>
-				<div id="nav-bar">
-					<nav>
-						<div class="logo">
-							<a href="" class="logo"><img src="img/grey-logo.png" alt="grey CRH Studios logo"></a>
-						</div>
-						<a href="index.html">HOME</a>
-                        <a href="ceramics.html">CERAMICS</a>
-                        <a href="about.html">ABOUT</a>
-                        <a href="checkout.html" class="iconbtn fas fa-shopping-cart"></a>
-					</nav>
+				<!-- NAVIGATION  -->
+				<header>
+					<div id="nav-bar">
+						<nav>
+							<div class="logo">
+								<a href="" class="logo"><img src="img/grey-logo.png" alt="grey CRH Studios logo"></a>
+							</div>
+							<a href="index.html">HOME</a>
+	                        <a href="ceramics.html">CERAMICS</a>
+	                        <a href="about.html">ABOUT</a>
+	                        <a href="cart.html" class="iconbtn fas fa-shopping-cart"></a>
+						</nav>
+					</div>
+				</header>
+
+				<h1>My Cart</h1>
+
+				<div class="cart-grid cart-categories">
+					<h3>Product</h3>
+					<h3>Customizations</h3>
+					<h3>Price</h3>
+					<h3>Quantity</h3>
+					<h3>Total</h3>
 				</div>
-			</header>
+
+				<hr class="accordion-hr">
 
 
-
-			<section id="my-cart">
-				<div class="cart">
-					<h1>My Cart</h1>
-					<div class="cart-grid-container">
-
-						<div class="cart-product">
-							<h3>Product</h3>
+				<!-- FIRST PRODUCT -->
+				<div class="cart-grid">
+					<!-- product image -->
+					<img src="img/sleek-peak.png" alt="a tall black vase with skinny neck against white background." class="product-img">
+					<p class="product-name">Sleek Peak</p>
+					
+					<!-- customizations -->
+					<div class="detail-container customization">
+						<div class="details">
+						<p>Color: Black</p>
+						<p>Finish: Glossy</p>
 						</div>
+					</div>
 
-						<div class="cart-cust">
-							<h3>Customization</h3>
+					<!-- price -->
+					<p class="price">C$80.00</p>
+
+					<!-- quantity -->
+					<div class="detail-container qt">
+						<div class="details">
+						<div class="quantity cart-quantity">
+							<div class="quantity-button quantity-down">-</div>
+							<input aria-label="quantity" type="number" min="1" max="20" step="1" value="1">
+							<div class="quantity-button quantity-up">+</div>
 						</div>
-
-						<div class="cart-price">
-							<h3>Price</h3>
 						</div>
+					</div>
 
-						<div class="cart-quantity">
-							<h3>Quantity</h3>
+					<!-- total -->
+					<p class="total">C$80.00</p>
+				</div>
+
+				<hr class="accordion-hr">
+
+				<!-- SECOND PRODUCT -->
+				<div class="cart-grid">
+					<img src="img/three-white-cups.png" alt="three white cups with speckles all over." class="product-img">
+					<p class="product-name">Well Rounded Teacup</p>
+
+					<!-- customizations -->
+					<div class="detail-container customization">
+						<div class="details">
+						<p>-</p>
+						<p>-</p>
 						</div>
+					</div>
 
-						<div class="cart-total">
-							<h3>Total</h3>
+					<!-- price -->
+					<p class="price">C$48.00</p>
+
+					<!-- quantity -->
+					<div class="detail-container qt">
+						<div class="details">
+						<div class="quantity cart-quantity">
+							<div class="quantity-button quantity-down">-</div>
+							<input aria-label="quantity" type="number" min="1" max="20" step="1" value="2">
+							<div class="quantity-button quantity-up">+</div>
 						</div>
-
-						<!-- first HR line  -->
-						<div class="hr-line1">
-							<hr class="style1">
 						</div>
+					</div>
+
+					<!-- total -->
+					<p class="total">C$48.00</p>
+
+				</div>
+
+				<hr class="accordion-hr">
+
+			<!-- end of body wrapper -->
+			</div>
+
+			<!-- subtotal -->
+			<div class="subtotal-container">
+				<h3 class="subtotal">Subtotal:</h3>
+				<p class="subtotal-price">$128.00</p>
+
+				<a href="" class="cta-button">Checkout</a>
+			</div>
+
+		<!-- end of main grid container -->
+		</div>
 
 
-						<!-- product 1 line -->
-						<div class="cart-product1-img">
-							<img src="img/sleek-peak.png" width="125" height="105"
-								alt="a tall black vase with skinny neck against white background.">
-						</div>
+		<!-- Footer -->
+		<footer id="main-footer" class="footer-container">
+			<div class="footer-content">
+				<p class="footer-heading">Our Studio is Open</p>
+				<p class="footer-line-height">2485 Broadway W<br>Vancouver, BC<br>V6K 2E8</p>
+			</div>
+			<div class="footer-content">
+				<p class="footer-heading">Get in Touch</p>
+				<p class="footer-line-height footer-contact">(604) 555-5555</p>
+				<p class="footer-contact">crh@gmail.com</p>
+			</div>
+			<div class="footer-content">
+				<p class="footer-heading">Navigate</p>
+				<a href="index.html" class="footer-line-height">Home</a>
+				<a href="ceramics.html" class="footer-line-height">Ceramics</a>
+				<a href="about.html" class="footer-line-height">About</a>
+			</div>
+			<div class="footer-content">
+				<p class="footer-heading">Resources</p>
+				<a href="citations.html" class="footer-line-height">Citations</a>
+				<a href="basic_styles.html" class="footer-line-height">Style Guide</a>
+				<a href="https://github.com/rowinac/IAT339-CRH-Studios" target="_blank"
+					class="footer-line-height">GitHub</a>
+			</div>
+			<div class="footer-content">
+				<p class="footer-heading">Social Media</p>
 
-						<div class="cart-product1-cust">
-							<p>Color: Black </p>
-							<p>Finish: Glossy</p>
-						</div>
+				<!-- FACEBOOK -->
+				<div class="container">
+					<!-- inactive/not hovered state -->
+					<div class="social">
+						<img src="img/facebook.png" alt="facebook logo">
+					</div>
 
-						<div class="cart-product1-price">
-							<p>C$80.00</p>
-						</div>
-
-						<div class="cart-product1-quantity">
-							<!-- QUANTITY BOX REFERENCED FROM http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx -->
-							<div class="quantity cart-quantity">
-								<div class="quantity-button quantity-down">-</div>
-								<input aria-label="quantity" type="number" min="0" max="20" step="1" value="1">
-								<div class="quantity-button quantity-up">+</div>
-							</div>
-						</div>
-
-						<div class="cart-product1-total">
-							<p>C$80.00</p>
-						</div>
-
-
-						<!-- second hr line -->
-						<div class="hr-line2">
-							<hr class="style1">
-						</div>
-
-
-						<!-- second product line -->
-						<div class="cart-product2-img">
-							<img src="img/three-white-cups.png" width="125" height="105"
-								alt="three white cups with speckles all over.">
-						</div>
-
-
-						<div class="cart-product2-cust">
-							<!-- nothing in here -->
-						</div>
-
-
-						<div class="cart-product2-price">
-							<p>C$48.00</p>
-						</div>
-
-
-						<div class="cart-product2-quantity">
-							<!-- QUANTITY BOX REFERENCED FROM http://www.aspdotnetkhan.com/create-number-incrementers-with-plus-minus-buttons-136.aspx -->
-							<div class="quantity cart-quantity">
-								<div class="quantity-button quantity-down">-</div>
-								<input aria-label="quantity" type="number" min="0" max="20" step="1" value="1">
-								<div class="quantity-button quantity-up">+</div>
-							</div>
-						</div>
-
-
-						<div class="cart-product2-total">
-							<p>C$48.00</p>
-						</div>
-
-
-						<!-- third hr line -->
-						<div class="hr-line3">
-							<hr class="style1">
-						</div>
-
-
-						<div class="cart-subtotal">
-							<p>Subtotal: C$128.00</p>
-							<a href="" class="cta-button">Checkout</a>
-						</div>
-
+					<!-- hovered state -->
+					<div class="overlay">
+						<a href="" class="social"><img src="img/facebook-hover.png" alt="facebook logo"></a>
 					</div>
 				</div>
 
+				<!-- INSTAGRAM -->
+				<div class="container">
+					<!-- inactive/not hovered state -->
+					<div class="social">
+						<img src="img/instagram.png" alt="instagram logo">
+					</div>
 
-		</div>
-
-
-
-		</section>
-
-
-		<!-- end of body wrapper -->
-		</div>
-	<!-- end of main grid container -->
-	</div>
-
-
-
-
-
-
-
-	<!-- Footer -->
-	<footer id="main-footer" class="footer-container">
-		<div class="footer-content">
-			<p class="footer-heading">Our Studio is Open</p>
-			<p class="footer-line-height">2485 Broadway W<br>Vancouver, BC<br>V6K 2E8</p>
-		</div>
-		<div class="footer-content">
-			<p class="footer-heading">Get in Touch</p>
-			<p class="footer-line-height footer-contact">(604) 555-5555</p>
-			<p class="footer-contact">crh@gmail.com</p>
-		</div>
-		<div class="footer-content">
-			<p class="footer-heading">Navigate</p>
-			<a href="index.html" class="footer-line-height">Home</a>
-			<a href="ceramics.html" class="footer-line-height">Ceramics</a>
-			<a href="about.html" class="footer-line-height">About</a>
-		</div>
-		<div class="footer-content">
-			<p class="footer-heading">Resources</p>
-			<a href="citations.html" class="footer-line-height">Citations</a>
-			<a href="basic_styles.html" class="footer-line-height">Style Guide</a>
-			<a href="https://github.com/rowinac/IAT339-CRH-Studios" target="_blank"
-				class="footer-line-height">GitHub</a>
-		</div>
-		<div class="footer-content">
-			<p class="footer-heading">Social Media</p>
-
-			<!-- FACEBOOK -->
-			<div class="container">
-				<!-- inactive/not hovered state -->
-				<div class="social">
-					<img src="img/facebook.png" alt="facebook logo">
+					<!-- hovered state -->
+					<div class="overlay">
+						<a href="" class="social"><img src="img/instagram-hover.png" alt="instagram logo"></a>
+					</div>
 				</div>
 
-				<!-- hovered state -->
-				<div class="overlay">
-					<a href="" class="social"><img src="img/facebook-hover.png" alt="facebook logo"></a>
+				<!-- TWITTER -->
+				<div class="container">
+					<!-- inactive/not hovered state -->
+					<div class="social">
+						<img src="img/twitter.png" alt="twitter logo">
+					</div>
+
+					<!-- hovered state -->
+					<div class="overlay">
+						<a href="" class="social"><img src="img/twitter-hover.png" alt="twitter logo"></a>
+					</div>
 				</div>
 			</div>
-
-			<!-- INSTAGRAM -->
-			<div class="container">
-				<!-- inactive/not hovered state -->
-				<div class="social">
-					<img src="img/instagram.png" alt="instagram logo">
-				</div>
-
-				<!-- hovered state -->
-				<div class="overlay">
-					<a href="" class="social"><img src="img/instagram-hover.png" alt="instagram logo"></a>
-				</div>
-			</div>
-
-			<!-- TWITTER -->
-			<div class="container">
-				<!-- inactive/not hovered state -->
-				<div class="social">
-					<img src="img/twitter.png" alt="twitter logo">
-				</div>
-
-				<!-- hovered state -->
-				<div class="overlay">
-					<a href="" class="social"><img src="img/twitter-hover.png" alt="twitter logo"></a>
-				</div>
-			</div>
-		</div>
-	</footer>
+		</footer>
 
 
 
-	<!-- link to javascript -->
-	<script src="js/elements.js"></script>
+		<!-- link to javascript -->
+		<script src="js/elements.js"></script>
 
-</body>
+	</body>
 
 </html>

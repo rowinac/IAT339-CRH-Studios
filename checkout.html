@@ -28,7 +28,7 @@
 	</head>
 
 	<body>
-		<div class="main-grid-container">
+		<div id="checkout-page" class="main-grid-container">
             <div class="body-wrapper">
                 <header>
                     <div id="nav-bar">
@@ -45,7 +45,7 @@
                     </div>
                 </header>
 
-                <h1>Checkout</h1>
+                <h1 class="h1-checkout">Checkout</h1>
 
             </div>
 
@@ -64,13 +64,11 @@
                     <img class="product-card-img" src="img/the-dalmation.png" alt="two white ceramic bowls stacked together.">  
                     <p class="checkout-quantity">QTY: 1</p>     
                 </div>
-                <!-- <hr> -->
                 
                 <!-- SHIPPING -->
-                <h2 class="checkout-h2-container">Shipping Address</h2>
                 <div id="checkout-forms" class="form-container">
-                    <!-- labels + input boxes -->
-
+                    <h2 class="checkout-h2-container two">Shipping Address</h2>
+                    
                     <!-- first name & last name -->
                     <form class="half-span-forms-left">
                         <label for="fname-input">First Name</label>
@@ -132,8 +130,7 @@
                     </form>
 
                     <!-- BILLING -->
-                    <h2 class="checkout-h2-container bill">Billing</h2>
-
+                    <h2 class="checkout-h2-container two">Billing</h2>
                     <div>
                         <img class="span-card-img" src="img/mastercard.png" alt="mastercard logo">
                     </div>
@@ -227,21 +224,24 @@
                                     <p>C$128.00</p>
                                 </div>
                             </div>
+
                             <hr>
+
+                            <div class="cta-container">
+                                <!-- Continue Button -->
+                                <a href="review-order.html" class="cta-button">Continue</a>
+                            </div>
                         </div>
                         
-                        <div class="cta-container">
-                            <!-- Submit Button -->
-                            <input class="cta-button" type="submit" value="Place Order">
-                        </div>
+                        
                     </form>
                 </div>
 
                 <!-- breadcrumb bar -->
                 <div id="breadcrumb">
                     <ul>
-                        <li><a href="">1</a></li>
-                        <li><a href="">2</a></li>
+                        <li><a href="checkout.html">1</a></li>
+                        <li><a href="review-order.html">2</a></li>
                     </ul>
                </div>
             </div>

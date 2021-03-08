@@ -48,7 +48,22 @@
 	grid-area: rolling-pin; 
 }
 
+.hero-grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.3fr 1.1fr;
+	gap: 0px 0px;
+	grid-template-areas: ". ." ". home-hero-title";
+}
 
+
+.quote-grid-container {
+	display: grid;
+	grid-template-columns: 0.6fr 1.6fr 0.8fr;
+	grid-template-rows: 0.3fr 1fr 0.3fr;
+	gap: 0px 0px;
+	grid-template-areas: ". . ." ". home-quote ." ". . .";
+}
 
 /* featured items */
 .feature-grid-container {

@@ -48,24 +48,22 @@
             </div>
         </div>
 
-		<!-- first header image -->
-		<img class="header-img" src="img/collection-of-mugs.png" alt="a group of white ceramic mugs placed on top of a surface.">
-
-		<!-- second header image -->
-		<!-- <img class="header-img" src="img/collection-of-teacups.png" alt="a collection of white teacups lined up."> -->
+		<!-- load one header image -->
+		<img id="myImage" class="header-img" src="img/collection-of-teacups.png" alt="a collection of white teacups lined up.">
 
 		<!-- tab content -->
         <div id="product-layout-page" class="main-grid-container"> 
             <div class="product-layout-container">
                 <h1 class="h1-ceramics">Ceramics</h1>
                 <!-- artist collection tabs -->
+
+				<!-- changing header images when tabs are clicked REFERENCED FROM https://stackoverflow.com/questions/2881307/can-i-have-two-javascript-onclick-events-in-one-element & https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb-->
                 <div class="tab product-listing-grid-span">
 					<div class="tom-crew-tab">
-						<button id="default-open" class="tab-links" onclick="openContent(event, 'tomCrewCollection')">Tom Crew's Collection</button>
+						<button id="default-open" class="tab-links" onclick="document.getElementById('myImage').src='img/collection-of-mugs.png'; openContent(event, 'tomCrewCollection');">Tom Crew's Collection</button>
 					</div>
-					
 					<div class="oriento-tab">
-						<button class="tab-links" onclick="openContent(event, 'orientoCollection')">ORIENTO's Collection</button>
+						<button class="tab-links" onclick="document.getElementById('myImage').src='img/collection-of-teacups.png'; openContent(event, 'orientoCollection');">ORIENTO's Collection</button>
 					</div>
 					
                 </div>

@@ -808,5 +808,13 @@
 
 }
 
+@media screen and (max-width: 70em) {
+	.home-grid-container {
+		display: block;
+		
+		
+	}
+}
+
 /* ---------------- END OF MEDIA QUERIES ----------------- */ 
 

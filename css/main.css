@@ -194,6 +194,7 @@ a.fas {
 
 .home-hero-title {
 	grid-area: home-hero-title;
+	text-align: right;
 }
 
 .home-quote {

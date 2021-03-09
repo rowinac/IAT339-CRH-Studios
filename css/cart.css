@@ -33,6 +33,12 @@
 	color: #C6B09D;
 }
 
+/* cart heading: styling p to look like h3 */
+.cart-heading {
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
 /* container for cart product details */
 .detail-container {
 	text-align: center;

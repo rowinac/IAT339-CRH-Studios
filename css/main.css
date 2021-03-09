@@ -292,7 +292,7 @@ a.product-link {
 }
 
 /* product name + price hover states in product grids */
-a.product-link:hover h3, a.product-link:focus h3, a.product-link:active h3 {
+a.product-link:hover p, a.product-link:focus p, a.product-link:active p {
 	color: #C98F7D;
 }
 

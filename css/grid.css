@@ -141,7 +141,7 @@
 .cart-grid-container-big {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: fr;
+	grid-template-rows: 1fr;
 	grid-column-gap: 1rem;
 }
 

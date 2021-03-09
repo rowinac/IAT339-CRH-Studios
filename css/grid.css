@@ -135,28 +135,6 @@
 
 
 
-/* this is the bigger grid overall for cart  */
-
-.cart-grid-container-big {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	grid-column-gap: 1rem;
-}
-
-/* general cart grid  */
-.cart-grid-container {
-	display: grid;
-	text-align: center;
-	grid-template-columns: 1fr 1.4fr 0.8fr 1fr 1fr;
-	grid-template-rows: 0.2fr 0.1fr 0.9fr 0.1fr 0.9fr 0.1fr 0.9fr;
-	gap: 0px 0px;
-	grid-template-areas: "cart-product cart-cust cart-price cart-quantity cart-total" "hr-line1 hr-line1 hr-line1 hr-line1 hr-line1" "cart-product1-img cart-product1-cust cart-product1-price cart-product1-quantity cart-product1-total" "hr-line2 hr-line2 hr-line2 hr-line2 hr-line2" "cart-product2-img cart-product2-cust cart-product2-price cart-product2-quantity cart-product2-total" "hr-line3 hr-line3 hr-line3 hr-line3 hr-line3" ". . . cart-subtotal cart-subtotal";
-}
-
-
-
-
 /* ----------- GENERAL GRIDS FOR STYLE GUIDE ------------  */
 
 /* order summary pattern example for two column settings */

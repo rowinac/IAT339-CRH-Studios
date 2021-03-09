@@ -40,7 +40,7 @@
 							<a href="index.html">HOME</a>
                             <a href="ceramics.html">CERAMICS</a>
                             <a href="about.html">ABOUT</a>
-                            <a href="cart.html" class="iconbtn fas fa-shopping-cart"></a>
+                            <a href="cart.html" class="iconbtn fas fa-shopping-cart" aria-label=“cart”></a>
                         </nav>
                     </div>
                 </header>
@@ -159,38 +159,38 @@
 
                     <!-- expiry date & CVV/CVC -->
                     <form class="third-span-forms-left">
-                        <label for="montj-input">Expiry Date</label>
-                        <select id="month-input" name="month-input">
-                            <option value="month">Month</option>
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
+                        <label for="month-input">Expiry Date</label>
+                        <select id="month-input" name="month-input" aria-label="month-input">
+                            <option value="month" aria-label="month">Month</option>
+                            <option value="01"  aria-label="01">01</option>
+                            <option value="02"  aria-label="02">02</option>
+                            <option value="03"  aria-label="03">03</option>
+                            <option value="04"  aria-label="04">04</option>
+                            <option value="05"  aria-label="05">05</option>
+                            <option value="06"  aria-label="06">06</option>
+                            <option value="07"  aria-label="07">07</option>
+                            <option value="08"  aria-label="08">08</option>
+                            <option value="09"  aria-label="09">09</option>
+                            <option value="10"  aria-label="10">10</option>
+                            <option value="11"  aria-label="11">11</option>
+                            <option value="12"  aria-label="12">12</option>
                         </select>
                     </form>
 
                     <form class="third-span-forms-middle">
                         <label for="year-input">&nbsp;</label>
-                        <select id="year-input" name="year-input">
-                            <option value="year">Year</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
+                        <select id="year-input" name="year-input"  aria-label="year-input">
+                            <option value="year"  aria-label="year">Year</option>
+                            <option value="21"  aria-label="21">21</option>
+                            <option value="22"  aria-label="22">22</option>
+                            <option value="23"  aria-label="23">23</option>
+                            <option value="24"  aria-label="24">24</option>
+                            <option value="25"  aria-label="25">25</option>
+                            <option value="26"  aria-label="26">26</option>
+                            <option value="27"  aria-label="27">27</option>
+                            <option value="28"  aria-label="28">28</option>
+                            <option value="29"  aria-label="29">29</option>
+                            <option value="30"  aria-label="30">30</option>
                         </select>
                     </form>
 
@@ -230,6 +230,11 @@
                             <div class="cta-container">
                                 <!-- Continue Button -->
                                 <a href="review-order.html" class="cta-button">Continue</a>
+                            </div>
+
+                            <div class="cta-container">
+                                <a href="review-order.html">
+                                <input class="cta-button" type="submit" value="Submit">
                             </div>
                         </div>
                         

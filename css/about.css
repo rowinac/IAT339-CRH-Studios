@@ -2,7 +2,9 @@
 
 /* about CRH Studios text blurb */
 .crh-blurb {
-	max-width: 49ch;
+	max-width: 53ch;
+	/*text-align: justify;
+	text-justify: inter-word;*/
 }
 
 /* background for biographies */

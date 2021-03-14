@@ -2,9 +2,9 @@
 
 /* about CRH Studios text blurb */
 .crh-blurb {
-	max-width: 53ch;
-	/*text-align: justify;
-	text-justify: inter-word;*/
+	max-width: 51ch;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 /* background for biographies */
@@ -104,7 +104,7 @@ aside p::after {
 	font-weight: 300;
 	color: #6D716F;
 	margin: 0 0 0 1rem;
-	line-height: 1.4rem;
+	line-height: 2rem;
 }
 
 /* 'get in touch' header */
@@ -191,11 +191,6 @@ textarea {
 		right: 0;
 	}
 
-	.artist-bio {
-		margin-left: 5rem;
-		padding-right: 3rem;
-	}
-
 	/* 'have any questions' and 'get in touch' header overlap with container */
 	.overlap {
 		margin-left: 5.5rem;
@@ -211,6 +206,37 @@ textarea {
 		bottom: -17rem;
 	}
 
+}
+
+@media screen and (max-width: 62em) {
+	.artist-bio {
+		margin-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.artist {
+		margin-left: 2rem;
+	}
+}
+
+@media screen and (max-width: 58em) {
+	.artist-bio {
+		margin-left: 12%;
+		margin-right: 3%;
+	}
+
+	.artist {
+		margin: 0 10% 0 12%;
+	}
+}
+
+@media screen and (max-width: 55em) {
+	.artist {
+		width: 80%;
+	}
+	.artist {
+		margin: 0 10% 0 10%;
+	}
 }
 
 @media screen and (max-width: 40.4em) {
@@ -238,7 +264,7 @@ textarea {
 @media screen and (max-width: 40em) {
 	.artist-bio {
 		margin-left: 3rem;
-		padding-right: 2rem;
+		padding-right: 1rem;
 	}
 
 	.artist-bio h2 {
@@ -260,6 +286,11 @@ textarea {
 	.overlap {
 		margin-left: 3rem;
 	}
+
+	.artist {
+		width: 100%;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 30em) {
@@ -273,6 +304,10 @@ textarea {
 
 	.form-header {
 		bottom: -7rem;
+	}
+
+	.crh-blurb-container {
+		margin: 0 0.5rem 0 0.5rem;
 	}
 
 }

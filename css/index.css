@@ -57,7 +57,7 @@
 }
 
 .arrow-down a:hover, a:focus {
-	color: 6D716F;
+	color: #6D716F;
 	transition-property: color; 
 	transition-duration: 0.3s; 
 	transition-timing-function: ease-out;

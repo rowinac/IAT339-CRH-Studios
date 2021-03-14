@@ -1,0 +1,53 @@
+/* ------------ ORDER CONFIRMATION ----------------- */
+
+/* ------- ORDER SUMMARY ------------ */
+
+.bold-confirmation {
+    font-weight: bold;
+}
+.center-align {
+    text-align: center;
+}
+
+.banner-confirmation {
+    text-align: center;
+}
+
+/* full (grey) width container for order summary */
+
+.confirmation-checkout-container {
+    background-color: #F4F4F4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.h2-confirmation {
+    margin-bottom: 0;
+    color: white;
+}
+
+.confirmation-hr {
+    border-bottom: 0.5px solid #A9A2A1;
+    margin-top: 0;
+}
+
+.order-summary-grid-confirmation {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6rem;
+    grid-template-rows: 5fr;
+    grid-row-gap: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+/* container for form elements */
+
+.form-container-confirmation {
+    display: grid;
+    grid-column: 2 / 10;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 1rem;
+    /* border-bottom: 0.5px solid #6D716F; */
+    padding-bottom: 2rem;
+}

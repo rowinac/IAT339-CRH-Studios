@@ -410,8 +410,8 @@
 
 /* ---------------- PRODUCT DETAIL PAGE GRID -----------------*/
 .product-layout-container {
-	grid-column-start: 2;
-	grid-column-end: 12;
+	grid-column-start: 3;
+	grid-column-end: 11;
 	grid-row: 9 / 12;
 }
 
@@ -582,6 +582,11 @@
 	.contact-form-container {
 		grid-column: 2 / 9;
 		margin: 12rem -2rem 0 0;
+	}
+
+	.product-layout-container {
+		grid-column-start: 2;
+		grid-column-end: 12;
 	}
 }
 

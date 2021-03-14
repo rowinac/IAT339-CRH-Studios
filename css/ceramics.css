@@ -10,7 +10,7 @@
 
 /* margin spacing for h1 on ceramics page */
 .h1-ceramics {
-	margin-top: 37%;
+	margin-top: 45%;
 }
 
 /* dark nav a links */
@@ -43,22 +43,14 @@ a.cart{
 	margin: 0rem;
 }
 
-/* tab name layout */
-.product-listing-grid-span {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-column-gap: 1.75rem;
-	grid-row-gap: 1rem;
+/* tab content for ceramics page */
+.tab-content {
+	border-bottom: none;
 }
 
-/* grid span for tom crew's tab */
-.tom-crew-tab {
-	grid-column: 1 / 3;
-}
-
-/* grid span for oriento's tab */
-.oriento-tab {
-	grid-column: 3 / 5;
+/* tab spacing for ceramics page */
+.tab {
+	margin-top: 3rem;
 }
 
 /* product layout images spanning over three columns */
@@ -82,6 +74,11 @@ a.cart{
 }
 
 /* ------------- MEDIA QUERIES -------------- */
+@media (max-width: 63rem){
+	.h1-ceramics {
+		margin-top: 35%;
+	}
+}
 
 @media (max-width: 50rem) {
 	.product-name {
@@ -114,7 +111,10 @@ a.cart{
 		width: 100%;
 		height: 86%;
 	}
-}
 
+	.tab button {
+		padding: 1rem 0.85rem 0.7rem 0.85rem;
+	}
+}
 
 /* ----------- END OF MEDIA QUERIES ------------ */

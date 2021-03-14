@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Karla', Helvetica, Arial, sans-serif;
 	color: #6D716F;

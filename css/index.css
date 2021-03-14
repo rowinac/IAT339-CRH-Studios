@@ -16,7 +16,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;	
     text-align: right;
-    
+    position: relative;
 }
 
 
@@ -26,11 +26,6 @@
 	color: #85807d;
 }
 
-.header-section p {
-    font-size: 2.7rem;
-    color: #aba7a4;
-    
-}
 
 
 .home-hero-title {
@@ -48,6 +43,25 @@
 }
 
 
+.arrow-down {
+	grid-area: arrow-down; 
+	text-align:center;
+	padding-top: 8.4rem;
+	margin-bottom:0;
+
+}
+
+.arrow-down a {
+	font-size: 5rem;
+	text-decoration: none;
+}
+
+.arrow-down a:hover, a:focus {
+	color: 6D716F;
+	transition-property: color; 
+	transition-duration: 0.3s; 
+	transition-timing-function: ease-out;
+}
 
 
 /* Home Page Quote */
@@ -57,9 +71,30 @@
 
 .quote h1 {
 	font-size: 2.2rem;
-	color: #C6B09D;
-	padding-top: 3rem;
-	padding-bottom:3rem;
+	color: #85807d;
+	padding-top: 2rem;
+	padding-bottom:2rem;
+}
+
+
+/* home page blurb */
+.blurb { 
+	grid-area: blurb; 
+    margin-top: 0;
+}
+
+.blurb h2 {
+    color: #C6B09D;
+	/* 30 px */
+	font-size: 1.9rem;
+    margin-top: 0;
+    
+}
+
+
+/* home page about image */
+.rolling-pin-img { 
+	grid-area: rolling-pin; 
 }
 
 
@@ -70,6 +105,7 @@
 
 .home-line {
 	grid-area: home-line;
+    align-items: center;
 }
 
 .home-view-products {

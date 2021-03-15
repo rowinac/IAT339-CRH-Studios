@@ -970,8 +970,9 @@ input::-webkit-inner-spin-button {
 /* ------------ MEDIA QUERIES --------- */
 
 @media screen and (max-width: 127em) {
+	/*  #order-sum form  */
 	#order-summary form {
-	padding: 2rem 6rem;
+		padding: 2rem 6rem;
 	}
 }
 
@@ -1012,7 +1013,8 @@ input::-webkit-inner-spin-button {
 		padding: 2rem 2rem;
 	}
 
-	#order-summary form {
+	/*  #order-sum form  */
+	#order-summary form{
 		padding: 2rem 1rem;
 	}
 }

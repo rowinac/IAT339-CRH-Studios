@@ -156,7 +156,8 @@
 /* ----------- GENERAL GRIDS FOR STYLE GUIDE ------------  */
 
 /* order summary pattern example for two column settings */
-#order-summary .first-pattern-ex {
+#order-summary .first-pattern-ex, #order-sum .first-pattern-ex {
+	background-color: #F4F4F4;
 	grid-column: 1 / 4;
 }
 
@@ -805,7 +806,7 @@
 		grid-column: 1 / 10;
 	}
 
-	#order-summary .first-pattern-ex {
+	#order-summary .first-pattern-ex, #order-sum .first-pattern-ex {
 		grid-column: 1 / 10;
 	}
 

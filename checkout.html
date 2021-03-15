@@ -54,6 +54,7 @@
 
                 <!-- YOUR ORDER -->
                 <h2 class="checkout-h2-container">Your Order</h2>
+                
                 <!-- product one -->
                 <div class="checkout-img-container">
                     <img class="product-card-img" src="img/sleek-peak-504x504.png" alt="a tall black thin-neck vase.">
@@ -61,46 +62,46 @@
                 </div>
                 <!-- product two -->
                 <div class="checkout-img-container-two">
-                    <img class="product-card-img" src="img/three-white-cups-504x504.png" alt="two white ceramic bowls stacked together.">  
-                    <p class="checkout-quantity">QTY: 1</p>     
+                        <img class="product-card-img" src="img/three-white-cups-504x504.png" alt="two white ceramic bowls stacked together.">  
+                        <p class="checkout-quantity">QTY: 1</p>     
                 </div>
-                
+
                 <!-- SHIPPING -->
-                <div id="checkout-forms" class="form-container">
+                <div id="checkout-forms" class="form-container" >
                     <h2 class="checkout-h2-container two">Shipping Address</h2>
-                    
+                        
                     <!-- first name & last name -->
-                    <form class="half-span-forms-left">
+                    <div class="half-span-forms-left">
                         <label for="fname-input">First Name</label>
                         <input type="text" id="fname-input" name="fname-input">
-                    </form> 
+                    </div> 
 
-                    <form class="half-span-forms-right">
+                    <div class="half-span-forms-right">
                         <label for="lname-input">Last Name</label>
                         <input type="text" id="lname-input" name="lname-input">
-                    </form>
-                    
+                    </div>
+                        
                     <!-- address -->
-                    <form class="full-span-forms">
+                    <div class="full-span-forms">
                         <label for="address-input">Address</label>
                         <input type="text" id="address-input" name="address-input">
-                    </form>
+                    </div>
 
                     <!-- country select -->
-                    <form class="full-span-forms">
+                    <div class="full-span-forms">
                         <label for="country">Country</label>
                         <select id="country" name="country">
                             <option value="canada">Canada</option>
                         </select>
-                    </form>
+                    </div>
 
                     <!-- city, province & postal code -->
-                    <form class="third-span-forms-left">
+                    <div class="third-span-forms-left">
                         <label for="city-input">City</label>
                         <input type="text" id="city-input" name="city-input">
-                    </form> 
+                    </div> 
 
-                    <form class="third-span-forms-middle">
+                    <div class="third-span-forms-middle">
                         <label for="province-input">Province</label>
                         <select id="province-input" name="province-input">
                             <option value="select">Select</option>
@@ -111,23 +112,23 @@
                             <option value="on">Ontario</option>
                             <option value="qc">Quebec</option>
                         </select>
-                    </form>
+                    </div>
 
-                    <form class="third-span-forms-right">
+                    <div class="third-span-forms-right">
                         <label for="postal-input">Postal Code</label>
                         <input type="text" id="postal-input" name="postal-input">
-                    </form>
+                    </div>
 
                     <!-- phone number & email -->
-                    <form class="half-span-forms-left">
+                    <div class="half-span-forms-left">
                         <label for="phone-input">Phone Number</label>
                         <input type="text" id="phone-input" name="phone-input">
-                    </form> 
+                    </div> 
 
-                    <form class="half-span-forms-right">
+                    <div class="half-span-forms-right">
                         <label for="email-input">Email</label>
                         <input type="text" id="email-input" name="email-input">
-                    </form>
+                    </div>
 
                     <!-- BILLING -->
                     <h2 class="checkout-h2-container two">Billing</h2>
@@ -143,24 +144,23 @@
                     <div>
                         <img class="span-card-img" src="img/apple-pay.png" alt="mastercard logo">
                     </div>
-                    
 
                     <!-- card name -->
-                    <form class="full-span-forms">
+                    <div class="full-span-forms">
                         <label for="card-name-input">Name on Card</label>
                         <input type="text" id="card-name-input" name="card-name-input">
-                    </form>
+                    </div>
 
                     <!-- card number -->
-                    <form class="full-span-forms">
+                    <div class="full-span-forms">
                         <label for="card-num-input">Card Number</label>
                         <input type="text" id="card-num-input" name="card-num-input">
-                    </form>
+                    </div>
 
                     <!-- expiry date & CVV/CVC -->
-                    <form class="third-span-forms-left">
+                    <div class="third-span-forms-left">
                         <label for="month-input">Expiry Date</label>
-                        <select id="month-input" name="month-input" aria-label="month-input">
+                        <select id="month-input" name="month-input">
                             <option value="month" aria-label="month">Month</option>
                             <option value="01"  aria-label="01">01</option>
                             <option value="02"  aria-label="02">02</option>
@@ -172,14 +172,14 @@
                             <option value="08"  aria-label="08">08</option>
                             <option value="09"  aria-label="09">09</option>
                             <option value="10"  aria-label="10">10</option>
-                            <option value="11"  aria-label="11">11</option>
+                            <option value="11"  aria-label="11">11</option>                                
                             <option value="12"  aria-label="12">12</option>
                         </select>
-                    </form>
+                    </div>
 
-                    <form class="third-span-forms-middle">
+                    <div class="third-span-forms-middle">
                         <label for="year-input">&nbsp;</label>
-                        <select id="year-input" name="year-input"  aria-label="year-input">
+                        <select id="year-input" name="year-input">
                             <option value="year"  aria-label="year">Year</option>
                             <option value="21"  aria-label="21">21</option>
                             <option value="22"  aria-label="22">22</option>
@@ -192,31 +192,32 @@
                             <option value="29"  aria-label="29">29</option>
                             <option value="30"  aria-label="30">30</option>
                         </select>
-                    </form>
+                    </div>
 
-                    <form class="third-span-forms-right">
+                    <div class="third-span-forms-right">
                         <label for="cvc-input">CVV/CVC</label>
                         <input type="text" id="cvc-input" name="cvc-input">
-                    </form>
-                </div>                
+                    </div>
+
+                </div> 
             </div>
 
             <!-- order summary module -->
-            <div id="order-summary" class="checkout-order-summary-container">
+            <div id="order-sum" class="checkout-order-summary-container">
                 <div class="first-pattern-ex">
-                    <form class="order-sum-ex">
-                        <h2>ORDER SUMMARY</h2>
 
+                    <!-- Make submit button link to another page REFERENCED FROM https://stackoverflow.com/questions/38427943/how-do-i-make-a-submit-button-link-to-another-page -->
+
+                    <form class="order-sum-ex order-summary-con" method="POST" action="review-order.html">
+                        <h2 class="checkout-h2-container">Order Summary</h2>
                         <div class="order-summary-info">
                             <div class="order-summary-grid">
-                                
                                 <div class="order-summary-labels">
                                     <p>Subtotal:</p>
                                     <p>Shipping:</p>
                                     <p>PST/GST:</p>
                                     <p>Total:</p>
                                 </div>
-                                
                                 <div class="order-summary-prices">
                                     <p>C$128.00</p>
                                     <p>-</p>
@@ -224,30 +225,13 @@
                                     <p>C$128.00</p>
                                 </div>
                             </div>
-
-                            <hr>
-
-                            <!-- <div class="cta-container">
-                                <a href="review-order.html" class="cta-button">Continue</a>
-                            </div> -->
-
+                            <!-- CTA Button -->
                             <div class="cta-container">
-                                <a href="review-order.html">
-                                <input class="cta-button" type="submit" value="Continue">
+                                <input class="cta-button" type="submit" value="Continue" >
                             </div>
-                        </div>
-                        
-                        
+                        </div>   
                     </form>
                 </div>
-
-                <!-- breadcrumb bar -->
-                <div id="breadcrumb">
-                    <ul>
-                        <li><a href="checkout.html">1</a></li>
-                        <li><a href="review-order.html">2</a></li>
-                    </ul>
-               </div>
             </div>
         </div>
 		

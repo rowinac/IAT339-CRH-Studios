@@ -33,7 +33,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
-	grid-column-gap: 1.5rem;
+	grid-column-gap: 2rem;
 	grid-template-areas:
 	  "blurb rolling-pin rolling-pin";
   }
@@ -48,31 +48,36 @@
 }
 
 
-.quote-grid-container {
+/*.quote-grid-container {
 	display: grid;
 	grid-template-columns: 0.6fr 1.6fr 0.8fr;
 	grid-template-rows: 0.3fr 1fr 0.3fr;
 	gap: 0px 0px;
 	grid-template-areas: ". . ." ". home-quote ." ". . .";
-}
+}*/
 
 /* featured items */
 .feature-grid-container {
 	display: grid;
-	grid-template-columns: 0.7fr 1.8fr 0.65fr;
+	/*grid-template-columns: 0.7fr 1.8fr 0.65fr;*/
+	grid-template-columns: auto 1.8fr auto;
 	grid-template-rows: 0.1fr;
 	gap: 0px 0px;
-	margin-top: 8rem;
+	margin-top: 7rem;
 	grid-template-areas: "home-featured-items home-line home-view-products";
 }
 
-.arrow-grid-container {
+/*.arrow-grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
 	gap: 0px 0px;
 	grid-template-areas:
 	  ". arrow-down .";
+}*/
+
+.rolling-pin-img {
+	grid-column: 2 / 4;
 }
 
 
@@ -542,7 +547,32 @@
 	.crh-blurb-container {
 		grid-column: 1 / 8;
 	}
+}
 
+@media screen and (max-width: 70em) {
+	.home-grid-container {
+		/*display: block;*/
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-row-gap: 2rem;
+		grid-template-areas: none;
+	}
+
+	.rolling-pin-img {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+
+	/* home page blurb */
+	.blurb { 
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		margin-bottom: 0;
+	}
+
+	.feature-grid-container {
+		margin-top: 3rem;
+	}
 }
 
 @media screen and (max-width: 68em) {
@@ -789,6 +819,22 @@
 	.doc-img-container {
 		grid-template-columns: 1fr;
 	}
+
+	.home-grid-container {
+		grid-row-gap: 1.5rem;
+	}
+
+	.blurb h2 {
+		margin-bottom: 0.5rem;
+	}
+
+	.blurb p {
+		margin-top: 0.5rem;
+	}
+
+	.meet-the-artists {
+		margin-top: 2rem;
+	}
 }
 
 @media screen and (max-width: 40.4em) {
@@ -886,25 +932,29 @@
 	.artist-bio-container {
 		padding: 3rem 0 12rem 0;
 	}
+}
+
+@media screen and (max-width: 30em) {
+	.feature-grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr auto;
+		grid-template-areas: none;
+	}
+
+	.home-featured-items {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		/*grid-area: none;*/
+	}
+
+	.home-view-products {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		/*grid-area: none;*/
+	}
 
 }
 
-@media screen and (max-width: 70em) {
-	.home-grid-container {
-		display: block;
-
-	}
-
-	.hero-grid-container {
-		display: block;
-	}
-
-	.quote-grid-container {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
-		display: block;
-	}
-}
 
 /* ---------------- END OF MEDIA QUERIES ----------------- */ 
 

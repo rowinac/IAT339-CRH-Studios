@@ -9,14 +9,20 @@
     text-align: center;
 }
 
-.banner-confirmation {
+.thank-you-message {
+    padding: 0 2rem;
+    max-width: 66ch;
+    margin-right: 0;
+   
     text-align: center;
+
 }
 
 .confirmation-checkout-container {
     background-color: #F4F4F4;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 .h2-confirmation {

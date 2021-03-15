@@ -214,7 +214,6 @@ select {
 	transition-timing-function: ease-out;
 } 
 
-
 .cta-margin {
 	margin-top: 3rem;
 	margin-bottom: 2.5rem;
@@ -358,74 +357,109 @@ select {
 
 /* BREADCRUMB REFERENCED FROM 
 https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-lines*/
+#breadcrumb-bar {
+    grid-column: 4 / 12;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #breadcrumb-bar ul {
-	padding-left: 0.5rem;
+    padding-left: 0.3rem;
+    list-style: none;
 }
 
-/* list elements in the breadcrumb nav example */
 #breadcrumb-bar li {
-	display: inline-block;
-	width: 3rem;
-	height: 3rem;
-	
-	text-align: center;
-	line-height: 2.7rem;
-
-	border-radius: 50%;
-	background-color: white; 
-	border: 2px solid #A9A2A1;
-	
-	margin: 0 14vw 0 14vw;
-	color: #6D716F;
-	position: relative;
+    display: inline-block;
 }
 
-/* breadcrumb line before li element*/
-#breadcrumb-bar li::before {
-	content: '';
-	position: absolute;
-	top: 1.5rem;
-	width: 26vw;
-	left: -15vw;
-	height: 0.1rem;
-	background: #A9A2A1;
-	z-index: -1;
+.first-breadcrumb-label {
+	text-align: left;
+	margin-left: -0.5rem;
+	margin-bottom: 0;
 }
 
-/* breadcrumb line after li element*/
-#breadcrumb-bar li::after {
-	content: '';
-	position: absolute;
-	top: 1.5rem;
-	width: 26vw;
-	right: -15vw;
-	height: 0.1rem;
-	background: #A9A2A1;
-	z-index: -1;
+.second-breadcrumb-label {
+	text-align: right;
+	margin-right: 0.3rem;
+	margin-bottom: 0;
 }
 
-#breadcrumb-bar a {
-	font-size: 1.6rem;
-	font-weight: 700;
-	color: #6D716F;
+li.breadcrumb a {
+    position: relative;
+    display: inline-block;
+    
+    border: 2px solid #A9A2A1;
+    border-radius: 50%;
+    background-color: white; 
+   
+    width: 4rem;
+    height: 4rem;
+
+    padding-top: 0.9rem;
+    margin: 0 18vw;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
 }
 
-#breadcrumb-bar li:hover, #breadcrumb-bar li:active {
+/* left line */
+li.breadcrumb a::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    width: 35vw;
+    right: 0;
+    height: 0.12rem;
+    background: #A9A2A1;
+    z-index: -1;
+}
+
+/* right line */
+li.breadcrumb a::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    width: 35vw;
+    left: 0;
+    height: 0.12rem;
+    background: #A9A2A1;
+    z-index: -1;
+}
+
+li.breadcrumb:first-child a {
+     margin-left: 0;
+}
+
+li.breadcrumb:last-child a {
+     margin-right: 0;
+}
+
+/* hide the line of the first element of the breadcrumb */
+li.breadcrumb:first-child a::before {
+     display: none;
+}
+
+/* hide the line of the last element of the breadcrumb */
+li.breadcrumb:last-child a::after {
+     display: none;
+}
+
+li.breadcrumb a:hover, li.breadcrumb a:active, li.breadcrumb a:focus {
+     background: #C98F7D;
+     color: #FFFFFF;
+     text-decoration: none;
+}
+
+/* active button for current page in breadcrumb*/
+li.active-page a {
 	background: #C98F7D;
-	color: #FFFFFF;
-
-	transition-property: background; 
-	transition-duration: 0.3s; 
-	transition-timing-function: ease-out;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 
-/* container for breadcrumb nav */
-.breadcrumb-container {
-	display: flex;
-	flex-direction: row;
-	justify-items: center;
-}
 
 
 /* ------------------------------------------------ */
@@ -1025,15 +1059,15 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 89em) {
-	#breadcrumb-bar li {
+	/*#breadcrumb-bar li {
     	margin: 0 12vw 0 14vw;
-	}
+	}*/
 }
 
 @media screen and (max-width: 80em) {
-	#breadcrumb-bar li {
+	/*#breadcrumb-bar li {
    		margin: 0 14vw 0 14vw;
-	}
+	}*/
 
 	.product-finish .cust {
 	  display: inline-block;

@@ -49,6 +49,14 @@
 
             </div>
 
+            <!-- breadcrumb bar -->
+            <!-- <div id="breadcrumb">
+                <ul>
+                    <li><a href="checkout.html">1</a></li>
+                    <li><a href="review-order.html">2</a></li>
+                </ul>
+           </div> -->
+
             <!-- review and place order module (same as checkout container) -->
             <div id="checkout" class="checkout-container">
 
@@ -66,7 +74,6 @@
                 </div>
                 
                 <!-- SHIPPING -->
-                
                 <div id="checkout-forms" class="form-container">
                     <h2 class="checkout-h2-container two">Shipping</h2>
                     <div class="full-span-forms">
@@ -75,8 +82,6 @@
                         <p class="personal-info">Vancouver, BC, V6Y 2BE</p>
                     </div>
                     
-                    <!-- <hr> -->
-
                     <!-- BILLING -->
                     <h2 class="checkout-h2-container two">Billing</h2>
 
@@ -100,21 +105,22 @@
             </div>
 
             <!-- order summary module -->
-            <div id="order-summary" class="checkout-order-summary-container">
+            <div id="order-sum" class="checkout-order-summary-container">
                 <div class="first-pattern-ex">
-                    <form class="order-sum-ex">
-                        <h2>Order Summary</h2>
+
+                    <!-- Make submit button link to another page REFERENCED FROM https://stackoverflow.com/questions/38427943/how-do-i-make-a-submit-button-link-to-another-page -->
+                    
+                    <form class="order-sum-ex order-summary-con" method="POST" action="order-placed.html">
+                        <h2 class="checkout-h2-container">Order Summary</h2>
 
                         <div class="order-summary-info">
                             <div class="order-summary-grid">
-                                
                                 <div class="order-summary-labels">
                                     <p>Subtotal:</p>
                                     <p>Shipping:</p>
                                     <p>PST/GST:</p>
                                     <p>Total:</p>
                                 </div>
-                                
                                 <div class="order-summary-prices">
                                     <p>C$128.00</p>
                                     <p>-</p>
@@ -123,24 +129,15 @@
                                 </div>
                             </div>
 
+                            <!-- CTA button -->
                             <div class="cta-container">
-                                <!-- Submit Button -->
                                 <input class="cta-button" type="submit" value="Place Order">
                             </div>
                         </div>
                     </form>
                 </div>
-
-                <!-- breadcrumb bar -->
-                <div id="breadcrumb">
-                    <ul>
-                        <li><a href="checkout.html">1</a></li>
-                        <li><a href="review-order.html">2</a></li>
-                    </ul>
-               </div>
             </div>
         </div>
-		
 
 		<!-- Footer -->
 		<footer class="footer-container">

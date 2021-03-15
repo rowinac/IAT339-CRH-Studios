@@ -598,7 +598,6 @@
 	.artist-bio {
 		grid-column: 7 / 12;
 	}
-
 }
 
 @media screen and (max-width: 63em) {
@@ -621,8 +620,6 @@
 	}
 }
 
-
-
 @media (max-width: 62rem){
 	#checkout-page.main-grid-container, #review-page.main-grid-container {
 		display: grid; 
@@ -644,6 +641,10 @@
 
 	.overlap {
 		grid-column: 1 / 5;
+	}
+
+	#order-sum .first-pattern-ex {
+		padding-bottom: 4rem;
 	}
 }
 

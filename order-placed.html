@@ -6,7 +6,7 @@
 		<meta charset="utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		
-		<title>Order Placed!</title>
+		<title>Order Placed</title>
 
 		<!-- CSS Style Sheets -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -28,7 +28,6 @@
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 	</head>
 
-
     <body>
         <div id="order-placed" class="main-grid-container">
             <div class="body-wrapper">
@@ -47,33 +46,40 @@
                     </div>
                 </header>
 
-                <h1 class= "center-align">Your order has been placed!</h1>
+                <h1 class="h1-checkout center-align">Your order has been placed!</h1>
             
             </div>
-        </div>
-        <!-- this is end of first body wrap and main container grid -->
 
-        <!-- full bleed banner for order confirmation  -->
-        <div id="order-summary">
-            <div class="confirmation-checkout-container">
-                <div class="center-align">
-                    <h2>ORDER CONFIRMATION</h2>
-                    <p>Hey John - thanks for your order, we hope you enjoy your new ceramics.</p>
-                    <p><b>Order Number: 131 324 923</b></p>
+            <!-- full bleed banner for order confirmation  -->
+            <div id="order-summary" class="order-summary-grid-confirmation">
+                <div class="confirmation-checkout-container">
+                    <div class="center-align">
+                        <h2 class="checkout-h2-container">Order Confirmation</h2>
+                        <p>Hey John - thanks for your order, we hope you enjoy your new ceramics.</p>
+                        <p><b>Order Number: 131 324 923</b></p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <!-- </div>
 
-
-        <div id="confirmation-summary" class="main-grid-container">
-            <h2 class="checkout-h2-container h2-confirmation">blank</h2>
+            <div id="confirmation-summary" class="main-grid-container"> -->
 
             <div class="checkout-container">
-                <h2 class="checkout-h2-container">Order Summary</h2>
+                <!-- YOUR ORDER -->
+                <h2 class="checkout-h2-container">Your Order</h2>
+                <!-- product one -->
+                <div class="checkout-img-container">
+                    <img class="product-card-img" src="img/sleek-peak-504x504.png" alt="a tall black thin-neck vase.">
+                    <p class="checkout-quantity">QTY: 1</p>
+                </div>
+                <!-- product two -->
+                <div class="checkout-img-container-two">
+                    <img class="product-card-img" src="img/three-white-cups-504x504.png" alt="two white ceramic bowls stacked together.">  
+                    <p class="checkout-quantity">QTY: 1</p>     
+                </div>
 
                 <!-- SHIPPING -->
-                
-                <div id="checkout-forms" class="form-container-confirmation">
+                <div id="checkout-forms" class="form-container">
                     <h2 class="checkout-h2-container two">Shipping</h2>
                     <div class="full-span-forms">
                         <p class="name-info personal-info">John Smith</p>
@@ -81,8 +87,6 @@
                         <p class="personal-info">Vancouver, BC, V6Y 2BE</p>
                     </div>
                         
-                    <!-- <hr> -->
-
                     <!-- BILLING -->
                     <h2 class="checkout-h2-container two">Billing</h2>
 
@@ -105,22 +109,22 @@
                 </div>   
             </div>
 
-            <div id="order-summary-total" class="checkout-order-summary-container">
-                
+            <div id="order-sum" class="checkout-order-summary-container">
                 <div class="first-pattern-ex">
-                    <form class="order-sum-ex">
-                        <h2>Order Total</h2>
+
+                    <!-- Make submit button link to another page REFERENCED FROM https://stackoverflow.com/questions/38427943/how-do-i-make-a-submit-button-link-to-another-page -->
+                    
+                    <form class="order-sum-ex order-summary-con" method="POST" action="index.html">
+                        <h2 class="checkout-h2-container">Order Summary</h2>
     
                         <div class="order-summary-info">
-                            <div class="order-summary-grid-confirmation">
-                                    
+                            <div class="order-summary-grid">
                                 <div class="order-summary-labels">
                                     <p>Subtotal:</p>
                                     <p>Shipping:</p>
                                     <p>PST/GST:</p>
                                     <p>Total:</p>
                                 </div>
-                                    
                                 <div class="order-summary-prices">
                                     <p>C$128.00</p>
                                     <p>-</p>
@@ -128,8 +132,11 @@
                                     <p>C$128.00</p>
                                 </div>
                             </div>
-    
-                    
+
+                            <!-- CTA button -->
+                            <div class="cta-container">
+                                <input class="cta-button" type="submit" value="Return Home">
+                            </div>
                         </div>
                     </form>
                 </div>

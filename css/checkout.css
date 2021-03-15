@@ -230,7 +230,8 @@ form input{
 /* ------------- MEDIA QUERIES --------------- */
 @media (max-width: 78rem) {
     form {
-    padding: 2rem 2.5rem;
+        padding: 2rem 2.5rem;
+    }
 }
 
 @media (max-width: 75rem){

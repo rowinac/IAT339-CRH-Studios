@@ -133,11 +133,13 @@ form {
 /* form boxes that span half way (left column) */
 .half-span-forms-left {
     grid-column: 1 / 4;
+    padding-right: 2rem;
 }
 
 /*  form boxes that span half way (right column) */
 .half-span-forms-right {
     grid-column: 4 / 7;
+    padding-left: 1rem;
 }
 
 /*  form boxes that span one third of the way (left column) */
@@ -211,7 +213,8 @@ https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-
 }
 
 .billing-card-img {
-    width: 30%;
+    margin-top: 0.5rem;
+    width: 65px;
 }
 
 form input{
@@ -341,12 +344,23 @@ form input{
         grid-column: 1 / 13;
         margin: 0 1rem 0 1rem;
     }
+
+    label {
+        font-size: 0.8rem;
+    }
 }
 
-@media (max-width: 37rem) {
-   label {
-    font-size: 0.8rem;
-   }
+@media (max-width: 30rem) {
+    /* form boxes that span half way (left column) */
+    .half-span-forms-left {
+        grid-column: 1 / 6;
+    }
+
+   /*  form boxes that span half way (right column) */
+    .half-span-forms-right {
+        grid-column: 1 / 6;
+        padding: 2rem 0 0 0;
+    }
 }
 
 /* ---------- END OF MEDIA QUERIES ----------- */

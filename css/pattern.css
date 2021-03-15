@@ -1090,7 +1090,7 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 34em) {
 	#nav-bar nav a {
-		padding: 0.7rem 1rem;
+		padding: 2rem 1rem 0.7rem 1rem;
 	}
 }
 
@@ -1102,7 +1102,7 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 29em) {
 	#nav-bar nav a {
-		padding: 0.7rem 0.8rem;
+		padding: 2rem 0.8rem 0.7rem 0.8rem;
 	}
 
 	#type-examples h1 {
@@ -1117,7 +1117,7 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 27em) {
 	#nav-bar nav a {
-		padding: 0.7rem 0.6rem;
+		padding: 2rem 0.6rem 0.7rem 0.6rem;
 	}
 }
 

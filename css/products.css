@@ -3,6 +3,25 @@
 	margin-bottom: 3rem;
 }
 
+.cta-container {
+	width: 100%;
+}
+
+.quantity {
+	margin: 2rem 0 1rem 0;
+}
+
+/* disabled state for cart button */
+#add-to-cart:disabled {
+	background-color: #F4F4F4;
+	color: #C98F7D;
+}
+
+/* hidden cart message */
+.hidden {
+	display: none;
+}
+
 /* grey swatch for customization */
 .checkmark.grey-gradient {
 	background-color: #8E989C;

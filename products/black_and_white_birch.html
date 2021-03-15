@@ -95,6 +95,13 @@
 								<p class="dimensions">Dimensions: 11.5cm x 22cm</p>
 							</div>
 
+							<!-- quantity box -->
+							<div class="quantity cart-quantity">
+								<div class="quantity-button quantity-down">-</div>
+								<input aria-label="quantity-1" type="number" min="1" max="20" step="1" value="1">
+								<div class="quantity-button quantity-up">+</div>
+							</div>
+
 							<!-- Customization -->
 							<div>
 								<button class="accordion">Want to Customize?</button>
@@ -154,7 +161,8 @@
 								<hr class="accordion-hr">
 							</div>
 
-							<a href="" class="cta-button cta-container">Add to Cart</a>
+							<button id="add-to-cart" class="cta-button cta-container">Add to Cart</button>
+
 						</div>
 					</div>
 				</section>
@@ -277,6 +285,7 @@
 		<script src="../js/elements.js"></script>
 		<script src="../js/image-gallery.js"></script>
 		<script src="../js/tabs.js"></script>
+		<script src="../js/cart_message.js"></script>
 	</body>
 </html>
 

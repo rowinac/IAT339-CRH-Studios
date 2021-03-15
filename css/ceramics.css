@@ -18,7 +18,7 @@
 	display: inline-block;
 	color: #FFFFFF;
 	text-decoration: none;
-	padding: 0.7rem 1.5rem;
+	padding: 2rem 1.5rem 0.7rem 1.5rem;
 	box-sizing: border-box;
 }
 
@@ -114,6 +114,16 @@ a.cart{
 
 	.tab button {
 		padding: 1rem 0.85rem 0.7rem 0.85rem;
+	}
+
+	/*#orientoCollection .product-card-container, #tomCrewCollection .product-card-container {
+		grid-template-columns: 1fr;
+	}*/
+}
+
+@media (max-width: 34rem) {
+	#orientoCollection .product-card-container, #tomCrewCollection .product-card-container {
+		grid-template-columns: 1fr;
 	}
 }
 

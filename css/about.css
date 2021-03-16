@@ -3,8 +3,7 @@
 /* about CRH Studios text blurb */
 .crh-blurb {
 	max-width: 51ch;
-	text-align: justify;
-	text-justify: inter-word;
+	/*text-align: justify;*/
 }
 
 /* background for biographies */
@@ -34,7 +33,7 @@
 .artist-bio p {
 	margin-bottom: 0;
 	max-width: 55ch;
-	text-align: justify;
+	/*text-align: justify;*/
 }
 
 aside {

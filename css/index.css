@@ -60,7 +60,7 @@
 	height: 120%;
 	width: 90%;
 	position: absolute;
-	top: 6rem;
+	top: 6.5rem;
 	bottom: 5rem;
 }
 
@@ -73,8 +73,7 @@
 
 /* about CRH studios blurb */
 #home-page-about-blurb p {
-	text-align: justify;
-	text-justify: inter-word;
+	/*text-align: justify;*/
 	padding-right: 2.2rem;
 }
 
@@ -243,7 +242,7 @@ hr.style2 {
 
 	.decorative-box {
 	    width: 92%;
-	    top: 3rem;
+	    top: 3.5rem;
 	}
 }
 

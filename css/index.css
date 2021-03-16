@@ -25,13 +25,15 @@
 .header-section h1 {
 	/* 57.6px to rem */
 	font-size: 4.2rem;
-	color: #85807d;
+	/* color: rgb(191, 164, 147); */
+	color: rgb(177, 148, 131);
+
 	margin-top: 5rem;
 	max-width: 18ch;
 }
 
 
-.home-hero-title {
+.home-hero-title { 
 	/*grid-area: home-hero-title;*/
 	display: flex;
 	flex-direction: column;
@@ -282,6 +284,17 @@ hr.style2 {
 	.home-view-products {
 		text-align: left;
 		padding: 0 0 2rem 0;
+	}
+}
+
+
+@media screen and (max-width: 46em) {
+	.header-section {
+		background-image: url(../img/home-page-small.png);
+	}
+
+	.header-section h1 {
+		padding-top:2rem;
 	}
 }
 

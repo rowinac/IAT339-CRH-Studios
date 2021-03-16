@@ -131,6 +131,12 @@ a.cart{
 	}
 }
 
+@media (max-width: 35rem){
+	.product-card-row-img {
+		height: 86%;
+	}
+}
+
 @media (max-width: 34rem) {
 	#orientoCollection .product-card-container, #tomCrewCollection .product-card-container {
 		grid-template-columns: 1fr;

@@ -39,13 +39,13 @@
   }
 
 
-.hero-grid-container {
+/*.hero-grid-container {
 	display: grid;
 	grid-template-columns: 0.6fr 1fr;
-	grid-template-rows: 0.3fr 1.1fr;
+	grid-template-rows: 0.1fr auto;
 	gap: 0px 0px;
 	grid-template-areas: ". ." ". home-hero-title";
-}
+}*/
 
 
 /*.quote-grid-container {

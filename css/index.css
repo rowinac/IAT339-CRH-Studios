@@ -262,7 +262,7 @@ hr.style2 {
 }
 
 @media screen and (max-width: 34em) {
-	.home-hero-title h1 {
+	.home-hero-title {
 		margin-right: 1rem;
 	}
 }

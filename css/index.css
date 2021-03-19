@@ -295,8 +295,8 @@ hr.style2 {
 
 @media screen and (max-width: 30em) {
 	.home-view-products {
-		text-align: left;
-		padding: 0 0 2rem 0;
+		text-align: right;
+		padding: 1rem 0 0rem 0;
 	}
 }
 

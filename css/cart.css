@@ -80,6 +80,7 @@ figcaption {
 .quantity input {
 	padding-left: 2rem;
 	padding-right: 1rem;
+	max-width: 5rem;
 }
 
 /* container for subtotal*/

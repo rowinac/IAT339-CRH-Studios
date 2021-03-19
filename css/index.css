@@ -58,7 +58,7 @@
 	grid-column: 2 / 4;
 	grid-row: 1 / 5;
 	content: '';
-	border-right: 0.5px solid #A9A2A1;
+	border-right: 2.75px solid #A9A2A1;
 	height: 120%;
 	width: 90%;
 	position: absolute;
@@ -178,6 +178,7 @@ hr.style2 {
 	#home-page-about-blurb p {
 		padding-right: 0;
 		max-width: 66ch;
+		margin-top: 0;
 	}
 
 	.meet-the-artists {
@@ -248,6 +249,17 @@ hr.style2 {
 	}
 }
 
+@media screen and (max-width: 46em) {
+	.header-section {
+		background-image: url(../img/home-page-small.png);
+	}
+
+	.header-section h1 {
+		padding-top:2rem;
+	}
+}
+
+
 @media screen and (max-width: 37em) {
 	.quote h2 {
 	  padding: 3rem 25% 3rem 0;
@@ -287,16 +299,13 @@ hr.style2 {
 	}
 }
 
-
-@media screen and (max-width: 46em) {
-	.header-section {
-		background-image: url(../img/home-page-small.png);
-	}
-
-	.header-section h1 {
-		padding-top:2rem;
+@media screen and (max-width: 27em) {
+	.quote h2 {
+	  padding: 3rem 20% 3rem 0;
+	  font-size: 1.6rem;
 	}
 }
+
 
 
 

@@ -6,6 +6,12 @@
 	top: 0;
 	z-index: -4;
 	margin-bottom: 10rem;
+
+	/* parallax referenced from https://www.w3schools.com/howto/howto_css_parallax.asp */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 /* margin spacing for h1 on ceramics page */
@@ -172,13 +178,18 @@ a.cart{
 		font-size: 1rem;
 		margin-bottom: 2rem;
 	}
+
+	.h1-ceramics {
+    	margin-top: 25%;
+	}
 }
 
 @media (max-width: 31rem) {
 	.tab button {
 		font-size: 0.8rem;
+		padding: 1rem 0.6rem 0.7rem 0.6rem;
 	}
-
 }
+
 
 /* ----------- END OF MEDIA QUERIES ------------ */

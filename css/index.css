@@ -158,6 +158,7 @@ hr.style2 {
 
 
 /* ----------- MEDIA QUERIES ------------- */
+
 @media screen and (max-width: 82em) {
 	.home-img {
 		margin-top: 5rem;
@@ -260,6 +261,15 @@ hr.style2 {
 }
 
 
+@media screen and (max-width: 24em) {
+	.header-section {
+		background-image: url(../img/home-page-mobile.png);
+		
+	}
+}
+
+
+
 @media screen and (max-width: 37em) {
 	.quote h2 {
 	  padding: 3rem 25% 3rem 0;
@@ -306,11 +316,6 @@ hr.style2 {
 	}
 }
 
-@media screen and (max-width: 24em) {
-	.header-section {
-		background-image: url(../img/home-page-mobile.png);
-	}
-}
 
 
 

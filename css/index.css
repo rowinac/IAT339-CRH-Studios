@@ -261,15 +261,6 @@ hr.style2 {
 }
 
 
-@media screen and (max-width: 24em) {
-	.header-section {
-		background-image: url(../img/home-page-mobile.png);
-		
-	}
-}
-
-
-
 @media screen and (max-width: 37em) {
 	.quote h2 {
 	  padding: 3rem 25% 3rem 0;
@@ -315,6 +306,13 @@ hr.style2 {
 	  font-size: 1.6rem;
 	}
 }
+
+@media screen and (max-width: 24em) {
+	.header-section {
+		background-image: url(../img/home-page-mobile.png);
+	}
+}
+
 
 
 

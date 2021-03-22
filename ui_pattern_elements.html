@@ -41,40 +41,40 @@
 				    <span></span>
 				    <span></span>
 
+ 				 	<div id="menu" class="target-menu">
+					
+				    	<!-- Main navigation -->
+						<button class="accordion">PAGES</button>
+						<div class="panel">
+							<div class="accordion-content">
+					    	<a href="basic_styles.html">BASIC STYLES</a>
+							<a href="ui_pattern_elements.html">UI PATTERN ELEMENTS</a>
+							<a href="design_docs.html">DESIGN DOCS</a>
+							<a href="citations.html">CITATIONS</a>
+							<a href="conventions.html">CONVENTIONS</a>
 
-				    <ul id="menu" class="target-menu">
-						
-					    	<!-- Main navigation -->
-							<button class="accordion">PAGES</button>
-							<div class="panel">
-								<div class="accordion-content">
-						    	<li><a href="basic_styles.html">BASIC STYLES</a></li>
-								<li><a href="ui_pattern_elements.html">UI PATTERN ELEMENTS</a></li>
-								<li><a href="design_docs.html">DESIGN DOCS</a></li>
-								<li><a href="citations.html">CITATIONS</a></li>
-								<li><a href="conventions.html">CONVENTIONS</a></li>
-								</div>
 							</div>
-							<!-- <hr> -->
+						</div>
+						<!-- <hr> -->
 
-							<!-- Target links -->
-							<button class="accordion">JUMP TO</button>
-							<div class="panel">
-								<div class="accordion-content">
-							    <li><a href="#accordion">ACCORDION</a></li>
-								<li><a href="#breadcrumb">BREADCRUMB BAR</a></li>
-								<li><a href="#footer">FOOTER</a></li>
-								<li><a href="#form-elements">FORM ELEMENTS</a></li>
-								<li><a href="#nav-bar">NAV BAR</a></li>
-								<li><a href="#order-summary">ORDER SUMMARY</a></li>
-								<li><a href="#product-listing">PRODUCT LISTING</a></li>
-								<li><a href="#quantity-box">QUANTITY BOX</a></li>
-								<li><a href="#swatches-checkboxes">SWATCHES & CHECKBOXES</a></li>
-								<li><a href="#tabs">TABS</a></li>
-								</div>
+						<!-- Target links -->
+						<button class="accordion">JUMP TO</button>
+						<div class="panel">
+							<div class="accordion-content">
+						   	<a href="#accordion">ACCORDION</a>
+							<a href="#breadcrumb">BREADCRUMB BAR</a>
+							<a href="#footer">FOOTER</a>
+							<a href="#form-elements">FORM ELEMENTS</a>
+							<a href="#nav-bar">NAV BAR</a>
+							<a href="#order-summary">ORDER SUMMARY</a>
+							<a href="#product-listing">PRODUCT LISTING</a>
+							<a href="#quantity-box">QUANTITY BOX</a>
+							<a href="#swatches-checkboxes">SWATCHES & CHECKBOXES</a>
+							<a href="#tabs">TABS</a>
 							</div>
-							<hr class="accordion-hr">
-	 				 	</ul>
+						</div>
+						<hr class="accordion-hr">
+ 				 	</div>
 					</div>
 				</div>
 			</nav>
@@ -92,7 +92,9 @@
 				
 				<!-- Accordion Example -->
 				<!-- ACCORDION REFERENCED FROM https://www.w3schools.com/howto/howto_js_accordion.asp -->
-				<button class="accordion">Accordion</button>
+				<button class="accordion">Accordion
+					<p class="accordion-toggle accordion-after">+</p>
+				</button>
 				<div class="panel">
 					<p class="accordion-content">Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.</p>
 				</div>
@@ -114,32 +116,90 @@
 						<div class="overflow-scroll-gradient-scroller">
 						<!-- <div class="text-container"> -->
 							<h3>CODE SNIPPET</h3>
-							<code>
-								<!-- HTML code snippet -->
-								&lt;!-- HTML --&gt;<br>
-								&lt;button class="accordion&gt;Accordion&lt;/button&gt;<br>
-								&lt;div class="panel"&gt;<br>
-									&lt;p&gt;Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.&lt;p&gt;<br>
-								&lt;/div&gt;<br>
+							<pre>
+								<code>
+									<!-- HTML code snippet -->
+									&lt;!-- HTML --&gt;
+									&lt;button class="accordion&gt;Accordion&lt;/button&gt;
+									&lt;div class="panel"&gt;
+										&lt;p class="accordion-content"&gt;Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.&lt;p&gt;
+									&lt;/div&gt;
+									&lt;hr class="accordion-hr"&gt;
 
-								&lt;p&gt;Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.&lt;/p&gt;<br>
+									<!-- CSS snippet -->
+									/* ---- CSS ---- */
+									.accordion {
+										background-color: #FFFFFF;
+										color: #C98F7D;
+										cursor: pointer;
+										padding: 1rem;
+										width: 100%;
+										border: none;
+										border-top: 0.5px solid #A9A2A1;
+										text-align: left;
+										outline: none;
+										transition: 0.4s;
+										font-size: 1.1rem;
+									}
 
-								<!-- JS code snippet -->
-								//JAVASCRIPT referenced from https://www.w3schools.com/howto/howto_js_accordion.asp;<br>
-								var numOfAccs = document.getElementsByClassName("accordion");<br>
-								var i;<br>
-								for (i = 0; i &lt; numOfAccs.length; i++) {<br>
-								numOfAccs[i].addEventListener("click", function() {<br>
-								this.classList.toggle("active");<br>
-								var panel = this.nextElementSibling;<br>
-								if (panel.style.display === "block") {<br>
-								panel.style.display = "none";<br>
-								} else {<br>
-								panel.style.display = "block";<br>
-								}<br>
-								});<br>
-								}
-							</code>
+									/* padding for content within the accordion */
+									.accordion-content {
+										padding-bottom: 1.5rem;
+									}
+
+									/* states for acccordion */
+									.active, .accordion:hover {
+										color: #6D716F;
+										transition-property: color; 
+										transition-duration: 0.3s; 
+										transition-timing-function: ease-out;
+									}
+
+									/* accordion decoratives (lines) */
+									.accordion-hr {
+										border-bottom: 0.5px solid #A9A2A1;
+										margin-top: 0;
+									}
+
+									.accordion:after {
+									  content: '\002B';
+									  color: #C98F7D;
+									  font-weight: bold;
+									  float: right;
+									  margin-left: 0.8rem;
+									}
+
+									.active:after {
+									  content: "\2212";
+									}
+
+									/* content for accordions */
+									.panel {
+										display: grid;
+										padding: 0 1rem;
+										background-color: white;
+										overflow: hidden;
+										max-height: 0;
+										transition: max-height 0.2s ease-out;
+									}
+
+									<!-- JS code snippet -->
+									//JAVASCRIPT referenced from https://www.w3schools.com/howto/howto_js_accordion.asp;
+									var numOfAccs = document.getElementsByClassName("accordion");
+									var i;
+									for (i = 0; i &lt; numOfAccs.length; i++) {
+									numOfAccs[i].addEventListener("click", function() {
+									this.classList.toggle("active");
+									var panel = this.nextElementSibling;
+									if (panel.style.display === "block") {
+									panel.style.display = "none";
+									} else {
+									panel.style.display = "block";
+									}
+									});
+									}
+								</code>
+							</pre>
 						</div>
 					</div>
 				</div>
@@ -177,14 +237,128 @@
 				<!-- Sample code for breadcrumb bar-->
 				<div class="text-container">
 					<h3>CODE SNIPPET</h3>
-					<code>
-						&lt;nav&gt;<br>
-						&lt;a href=""&gt;Target 1&lt;/a&gt;<br>
-						&lt;a href=""&gt;Target 2&lt;/a&gt;<br>
-						&lt;/nav&gt;<br>
+					<pre>
+						<code>
+							<!-- HTML code snippet -->
+							&lt;--HTML code snippet--&gt;
+							&lt;div id="breadcrumb-bar"&gt;
+				                &lt;ul&gt;
+				                    &lt;li class="breadcrumb active-page"&gt;
+				                       &lt;a href=""&gt;1&lt;/a&gt;
+				                        &lt;p class="first-breadcrumb-label"&gt;Checkout&lt;/p&gt;
+				                    &lt;/li&gt;
+				                    &lt;li class="breadcrumb"&gt;
+				                        &lt;a href=""&gt;2&lt;/a&gt;
+				                        &lt;p class="second-breadcrumb-label"&gt;Review&lt;/p&gt;
+				                    &lt;/li&gt;
+				                &lt;/ul&gt;
+				            &lt;/div&gt;
 
-						&lt;p&gt;Orci quis quam facilisis molestiel Donec sitae amet diam a velit effic venenatis. In dictu  nunc libero, eul pharetra magna laoreet sitarm am. Morbi quis semper mi. Curabituras ornare orci. Aliquam erat volutpat.&lt;/p&gt;<br>
-					</code>
+				            <!-- CSS code snippet -->
+				            /*---- CSS Code Snippet ----*/
+				            #breadcrumb-bar {
+							    grid-column: 4 / 12;
+							    display: flex;
+							    flex-direction: row;
+							    justify-content: center;
+							}
+
+							#breadcrumb-bar ul {
+							    padding-left: 0.3rem;
+							    list-style: none;
+							}
+
+							#breadcrumb-bar li {
+							    display: inline-block;
+							}
+
+							.first-breadcrumb-label {
+								text-align: left;
+								margin-left: -0.5rem;
+								margin-bottom: 0;
+							}
+
+							.second-breadcrumb-label {
+								text-align: right;
+								margin-right: 0.3rem;
+								margin-bottom: 0;
+							}
+
+							li.breadcrumb a {
+							    position: relative;
+							    display: inline-block;
+							    
+							    border: 2px solid #A9A2A1;
+							    border-radius: 50%;
+							    background-color: white; 
+							   
+							    width: 4rem;
+							    height: 4rem;
+
+							    padding-top: 0.9rem;
+							    margin: 0 18vw;
+
+							    font-size: 1.8rem;
+							    font-weight: 700;
+							    text-align: center;
+							}
+
+							/* left line */
+							li.breadcrumb a::before {
+							    content: '';
+							    position: absolute;
+							    top: 2rem;
+							    width: 35vw;
+							    right: 0;
+							    height: 0.12rem;
+							    background: #A9A2A1;
+							    z-index: -1;
+							}
+
+							/* right line */
+							li.breadcrumb a::after {
+							    content: '';
+							    position: absolute;
+							    top: 2rem;
+							    width: 35vw;
+							    left: 0;
+							    height: 0.12rem;
+							    background: #A9A2A1;
+							    z-index: -1;
+							}
+
+							li.breadcrumb:first-child a {
+							     margin-left: 0;
+							}
+
+							li.breadcrumb:last-child a {
+							     margin-right: 0;
+							}
+
+							/* hide the line of the first element of the breadcrumb */
+							li.breadcrumb:first-child a::before {
+							     display: none;
+							}
+
+							/* hide the line of the last element of the breadcrumb */
+							li.breadcrumb:last-child a::after {
+							     display: none;
+							}
+
+							li.breadcrumb a:hover, li.breadcrumb a:active, li.breadcrumb a:focus {
+							     background: #C98F7D;
+							     color: #FFFFFF;
+							     text-decoration: none;
+							}
+
+							/* active button for current page in breadcrumb*/
+							li.active-page a {
+								background: #C98F7D;
+							    color: #FFFFFF;
+							    text-decoration: none;
+							}
+						</code>
+					</pre>
 				</div>
 			</section>
 
@@ -276,46 +450,141 @@
 					<div class="text-container">
 						<div class="overflow-scroll-gradient-scroller">
 							<h3>CODE SNIPPET</h3>
-							<code>
-								&lt;footer class="footer-container&gt;<br>
+							<pre>
+								<code>
+									&lt;-- HTML code snippet --&gt;
 
-									&lt;!-- Location --&gt;<br>
-									&lt;div&gt;<br>
-										&lt;p class="footer-heading"&gt;Our Studio is Open&lt;/p&gt;<br>
-										&lt;p&gt;2485 Broadway W&lt;br&gt;Vancouver, BC&lt;br&gt;V6K 2E8&lt;/p&gt;<br>
-									&lt;/div&gt;<br>
+									&lt;footer class="footer-container&gt;
+										&lt;!-- Location --&gt;
+										&lt;div&gt;
+											&lt;p class="footer-heading"&gt;Our Studio is Open&lt;/p&gt;
+											&lt;p&gt;2485 Broadway W&lt;br&gt;Vancouver, BC&lt;br&gt;V6K 2E8&lt;/p&gt;
+										&lt;/div&gt;
 
-									&lt;!-- Contact --&gt;<br>
-									&lt;div&gt;<br>
-										&lt;p class="footer-heading"&gt;Get in Touch&lt;/p&gt;<br>
-										&lt;p&gt;(604) 555-5555&lt;/p&gt;<br>
-										&lt;p&gt;crh@gmail.com&lt;/p&gt;<br>
-									&lt;/div&gt;<br>
+										&lt;!-- Contact --&gt;
+										&lt;div&gt;
+											&lt;p class="footer-heading"&gt;Get in Touch&lt;/p&gt;
+											&lt;p&gt;(604) 555-5555&lt;/p&gt;
+											&lt;p&gt;crh@gmail.com&lt;/p&gt;
+										&lt;/div&gt;
 
-									&lt;!-- Navigation --&gt;<br>
-									&lt;div&gt;<br>
-										&lt;p& class="footer-heading"gt;Navigation&lt;/p&gt;<br>
-										&lt;a href="index.html"&gt;Home&lt;/a&gt;<br>
-										&lt;a href="ceramics.html"&gt;Ceramics&lt;/a&gt;<br>
-										&lt;a href="about.html"&gt;About&lt;/a&gt;<br>
-									&lt;/div&gt;<br>
+										&lt;!-- Navigation --&gt;
+										&lt;div&gt;
+											&lt;p& class="footer-heading"gt;Navigation&lt;/p&gt;
+											&lt;a href="index.html"&gt;Home&lt;/a&gt;
+											&lt;a href="ceramics.html"&gt;Ceramics&lt;/a&gt;
+											&lt;a href="about.html"&gt;About&lt;/a&gt;
+										&lt;/div&gt;
 
-									&lt;!-- Resources --&gt;<br>
-									&lt;div&gt;<br>
-										&lt;p class="footer-heading"&gt;Resources&lt;/p&gt;<br>
-										&lt;a href=""&gt;Citations&lt;/a&gt;<br>
-										&lt;a href=""&gt;Style Guide&lt;/a&gt;<br>
-									&lt;/div&gt;<br>
+										&lt;!-- Resources --&gt;
+										&lt;div&gt;
+											&lt;p class="footer-heading"&gt;Resources&lt;/p&gt;
+											&lt;a href=""&gt;Citations&lt;/a&gt;
+											&lt;a href=""&gt;Style Guide&lt;/a&gt;
+										&lt;/div&gt;
 
-									&lt;!-- Social Media --&gt;<br>
-									&lt;div class="footer-heading"&gt;<br>
-										&lt;p&gt;Social Media&lt;/p&gt;<br>
-										&lt;a href=""&gt;&lt;img src="img/facebook.png"&gt;&lt;/a&gt;<br>
-										&lt;a href=""&gt;&lt;img src="img/instagram.png"&gt;&lt;/a&gt;<br>
-										&lt;a href=""&gt;&lt;img src="img/twitter.png"&gt;&lt;/a&gt;<br>
-									&lt;/div&gt;<br>
-								&lt;/footer&gt;
-							</code>
+										&lt;!-- Social Media --&gt;
+										&lt;div class="footer-content"&gt;
+											&lt;p class="footer-heading"&gt;Social Media&lt;/p&gt;
+
+											&lt;!-- FACEBOOK --&gt;
+											&lt;div class="container"&gt;
+												&lt;!-- inactive/not hovered state --&gt;
+												&lt;div class="social"&gt;
+													&lt;img src="img/facebook.png" alt="facebook logo"&gt;
+												&lt;/div&gt;
+
+												&lt;!-- hovered state --&gt;
+												&lt;div class="overlay"&gt;
+													&lt;a href="" class="social"&gt;&lt;img src="img/facebook-hover.png" alt="facebook logo"&gt;&lt;/a&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+
+											&lt;!-- INSTAGRAM --&gt;
+											&lt;div class="container"&gt;
+												&lt;!-- inactive/not hovered state --&gt;
+												&lt;div class="social"&gt;
+													&lt;img src="img/instagram.png" alt="instagram logo"&gt;
+												&lt;/div&gt;
+
+												&lt;!-- hovered state --&gt;
+												&lt;div class="overlay"&gt;
+													&lt;a href="" class="social"&gt;&lt;img src="img/instagram-hover.png" alt="instagram logo"&gt;&lt;/a&lt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+											
+											&lt;!-- TWITTER --&gt;
+											&lt;div class="container"&gt;
+												&lt;!-- inactive/not hovered state --&gt;
+												&lt;div class="social"&gt;
+													&lt;img src="img/twitter.png" alt="twitter logo"&gt;
+												&lt;/div&gt;
+
+												&lt;!-- hovered state --&gt;
+												&lt;div class="overlay"&gt;
+													&lt;a href="" class="social"&gt;&lt;img src="img/twitter-hover.png" alt="twitter logo"&gt;&lt;/a&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
+									&lt;/footer&gt;
+
+									/*---- CSS code snippet --*/
+									footer {
+										background-color: #A9A2A1; 
+										color: #FFFFFF;
+										padding: 2rem;
+									}
+
+									footer a {
+										color: #FFFFFF;
+										display: block;
+									}
+
+									footer a.social {
+										display: inline-block;
+									}
+
+									/* font weight for footer subheadings*/
+									.footer-heading {
+										font-weight: 700;
+									}
+
+									/* contact info in footer */
+									.footer-contact {
+										margin-top: 0rem;
+										margin-bottom: 0.2rem;
+									}
+
+									/* contact info in footer */
+									.footer-line-height {
+										line-height: 1.5rem;
+									}
+
+									/* social media icons in the footer */
+									.social img {
+										width: 85%;
+										height: auto;
+									}
+
+									/* hover state for the social media icons in the footer */
+									.container {
+										display: inline-block;
+									}
+
+									/* overlay images for icon links */
+									.overlay{
+										position: absolute;
+										transition: 0.3s;
+										opacity: 0;
+										transform: translate(0, -2.75rem);
+									}
+
+									/* icon overlay opacity during hover*/
+									.container:hover .overlay {
+										opacity: 1;
+									}
+								</code>
+							</pre>
 						</div>
 					</div>
 				</div>
@@ -334,16 +603,16 @@
 					<div class="first-pattern-ex">
 						<form>
 							<!-- Form Label Example -->
-							<label for="form-input">First Name</label><br>
+							<label for="form-input">First Name</label>
 							<!-- Form Input Example -->
-							<input type="text" id="form-input" name="form-input"><br>
+							<input type="text" id="form-input" name="form-input">
 							
 							<!-- Form Label -->
-							<label for="country">Country</label><br>
+							<label for="country">Country</label>
 							<!-- Form Drop down -->
 							<select id="country" name="country">
 								<option value="canada">Canada</option>
-							</select><br>
+							</select>
 
 							<!-- Submit Button -->
 							<div class="cta-container">
@@ -367,20 +636,44 @@
 				<!-- Sample code for form implementation -->
 				<div class="text-container">
 					<h3>CODE SNIPPET</h3>
-					<code>
-						&lt;!-- Text Label & Input --&gt;<br>
-						&lt;label for="name"&gt;First Name&lt;/label&gt;<br>
-						&lt;input type="text" id="fname" name="fname"&gt;<br>
+					<pre>
+						<code>
+							&lt;--HTML code snippet--&gt;
 
-						&lt;!-- Drop-down --&gt;<br>
-						&lt;label for="country"&gt;Country&lt;/label&gt;<br>
-						&lt;select id="country" name="country"&gt;<br>
-						&lt;option value="canada"&gt;Canada&lt;/option&gt;<br>
-						&lt;/select&gt;<br>
+							&lt;!-- Text Label & Input --&gt;
+							&lt;label for="name"&gt;First Name&lt;/label&gt;
+							&lt;input type="text" id="fname" name="fname"&gt;
 
-						&lt;!-- Submit Button --&gt;<br>
-						&lt;input type="submit" value="Submit"&gt;
-					</code>
+							&lt;!-- Drop-down --&gt;
+							&lt;label for="country"&gt;Country&lt;/label&gt;
+							&lt;select id="country" name="country"&gt;
+							&lt;option value="canada"&gt;Canada&lt;/option&gt;
+							&lt;/select&gt;
+
+							&lt;!-- Submit Button --&gt;
+							&lt;input type="submit" value="Submit"&gt;
+
+							/*---- CSS code snippet ----*/
+							form {
+								background-color: #F4F4F4;
+								padding: 2rem 4rem;
+							}
+
+							label {
+								display: inline-block;
+								color: #7E7E7E;
+								margin: 0.3rem 0;
+							}
+
+							form input{
+								width: 100%;
+								border-radius: 0.5rem;
+								border: 1.8px solid #A9A2A1;
+								padding-bottom: 0.5rem;
+								margin-bottom: 1rem;
+							}
+						</code>
+					</pre>
 				</div>
 			</section>
 
@@ -399,7 +692,7 @@
 					<a href="">HOME</a>
 					<a href="">CERAMICS</a>
 					<a href="">ABOUT</a>
-					<a href="" class="iconbtn fas fa-shopping-cart"></a>
+					<a href="" class="iconbtn fas fa-shopping-cart" aria-label="cart"></a>
 				</nav>
 				<!-- Darker Nav Example -->
 				<nav class="darker-nav">
@@ -407,7 +700,7 @@
 					<a href="">HOME</a>
 					<a href="">CERAMICS</a>
 					<a href="">ABOUT</a>
-					<a href="" class="iconbtn fas fa-shopping-cart"></a>
+					<a href="" class="iconbtn fas fa-shopping-cart" aria-label="cart"></a>
 				</nav>
 
 
@@ -423,15 +716,64 @@
 				<!-- Sample code for form implementation -->
 				<div class="text-container">
 					<h3>CODE SNIPPET</h3>
-					<code>
-						&lt;nav&gt;<br>
-							&lt;a href="index.html"&gt;&lt;img src="img/grey-logo.png" alt="grey CRH Studios logo"&gt;&lt;/a&gt;<br>
-							&lt;a href="index.html"&gt;HOME&lt;/a&gt;<br>
-							&lt;a href="ceramics.html"&gt;CERAMIC&lt;/a&gt;<br>
-							&lt;a href="about.html"&gt;ABOUT&lt;/a&gt;<br>
-							&lt;a href="cart.html"&gt;&lt;img src="img/grey-cart.png" alt="grey cart icon"&gt;&lt;/a&gt;<br>
-						&lt;/nav&gt;
-					</code>
+					<pre>
+						<code>
+							&lt;---- HTML code snippet ----&gt;
+							&lt;nav&gt;
+								&lt;a href="index.html"&gt;&lt;img src="img/grey-logo.png" alt="grey CRH Studios logo"&gt;&lt;/a&gt;
+								&lt;a href="index.html"&gt;HOME&lt;/a&gt;
+								&lt;a href="ceramics.html"&gt;CERAMIC&lt;/a&gt;
+								&lt;a href="about.html"&gt;ABOUT&lt;/a&gt;
+								&lt;a href="" class="iconbtn fas fa-shopping-cart" aria-label="cart"&gt;&lt;/a&gt;
+							&lt;/nav&gt;
+
+							/*---- CSS code snippet ----*/
+							nav a {
+								display: inline-block;
+								color: #6D716F;
+								text-decoration: none;
+								padding: 2rem 1.5rem 0.7rem 1.5rem;
+								box-sizing: border-box;
+							}
+
+							nav a:hover, nav a:active, nav a:focus {
+								text-decoration: none;
+								font-weight: 600;
+								transition-property: color; 
+								color: #C98F7D;
+								transition-duration: 0.1s; 
+								transition-timing-function: ease-out;
+							}
+
+							#nav-bar nav {
+								background-color: #FFFFFF;
+								/*border: 1px solid #F4F4F4;*/
+								display: flex;
+								flex-direction: row;
+								align-items: center;
+								flex-wrap: nowrap;
+								justify-content: flex-end;
+								margin-bottom: 1rem;
+							}
+
+							/* images within the nav bar; ie: logo + cart */
+							#nav-bar img {
+								width: 80%;
+								height: auto;
+							}
+
+							/* positioning for logo in site nav example */
+							#nav-bar .logo {
+								margin-right: auto;
+								padding-left: 0;
+							}
+
+							/* cart icon */
+							a.fas { 
+								padding-right: 0;
+							}
+						</code>
+					</pre>
 				</div>
 			</section>
 
@@ -482,34 +824,77 @@
 								<div class="overflow-scroll-gradient-scroller">
 									<!-- Sample code for order summary module -->
 									<h3>CODE SNIPPET</h3>
-									<code>
-										&lt;form&gt;<br>
-										&lt;h2&gt;ORDER SUMMARY&lt;/h2&gt;<br>
-											
-										&lt;div class="order-summary-info"&gt;<br>
-										&lt;div class="order-summary-grid"&gt;<br>
+									<pre>
+										<code>
+											&lt;----HTML code snippet----&gt;
+											&lt;form&gt;
+											&lt;h2&gt;ORDER SUMMARY&lt;/h2&gt;
 												
-										lt;div class="order-summary-labels"&gt;<br>
-										&lt;p&gt;Subtotal:&lt;/p&gt;<br>
-										&lt;p&gt;Shipping:&lt;/p&gt;<br>
-										&lt;p&gt;PST/GST:&lt;/p&gt;<br>
-										&lt;p&gt;Total:&lt;/p&gt;<br>
-										&lt;/div&gt;<br>
+											&lt;div class="order-summary-info"&gt;
+											&lt;div class="order-summary-grid"&gt;
 													
-										&lt;div class="order-summary-prices"&gt;<br>
-										lt;p&gt;C$128.00&lt;/p&gt;<br>
-										&lt;p&gt;-&lt;/p&gt;<br>
-										&lt;p&gt;-&lt;/p&gt;<br>
-										&lt;p&gt;C$128.00&lt;/p&gt;<br>
-										&lt;/div&gt;<br> &lt;/div&gt;<br>
-										&lt;hr&gt;<br> &lt;/div&gt;<br>
+											lt;div class="order-summary-labels"&gt;
+											&lt;p&gt;Subtotal:&lt;/p&gt;
+											&lt;p&gt;Shipping:&lt;/p&gt;
+											&lt;p&gt;PST/GST:&lt;/p&gt;
+											&lt;p&gt;Total:&lt;/p&gt;
+											&lt;/div&gt;
+														
+											&lt;div class="order-summary-prices"&gt;
+											lt;p&gt;C$128.00&lt;/p&gt;
+											&lt;p&gt;-&lt;/p&gt;
+											&lt;p&gt;-&lt;/p&gt;
+											&lt;p&gt;C$128.00&lt;/p&gt;
+											&lt;/div&gt;
+											&lt;/div&gt;
+											&lt;hr&gt;
+											&lt;/div&gt;
+												
+											&lt;div class="cta-container"&gt;
 											
-										&lt;div class="cta-container"&gt;<br>
-										
-										<!-- Submit Button -->
-										&lt;input class="cta-button" type="submit" value="Place Order"&gt;<br>
-										&lt;/div&gt;<br> &lt;/form&gt;<br>
-									</code>
+											&lt;!-- Submit Button --&gt;
+											&lt;input class="cta-button" type="submit" value="Place Order"&gt;
+											&lt;/div&gt;
+											&lt;/form&gt;
+
+											/*----CSS code snippet----*/
+											/* flexbox for order summary info */
+											.order-summary-info {
+												display: flex;
+												flex-direction: column;
+												align-items: center;
+											}
+
+											/* order summary note container */
+											#order-summary .side-note .text-container {
+												margin: 0;
+												min-height: 27.2rem;
+											}
+
+											/* header 2 in order summary container */
+											#order-summary .order-sum-ex h2 {
+												padding: 1.7rem 0;
+												padding-bottom: 1.5rem;
+												margin: 0;
+												text-align: center;
+											}
+
+											#order-summary hr {
+												border-top: 0.01px solid #A9A2A1;
+												width: 15.5rem;
+												margin-bottom: 1rem;
+											}
+
+											#order-summary form {
+												align-items: center;
+											}
+
+											#order-summary .cta-button {
+												padding: 0.6rem 5.2rem;
+												margin-bottom: 2rem;
+											}
+										</code>
+									</pre>
 								</div>
 							</div>
 						</div>
@@ -581,7 +966,10 @@
 
 						<!-- Customization -->
 						<div>
-							<button class="accordion">Want to Customize?</button>
+							<button class="accordion">Want to Customize?
+								<p class="accordion-toggle accordion-after">+</p>
+								
+							</button>
 							
 							<div class="panel">
 								<div class="product-color">
@@ -656,131 +1044,219 @@
 					<div class="text-container">
 						<div class="overflow-scroll-gradient-scroller">
 							<h3>CODE SNIPPET</h3>
-							<code>
-								&lt;!-- Product image grid --&gt;
-								&lt;div class="product-listing-grid"&gt;<br>
-									&lt;div class="gallery-container"&gt;<br>
-										<!-- full-width images with number text -->
-										&lt;div class="product-preview"&gt;<br>
-											<!-- <div class="number-text">1 / 3</div> -->
-											&lt;img src="img/vase-wideshot.png" alt="a wideshot of a blue vase"&gt;<br>
-										&lt;/div&gt;<br>
+							<pre>
+								<code>
+									&lt;----HTML code snippet----&gt;
 
-										&lt;div class="product-preview"&gt;<br>
-											<!-- <div class="number-text">2 / 3</div> -->
-											&lt;img src="img/vase-staged.png" alt="a closeup of a blue vase with white flowers in it"&gt;<br>
-										&lt;/div&gt;<br>
+									&lt;!-- Product image grid --&gt;
+									&lt;div class="product-listing-grid"&gt;
+										&lt;div class="gallery-container"&gt;
+											&lt;div class="product-preview"&gt;
+												&lt;img src="img/vase-wideshot.png" alt="a wideshot of a blue vase"&gt;
+											&lt;/div&gt;
 
-										&lt;div class="product-preview"&gt;<br>
-											<!-- div class="number-text">3 / 3</div> -->
-											&lt;img src="img/vase-cu.png" alt="a closeup of the neck of a blue vase"&gt;<br>
-										&lt;/div&gt;<br>
+											&lt;div class="product-preview"&gt;
+												&lt;img src="img/vase-staged.png" alt="a closeup of a blue vase with white flowers in it"&gt;
+											&lt;/div&gt;
 
-										&lt;!-- thumbnail images --&gt;
-										&lt;div class="gallery-row"&gt;<br>
-											&lt;div class="gallery-column"&gt;<br>
-												&lt;img class="demo gallery-cursor" src="img/vase-wideshot.png" onclick="currentSlide(1)" alt="a wideshot of a blue vase"&gt;<br>
-										
-												&lt;img class="demo gallery-cursor" src="img/vase-staged.png" onclick="currentSlide(2)" alt="a closeup of a blue vase with white flowers in it"&gt;<br>
+											&lt;div class="product-preview"&gt;
+												&lt;img src="img/vase-cu.png" alt="a closeup of the neck of a blue vase"&gt;
+											&lt;/div&gt;
+
+											&lt;!-- thumbnail images --&gt;
+											&lt;div class="gallery-row"&gt;
+												&lt;div class="gallery-column"&gt;
+													&lt;img class="demo gallery-cursor" src="img/vase-wideshot.png" onclick="currentSlide(1)" alt="a wideshot of a blue vase"&gt;
 											
-												&lt;img class="demo gallery-cursor" src="img/vase-cu.png" onclick="currentSlide(3)" alt="a closeup of the neck of a blue vase"&gt;<br>
-											&lt;/div&gt;<br>
-										&lt;/div&gt;<br>
-									&lt;/div&gt;<br>
-								
+													&lt;img class="demo gallery-cursor" src="img/vase-staged.png" onclick="currentSlide(2)" alt="a closeup of a blue vase with white flowers in it"&gt;
+												
+													&lt;img class="demo gallery-cursor" src="img/vase-cu.png" onclick="currentSlide(3)" alt="a closeup of the neck of a blue vase"&gt;
+												&lt;/div&gt;
+											&lt;/div&gt;
+										&lt;/div&gt;
 									
-									&lt;div class="product-info"&gt;<br>
-										&lt;!-- Product Information --&gt;
-										&lt;div&gt;<br>
-											&lt;p class="artist-name"&gt;ORIENTO&lt;/p&gt;<br>
-											&lt;h1&gt;Cry Me a River&lt;/h1&gt;<br>
-											&lt;h2&gt;C$75&lt;/h2&gt;<br>
+										
+										&lt;div class="product-info"&gt;
+											&lt;!-- Product Information --&gt;
+											&lt;div&gt;
+												&lt;p class="artist-name"&gt;ORIENTO&lt;/p&gt;
+												&lt;h1&gt;Cry Me a River&lt;/h1&gt;
+												&lt;h2&gt;C$75&lt;/h2&gt;
 
-											&lt;p&gt;Orci quis quam facilisis molestie moi. Donec sitae amet diam a velit efficitur venenatis. In dictu  nunc libero, euste pharetra magna laoreet sitarm amet. Morbi quis semper mi.&lt;/p&gt;<br>
-											&lt;p class="dimensions"&gt;Dimensions: 16cm x 40.3 cm&lt;/p&gt;<br>
-										&lt;/div&gt;<br>
+												&lt;p&gt;Orci quis quam facilisis molestie moi. Donec sitae amet diam a velit efficitur venenatis. In dictu  nunc libero, euste pharetra magna laoreet sitarm amet. Morbi quis semper mi.&lt;/p&gt;
+												&lt;p class="dimensions"&gt;Dimensions: 16cm x 40.3 cm&lt;/p&gt;
+											&lt;/div&gt;
 
-										&lt;!-- Customization --&gt;
-										&lt;div&gt;<br>
-											&lt;button class="accordion"&gt;Want to Customize?&lt;/button&gt;<br>
-											
-											&lt;div class="panel"&gt;<br>
-												&lt;div class="product-color"&gt;<br>
-													&lt;!-- Swatches --&gt;
-													&lt;h3 class="cust-heading"&gt;Color&lt;/h3&gt;<br>
-													<!-- blue -->
-													&lt;label class="cust color" aria-label="blue"&gt;<br>
-														&lt;input type="radio" id="blue" name="swatch" value="blue" checked="checked"&gt;<br>
-														&lt;span class="checkmark blue"&gt;&lt;/span&gt;<br>
-													&lt;/label&gt;<br>
-													<!-- green -->
-													&lt;label class="cust color" aria-label="green"&gt;<br>
-														&lt;input type="radio" id="green" name="swatch" value="green"&gt;<br>
-														&lt;span class="checkmark green"&gt;&lt;/span&gt;<br>
-													&lt;/label&gt;<br>
-													<!-- grey -->
-													&lt;label class="cust color" aria-label="grey"&gt;<br>
-														&lt;input type="radio" id="grey" name="swatch" value="grey"&gt;<br>
-														&lt;span class="checkmark grey"&gt;&lt;/span&gt;<br>
-													&lt;/label&gt;<br>
-												&lt;/div&gt;<br>
-											
-												&lt;div class="product-finish"&gt;<br>
-													&lt;!-- Checkboxes--&gt;
-													&lt;h3 class="cust-heading"&gt;Finish&lt;/h3&gt;<br>
-													&lt;label class="cust finish first-cust-option" for="glossy"&gt;<br>
-														&lt;input type="radio" id="glossy" name="finish" value="glossy" checked="checked"&gt;<br>
-														&lt;span class="checkmark finish"&gt;&lt;/span&gt;<br>
-														Glossy
-													&lt;/label&gt;<br>
-													&lt;label class="cust finish" for="matte"&gt;<br>
-														&lt;input type="radio" id="matte" name="finish" value="matte"&gt;<br>
-														Matte
-														&lt;span class="checkmark finish"&gt;&lt;/span&gt;<br>
-													&lt;/label&gt;<br>
-												&lt;/div&gt;<br>
-											&lt;/div&gt;<br>
-											&lt;hr class="accordion-hr"&gt;<br>
-										&lt;/div&gt;<br>
+											&lt;!-- Customization --&gt;
+											&lt;div&gt;
+												&lt;button class="accordion"&gt;Want to Customize?&lt;/button&gt;
+												
+												&lt;div class="panel"&gt;
+													&lt;div class="product-color"&gt;
+														&lt;!-- Swatches --&gt;
+														&lt;h3 class="cust-heading"&gt;Color&lt;/h3&gt;
+														&lt;!-- blue --&gt;
+														&lt;label class="cust color" aria-label="blue"&gt;
+															&lt;input type="radio" id="blue" name="swatch" value="blue" checked="checked"&gt;
+															&lt;span class="checkmark blue"&gt;&lt;/span&gt;
+														&lt;/label&gt;
+														&lt;!-- green --&gt;
+														&lt;label class="cust color" aria-label="green"&gt;
+															&lt;input type="radio" id="green" name="swatch" value="green"&gt;
+															&lt;span class="checkmark green"&gt;&lt;/span&gt;
+														&lt;/label&gt;
+														&lt;!-- grey --&gt;
+														&lt;label class="cust color" aria-label="grey"&gt;
+															&lt;input type="radio" id="grey" name="swatch" value="grey"&gt;
+															&lt;span class="checkmark grey"&gt;&lt;/span&gt;
+														&lt;/label&gt;
+													&lt;/div&gt;
+												
+													&lt;div class="product-finish"&gt;
+														&lt;!-- Checkboxes--&gt;
+														&lt;h3 class="cust-heading"&gt;Finish&lt;/h3&gt;
+														&lt;label class="cust finish first-cust-option" for="glossy"&gt;
+															&lt;input type="radio" id="glossy" name="finish" value="glossy" checked="checked"&gt;
+															&lt;span class="checkmark finish"&gt;&lt;/span&gt;
+															Glossy
+														&lt;/label&gt;
+														&lt;label class="cust finish" for="matte"&gt;
+															&lt;input type="radio" id="matte" name="finish" value="matte"&gt;
+															Matte
+															&lt;span class="checkmark finish"&gt;&lt;/span&gt;
+														&lt;/label&gt;
+													&lt;/div&gt;
+												&lt;/div&gt;
+												&lt;hr class="accordion-hr"&gt;
+											&lt;/div&gt;
 
-										&lt;a href="" class="cta-button cta-container"&gt;Add to Cart&lt;/a&gt;<br>
-									&lt;/div&gt;<br>
-								&lt;/div&gt;<br>
+											&lt;a href="" class="cta-button cta-container"&gt;Add to Cart&lt;/a&gt;
+										&lt;/div&gt;
+									&lt;/div&gt;
 
-								//JAVASCRIPT <br>
-								var slideIndex = 1;<br>
-								showSlides(slideIndex);<br>
 
-								// Thumbnail image controls<br>
-								function currentSlide(n) {<br>
-								  showSlides(slideIndex = n);<br>
-								}<br>
+									/*---- CSS code snippet ----*/
+									/* gallery container for images */
+									.gallery-container {
+										position: relative;
+									}
 
-								function showSlides(n) {<br>
-								  var i;<br>
-								  var slides = <br>document.getElementsByClassName("product-preview");<br>
-								  var dots = document.getElementsByClassName("demo");<br>
-								 
-								 if (n &gt; slides.length) {<br>
-								    slideIndex = 1<br>
-								  }<br>
-								  
-								  if (n &lt; 1) {<br>
-								    slideIndex = slides.length<br>
-								  }<br>
-								  
-								  for (i = 0; i &lt; slides.length; i++) {<br>
-								    slides[i].style.display = "none";<br>
-								  }<br>
+									/* product thumbnails under gallery */
+									.product-preview {
+										display: none;
+									}
 
-								  for (i = 0; i &lt; dots.length; i++) {<br>
-								    dots[i].className = dots[i].className.replace(" <br>thumbnail-active", "");<br>
-								  }<br>
+									/* images in gallery thumbnails */
+									.product-preview img {
+										width: 100%;
+									}
 
-								  slides[slideIndex-1].style.display = "block";<br>
-								  dots[slideIndex-1].className += " thumbnail-active";<br>
-								}
-							</code>
+									.gallery-row img {
+										width: 100%;
+										height: auto;
+										max-height: 85%;
+									}
+
+									/* cursor pointer for gallery images*/
+									.gallery-cursor {
+										cursor: pointer;
+									}
+
+									/* image number/position in preview gallery  */
+									/*.number-text {
+									  color: #A9A2A1;
+									  font-size: 1.1rem;
+									  padding: 1rem 1rem;
+									  position: absolute;
+									  top: 0;
+									}*/
+
+									/* make inactive thumbnails transparent */
+									.demo {
+									  opacity: 0.6;
+									}
+
+									/* hover / active thumbanils in the preview should be fully opaque */
+									.thumbnail-active, .demo:hover {
+									  opacity: 1;
+									  transform: scale(1.025);
+									  transition-property: transform; 
+									  transition-duration: 0.3s; 
+									  transition-timing-function: ease-out;
+									}
+
+									/* active thumbnail in gallery preview */
+									.thumbnail-active {
+										border: 2px solid #C98F7D;
+									}
+
+									/* artist label in product listing */
+									.artist-name {
+										margin-top: 0;
+										margin-bottom: 1rem;
+									}
+
+									/* product name in listing */
+									.product-info h1 {
+										color: #6D716F;
+										font-size: 2.5rem;
+										margin-bottom: 0.7rem;
+									}
+
+									/* pricing in product listing */
+									.product-info h2 {
+										padding-top: 0;
+										padding-bottom: 1rem;
+										margin-top: 0.7rem;
+										font-weight: 300;
+									}
+
+									/* dimension blurb in product listing */
+									.dimensions {
+										margin-top: 2rem;
+									}
+
+									/* customization accordion in product listing */
+									.product-info .accordion {
+										margin-top: 2rem;
+									}
+
+
+									//JAVASCRIPT code snippet 
+									var slideIndex = 1;
+									showSlides(slideIndex);
+
+									// Thumbnail image controls
+									function currentSlide(n) {
+									  showSlides(slideIndex = n);
+									}
+
+									function showSlides(n) {
+									  var i;
+									  var slides = document.getElementsByClassName("product-preview");
+									  var dots = document.getElementsByClassName("demo");
+									 
+									 if (n &gt; slides.length) {
+									    slideIndex = 1
+									  }
+									  
+									  if (n &lt; 1) {
+									    slideIndex = slides.length
+									  }
+									  
+									  for (i = 0; i &lt; slides.length; i++) {
+									    slides[i].style.display = "none";
+									  }
+
+									  for (i = 0; i &lt; dots.length; i++) {
+									    dots[i].className = dots[i].className.replace("thumbnail-active", "");
+									  }
+
+									  slides[slideIndex-1].style.display = "block";
+									  dots[slideIndex-1].className += " thumbnail-active";
+									}
+								</code>
+							</pre>
 						</div>
 					</div>
 				</div>
@@ -815,46 +1291,129 @@
 					<div class="text-container">
 						<div class="overflow-scroll-gradient-scroller">
 							<h3>CODE SNIPPET</h3>
-							<code>
-								&lt;!--HTML--&gt;<br>
-								&lt;div class="quantity"&gt;<br>
-									&lt;div class="quantity-button quantity-down"&gt;-&lt;/div&gt;<br>
-									&lt;input type="number" min="0" max="20" step="1" value="0"&gt;<br>
-									&lt;div class="quantity-button quantity-up"&gt;+&lt;/div&gt;<br>
-								&lt;/div&gt;<br>
-								//JAVASCRIPT<br>
-								jQuery('.quantity').each(function () {<br>
-								    var spinner = jQuery(this),<br>
-								    input = spinner.find('input[type="number"]'),<br>
-								    buttonUp = spinner.find('.quantity-up'),<br>
-								    buttonDown = spinner.find('.quantity-down'),<br>
-								    min = input.attr('min'),<br>
-								    max = input.attr('max');<br>
+							<pre>
+								<code>
+									&lt;!----HTML code snippet----&gt;
+									&lt;div class="quantity"&gt;
+										&lt;div class="quantity-button quantity-down"&gt;-&lt;/div&gt;
+										&lt;input type="number" min="0" max="20" step="1" value="0"&gt;
+										&lt;div class="quantity-button quantity-up"&gt;+&lt;/div&gt;
+									&lt;/div&gt;
 
-								    buttonUp.click(function () {<br>
-								        var oldValue = parseFloat(input.val());<br>
-								        if (oldValue &gt;= max) {<br>
-								            var newVal = oldValue;<br>
-								        } else {<br>
-								            var newVal = oldValue + 1;<br>
-								        }<br>
-								        spinner.find("input").val(newVal);<br>
-								        spinner.find("input").trigger("change");<br>
-								    });<br>
 
-								    buttonDown.click(function () {<br>
-								        var oldValue = parseFloat(input.val());<br>
-								        if (oldValue &lt;= min) {<br>
-								            var newVal = oldValue;<br>
-								        } else {<br>
-								            var newVal = oldValue - 1;<br>
-								        }<br>
-								        spinner.find("input").val(newVal);<br>
-								        spinner.find("input").trigger("change");<br>
-								    });<br>
+									/*---- CSS code snippet ----*/
+									/* quantity box position */
+									.quantity {
+										position: relative;
+										width: 100%;
+										margin-top: 3rem;
+										margin-bottom: 2rem;
+										display: flex;
+									}
 
-								});
-							</code>
+									/* hide number input arrows; firefox */
+									.quantity input[type=number] {
+										-moz-appearance: none;
+										-webkit-appearance: none;
+										-moz-appearance: textfield;
+									}
+
+									/* hide number input arrows; chrome, safari, edge, opera */
+									input::-webkit-outer-spin-button,
+									input::-webkit-inner-spin-button {
+									  -webkit-appearance: none;
+									  margin: 0;
+									}
+
+
+									.quantity input:focus {
+										outline: 0.5rem;
+									}
+
+									.quantity-button {
+										cursor: pointer;
+										border: solid 1px #eee;
+										width: 2rem;
+										text-align: center;
+										color: #333;
+
+										-moz-user-select: none;
+										-ms-user-select: none;
+										-o-user-select: none;
+										user-select: none;
+									}
+
+									/* quantity box border styling*/
+									.quantity-button.quantity-up,
+									.quantity-button.quantity-down,
+									.quantity input {
+										border: solid 1px #ccc;
+										display: inline-block;
+										height: 2.5rem;
+										line-height: 2.3rem;
+									}
+
+									/* quantity input / number */
+									.quantity input {
+										border-right-style: none;
+										border-left-style: none;
+										padding-left: 3rem;
+										padding-right: 2rem;
+										border-radius: 0;
+										color: #6D716F;
+									}
+
+									/* "+" styling for quantity box */
+									.quantity-button.quantity-up {
+										border-left-style: none;
+										color: #C98F7D;
+										font-size: 1.5rem;
+										padding-right: 0.75rem;
+									}
+
+									/* "-" styling for quantity box */
+									.quantity-button.quantity-down {
+										float: left;
+										border-right-style: none;
+										color: #C98F7D;
+										font-size: 1.5rem;
+										padding-left: 0.75rem;
+									}
+
+
+									//JAVASCRIPT code snippet
+									jQuery('.quantity').each(function () {
+									    var spinner = jQuery(this),
+									    input = spinner.find('input[type="number"]'),
+									    buttonUp = spinner.find('.quantity-up'),
+									    buttonDown = spinner.find('.quantity-down'),
+									    min = input.attr('min'),
+									    max = input.attr('max');
+
+									    buttonUp.click(function () {
+									        var oldValue = parseFloat(input.val());
+									        if (oldValue &gt;= max) {
+									            var newVal = oldValue;
+									        } else {
+									            var newVal = oldValue + 1;
+									        }
+									        spinner.find("input").val(newVal);
+									        spinner.find("input").trigger("change");
+									    });
+
+									    buttonDown.click(function () {
+									        var oldValue = parseFloat(input.val());
+									        if (oldValue &lt;= min) {
+									            var newVal = oldValue;
+									        } else {
+									            var newVal = oldValue - 1;
+									        }
+									        spinner.find("input").val(newVal);
+									        spinner.find("input").trigger("change");
+									    });
+									});
+								</code>
+							</pre>
 						</div>
 					</div>
 				</div>
@@ -932,43 +1491,203 @@
 					<div class="text-container">
 						<div class="overflow-scroll-gradient-scroller">
 							<h3>CODE SNIPPET</h3>
-							
-							<code>
-								&lt;div class="swatches"&gt;<br>
-								&lt;!-- style to look like swatches --&gt;<br>
-									&lt;h3 class="example-heading"&gt;SWATCHES&lt;/h3&gt;<br>
-									<!-- blue -->
-									&lt;label class="cust color" aria-label="blue"&gt;<br>
-										&lt;input type="radio" id="blue" name="radio" value="blue" checked="checked"&gt;<br>
-										&lt;span class="checkmark blue"&gt;&lt;/span&gt;<br>
-									&lt;/label&gt;<br>
-									<!-- green -->
-									&lt;label class="cust color" aria-label="green"&gt;<br>
-										&lt;input type="radio" id="green" name="radio" value="green"&gt;<br>
-										&lt;span class="checkmark green"&gt;&lt;/span&gt;<br>
-									&lt;/label&gt;<br>
-									<!-- grey -->
-									&lt;label class="cust color" aria-label="grey"&gt;<br>
-										&lt;input type="radio" id="grey" name="radio" value="grey"&gt;<br>
-										&lt;span class="checkmark grey"&gt;&lt;/span&gt;<br>
-									&lt;/label&gt;<br>
-								&lt;/div&gt;<br>
+							<pre>
+								<code>
+									&lt;!---- HTML code snippet ----&gt;
+									&lt;div class="swatches"&gt;
+									&lt;!-- style to look like swatches --&gt;
+										&lt;h3 class="example-heading"&gt;SWATCHES&lt;/h3&gt;
 
-								&lt;!-- Checkbox Example --&gt;<br>
-								&lt;div class="checkboxes"&gt;<br>
-									&lt;h3 class="example-heading"&gt;CHECKBOXES&lt;/h3&gt;<br>
-									&lt;label class="cust finish first-cust-option" for="glossy-ex"&gt;<br>
-										&lt;input type="radio" id="glossy-ex" name="radio" value="glossy-ex" checked="checked"&gt;<br>
-										&lt;span class="checkmark finish"&gt;&lt;/span&gt;<br>
-										Glossy<br>
-									&lt;/label&gt;<br>
-									&lt;label class="cust finish" for="matte-ex"&gt;<br>
-										&lt;input type="radio" id="matte-ex" name="radio" value="matte-ex"&gt;<br>
-										Matte<br>
-										&lt;span class="checkmark finish"&gt;&lt;/span&gt;<br>
-									&lt;/label&gt;<br>
-								&lt;/div&gt;<br>
-							</code>
+										&lt;!-- blue --&gt;
+										&lt;label class="cust color" aria-label="blue"&gt;
+											&lt;input type="radio" id="blue" name="radio" value="blue" checked="checked"&gt;
+											&lt;span class="checkmark blue"&gt;&lt;/span&gt;
+										&lt;/label&gt;
+
+										&lt;!-- green --&gt;
+										&lt;label class="cust color" aria-label="green"&gt;
+											&lt;input type="radio" id="green" name="radio" value="green"&gt;
+											&lt;span class="checkmark green"&gt;&lt;/span&gt;
+										&lt;/label&gt;
+
+										&lt;!-- grey --&gt;
+										&lt;label class="cust color" aria-label="grey"&gt;
+											&lt;input type="radio" id="grey" name="radio" value="grey"&gt;
+											&lt;span class="checkmark grey"&gt;&lt;/span&gt;
+										&lt;/label&gt;
+									&lt;/div&gt;
+
+									&lt;!-- Checkbox Example --&gt;
+									&lt;div class="checkboxes"&gt;
+										&lt;h3 class="example-heading"&gt;CHECKBOXES&lt;/h3&gt;
+
+										&lt;!-- glossy --&gt;
+										&lt;label class="cust finish first-cust-option" for="glossy-ex"&gt;
+											&lt;input type="radio" id="glossy-ex" name="radio" value="glossy-ex" checked="checked"&gt;
+											&lt;span class="checkmark finish"&gt;&lt;/span&gt;
+											Glossy
+										&lt;/label&gt;
+
+										&lt;!-- matte --&gt;
+										&lt;label class="cust finish" for="matte-ex"&gt;
+											&lt;input type="radio" id="matte-ex" name="radio" value="matte-ex"&gt;
+											Matte
+											&lt;span class="checkmark finish"&gt;&lt;/span&gt;
+										&lt;/label&gt;
+									&lt;/div&gt;
+
+
+									/*---- CSS code snippet ----*/
+
+									/* first label for finishes in product listing*/
+									.first-cust-option {
+										padding-right: 0.3rem;
+									}
+
+									/* customization titles */
+									.cust-heading {
+										color: #7E7E7E;
+										font-size: 1.1rem;
+										margin: 0.6rem 0;
+									}
+
+									/* container for checkbox */
+									.cust {
+									  display: inline-block;
+									  position: relative;
+									  padding-left: 1.7rem;
+									  margin-bottom: 3rem;
+									  cursor: pointer;
+									  -webkit-user-select: none;
+									  -moz-user-select: none;
+									  -ms-user-select: none;
+									  user-select: none;
+									}
+
+									/* hide default radio button */
+									.cust input {
+									  position: absolute;
+									  opacity: 0;
+									  cursor: pointer;
+									}
+
+									/* custom radio button */
+									.checkmark {
+									  position: absolute;
+									  top: 0;
+									  left: 0;
+									  height: 1.5rem;
+									  width: 1.5rem;
+									  background-color: #eee;
+									  border-radius: 50%;
+									}
+
+									/* blue swatch */
+									.checkmark.blue {
+										background-color: #255481;
+									}
+
+									/* green swatch */
+									.checkmark.green {
+										background-color: #C7CEB3;
+									}
+
+									/* grey swatch*/
+									.checkmark.grey {
+										background-color: #949393;
+									}
+
+									/* radio hover state for color customization */
+									.cust.color:hover input ~ .checkmark, .cust.color:focus input ~ .checkmark {
+									  border: 2px solid #C98F7D;
+									}
+
+									/* when it's checked add a border for color customization */
+									.cust.color input:checked ~ .checkmark {
+									  border: 2px solid #C98F7D;
+									}
+
+									/* styling for 'finish' checkboxes under customization */
+									.checkmark.finish {
+										height: 1rem;
+										width: 1rem;
+										margin-top: 0.1rem;
+										margin-right: 0.1rem;
+										background-color: #FFFFFF;
+										border: 2px solid #C98F7D;
+									}
+
+									/* customization finish labels */
+									.product-finish label {
+										padding-left: 1.2rem;
+										margin-right: 0.5rem;
+										margin-bottom: 0.5rem;
+									}
+
+									/* radio hover state for color customization */
+									.cust.finish:hover input ~ .checkmark, .cust.finish:focus input ~ .checkmark {
+										background-color: #F4F4F4;
+									}
+
+									/* indicator, hide it when not checked; for finishes */
+									.checkmark:after {
+									  content: "";
+									  position: relative;
+									  display: none;
+									}
+
+									/* indicator, show when checked; for finishes  */
+									.cust.finish input:checked ~ .checkmark:after {
+									  display: block;
+									}
+
+									/* radio indicator; for finishes */
+									.cust.finish .checkmark.finish:after {
+									 	top: 2px;
+										left: 2px;
+										width: 8px;
+										height: 8px;
+										border-radius: 50%;
+										background: #C98F7D;
+									}
+
+									/* padding for checkboxes in the example section */
+									.checkboxes .cust {
+										padding-left: 1.3rem;
+									}
+
+									/* padding for checkboxes in the example section */
+									.checkboxes .first-cust-option {
+										padding-right: 1rem;
+									}
+
+									.cust.color label {
+										padding-bottom: 1rem;
+									}
+
+									/* label for color swatches */
+									.color-name { 
+										font-weight: 100;
+										font-size: 0.7rem;
+										text-align: center;
+									}
+
+									/* unchecked state for color labels */
+									.cust.color input:not(:checked) + .color-name {
+										 display: none;
+										 background:red;
+									}
+
+									/* checked state for color labels */
+									.cust.color input:checked + .color-name {
+										 display: block;
+										 margin-top: 2.4rem;
+										 margin-left: -6.4rem;
+										 margin-right: -5rem;
+										 padding: 0;
+									}
+								</code>
+							</pre>
 						</div>
 					</div>
 				</div>
@@ -1011,40 +1730,94 @@
 					<div class="text-container">
 						<div class="overflow-scroll-gradient-scroller">
 							<h3>CODE SNIPPET</h3>
-							<code>
-								//HTML<br>
-								&lt;!-- Tab Buttons --&gt;<br>
-								&lt;div&gt;<br>
-									&lt;button class="tab-links"&gt;Care Instructions&lt;/button&gt;<br>
-									&lt;button class="tab-links"&gt;Additional Information&lt;/button&gt;<br>
-								&lt;/div&gt;<br>
-								&lt;!-- Tab Information --&gt;<br>
-								&lt;div class="tab-content"&gt;<br>
-									&lt;p&gt;As this item is rather delicate, we highly recommend handwashing only with hot soapy water.&lt;/p&gt;<br>
-									&lt;p&gt;Tabs are used for toggling between snippets of information or sections of a page. They are the primary means of organization on the Ceramics page for switching between the artists' collections, but should be swapped out for an accordion pattern on mobile sizes. Active tabs should also adhere to the #C98F7D swatch for interactives as outlined under the color palette section.&lt;/p&gt;<br>
-								&lt;/div&gt;<br>
+							<pre>
+								<code>
+									&lt;---- HTML code snippet ----&gt;
+									&lt;!-- Tab Buttons --&gt;
+									&lt;div&gt;
+										&lt;button class="tab-links"&gt;Care Instructions&lt;/button&gt;
+										&lt;button class="tab-links"&gt;Additional Information&lt;/button&gt;
+									&lt;/div&gt;
+									&lt;!-- Tab Information --&gt;
+									&lt;div class="tab-content"&gt;
+										&lt;p&gt;As this item is rather delicate, we highly recommend handwashing only with hot soapy water.&lt;/p&gt;
+										&lt;p&gt;Tabs are used for toggling between snippets of information or sections of a page. They are the primary means of organization on the Ceramics page for switching between the artists' collections, but should be swapped out for an accordion pattern on mobile sizes. Active tabs should also adhere to the #C98F7D swatch for interactives as outlined under the color palette section.&lt;/p&gt;
+									&lt;/div&gt;
 
 
-								<!-- JS Snippet -->
-								//JAVASCRIPT<br>
-								// TABS JS REFERENCED FROM https://www.w3schools.com/howto/howto_js_tabs.asp<br>
-								function openContent(event, tabName) {<br>
-									var i, tabContent, tabLinks;<br>
 
-									tabContent = document.getElementsByClassName("tab-content");<br>
-									for (i = 0; i &lt; tabContent.length; i++) {<br>
-										tabContent[i].style.display = "none";<br>
-									}<br>
+									/*---- CSS code snippet ----*/
 
-									tabLinks = document.getElementsByClassName("tab-links");<br>
-									for (i = 0; i &lt tabLinks.length; i++) {<br>
-										tabLinks[i].className = tabLinks[i].className.replace(" active","");<br>
-									}<br>
+									/* Style the tab in table examples  */
+									.tab {
+										overflow: hidden;
+										border-bottom: 1.7px solid #A9A2A1;
+										margin-top: 5rem;
+									}
 
-									document.getElementById(tabName).style.display = "block";<br>
-									event.currentTarget.className += " active";<br>
-								}
-							</code>
+									/* Style the buttons inside the tab */
+									.tab button {
+										background-color: inherit;
+										color: #7E7E7E;
+										float: left;
+										border: none;
+										outline: none;
+										cursor: pointer;
+										padding: 1rem 1.5rem 0.7rem 1.5rem;
+										transition: 0.3s;
+										font-size: 1.1rem;
+										border: 1px solid #A9A2A1;
+										border-bottom: none;
+									}
+
+									/* Change background color of buttons on hover */
+									.tab button:hover, .tab button:focus {
+										color: #C98F7D;
+										font-weight: bold;
+										transition-property: color; 
+										transition-duration: 0.3s; 
+										transition-timing-function: ease-out;
+									}
+
+									/* Create an active/current tablink class */
+									.tab button.tab-active {
+										color: #C98F7D;
+										padding-bottom: 0.5rem;
+										font-weight: bold;
+										border: 1px solid #C98F7D;
+										border-bottom: 4px solid #C98F7D;
+									}
+
+
+									/* Style the tab content */
+									.tab-content {
+									  display: none;
+									  padding: 2rem 0;
+									  border-bottom: 1px solid #A9A2A1;
+									  border-top: none;
+									}
+
+
+									<!-- JS Snippet -->
+									//JAVASCRIPT code snippet
+									function openContent(event, tabName) {
+										var i, tabContent, tabLinks;
+
+										tabContent = document.getElementsByClassName("tab-content");
+										for (i = 0; i &lt; tabContent.length; i++) {
+											tabContent[i].style.display = "none";
+										}
+
+										tabLinks = document.getElementsByClassName("tab-links");
+										for (i = 0; i &lt; tabLinks.length; i++) {
+											tabLinks[i].className = tabLinks[i].className.replace(" active","");
+										}
+
+										document.getElementById(tabName).style.display = "block";
+										event.currentTarget.className += " active";
+									}
+								</code>
+							</pre>
 						</div>
 					</div>
 				</div>
@@ -1126,4 +1899,5 @@
 		<script src="js/tabs.js"></script>
 
 	</body>
+
 </html>

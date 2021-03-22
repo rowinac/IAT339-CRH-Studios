@@ -11,6 +11,18 @@
 	margin: 2rem 0 1rem 0;
 }
 
+.tab-content p {
+	margin: 1rem 0 1rem 0;
+}
+
+
+/* header for additional info */
+.info-header {
+	font-size: 1.2rem;
+	margin-top: 0rem;
+	margin-bottom: 1rem;
+}
+
 /* disabled state for cart button */
 #add-to-cart:disabled {
 	background-color: #F4F4F4;

@@ -238,13 +238,13 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 }
 
 /* list elements in the hamburger menu*/
-.target-menu li {
-  padding-bottom: 0rem;
+.target-menu a {
+  padding-bottom: 0.6rem;
   font-size: 1.1rem;
 }
 
 /* fade in animation from the left */
-.menu-tgl input:checked ~ ul {
+.menu-tgl input:checked ~ #menu {
   transform: none;
   opacity: 1;
 }

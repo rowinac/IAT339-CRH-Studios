@@ -1,28 +1,39 @@
 
 // ACCORDION JS
 // ACCORDION JS REFERENCED FROM https://www.w3schools.com/howto/howto_js_accordion.asp
-var numOfAccs = document.getElementsByClassName("accordion");
+var numOfAccs = document.getElementsByClassName('accordion');
 var i;
+
+var accordionToggle = document.querySelector(".accordion-toggle");
+var current = this.accordionToggle;
+var button = document.activeElement.tagName;
 
 for (i = 0; i < numOfAccs.length; i++) {
   numOfAccs[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    
+  
     var panel = this.nextElementSibling;
-
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "grid";
-    }
+    // var button = this.activeElement;
+    var toggle = this.classList.toggle("active");
+    // buttonToggle = button.accordionToggle;
+    console.log(button);
+    
+    // change the button depending on state of accordion
+    if (toggle) {
+        // when it's open
+         // button.innerHTML = "-";
+     } else if (!toggle) {
+        // when it's closed
+        // button.innerHTML = "+";
+     }
 
     // slide down animation 
     if (panel.style.maxHeight) {
+        // closed
       panel.style.maxHeight = null;
     } else {
+        // open
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
-
   });
 }
 

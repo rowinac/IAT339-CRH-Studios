@@ -173,6 +173,12 @@
 	grid-column-gap: 0.8rem;
 }
 
+#product .panel {
+	display: grid;
+	grid-template-columns: 7rem 10rem;
+	grid-column-gap: 0.8rem;
+}
+
 /* style guide grid container */
 .grid-container { 
 	display: grid; 
@@ -378,28 +384,14 @@
 .doc-img-container {
 	display: grid;
 	grid-column: 4 / 9;
-	grid-template-columns: 35rem 10rem;
-	grid-column-gap: 4rem;
+	grid-template-columns: 65% 30%;
+	grid-column-gap: 5%;
 	grid-row-gap: 1rem;
-}
-
-/* grid settings for mockup ceramics section */
-.mc.doc-img-container {
-	grid-template-columns: 23rem 23rem;
-	grid-column-gap: 2rem;
-	grid-row-gap: 5rem;
 }
 
 /* second column images in multi doc settings */
 .doc-sec-img {
 	margin-top: 4.5rem;
-}
-
-/* grid settings for mobile mockup ceramics sec*/
-.mcm.doc-img-container {
-	grid-template-columns: 15rem 15rem;
-	grid-column-gap: 2rem;
-	grid-row-gap: 5rem;
 }
 /* -------------- END OF DESIGN DOC GRIDS ---------------  */
 
@@ -450,6 +442,10 @@
 	#product-listing .panel {
 		grid-column-gap: 1rem;
 	}
+
+	#product .panel {
+		grid-column-gap: 1rem;
+	}
 }
 
 @media screen and (max-width: 84em) {
@@ -467,11 +463,6 @@
 		grid-template-rows: 1fr 1fr 1fr;
 		margin-bottom: 0.5rem;
 		height: 20rem;
-	}
-
-	/* two column grid for patterns */
-	.doc-img-container {
-		grid-template-columns: 33rem 8rem;
 	}
 
 	/* contact form container*/
@@ -577,13 +568,6 @@
 	}
 }
 
-@media screen and (max-width: 68em) {
-	.mc.doc-img-container {
-		grid-template-columns: 20rem 20rem;
-		grid-column-gap: 2rem;
-	}
-}
-
 @media screen and (max-width: 66em) {
 	/* image gallery for product listing */
 	/*.gallery-container {
@@ -667,12 +651,6 @@
 }
 
 @media screen and (max-width: 60rem) {
-	 two column grid for patterns 
-	.doc-img-container {
-		grid-template-columns: 25rem 5rem;
-		grid-column-gap: 2rem;
-	}
-
 	.product-listing-grid {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
@@ -690,12 +668,6 @@
 		grid-column: 1 / 2;
 	}
 
-	/* two column grid for patterns */
-	.doc-img-container {
-		grid-template-columns: 30rem 10rem;
-		grid-column-gap: 2rem;
-	}
-
 	/* three column grid for product cards in general company website */
 	.product-card-container {
 		grid-column-gap: 1rem; 
@@ -703,10 +675,6 @@
 }
 
 @media screen and (max-width: 58em) {
-	.mc.doc-img-container {
-		grid-template-columns: 1fr;
-	}
-
 	.mc.doc-sec-img {
 		margin-top: 0;
 	}
@@ -799,12 +767,17 @@
 	}
 }
 
-@media screen and (max-width: 47rem) {
-	/* two column grid for patterns */
+@media screen and (max-width: 49rem) {
+	/* two column grid for design docs */
 	.doc-img-container {
-		grid-template-columns: 20rem 3rem;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+		grid-row-gap: 0;
 	}
 
+}
+
+@media screen and (max-width: 47rem) {
 	.footer-ex-container {
 		justify-content: flex-start;
 	}
@@ -835,11 +808,6 @@
 }
 
 @media screen and (max-width: 42rem) {
-	/* two column grid for patterns */
-	.doc-img-container {
-		grid-template-columns: 1fr;
-	}
-
 	.home-grid-container {
 		grid-row-gap: 1.5rem;
 	}
@@ -883,29 +851,15 @@
 		grid-template-columns: 1fr;
 		grid-row-gap: 2rem;
 	}
-
-	.mcm.doc-img-container {
-		grid-template-columns: 12rem 12rem;
-		grid-column-gap: 5rem;
-	}
 }
 
 @media screen and (max-width: 37em) {
 	.swatch-container {
 		grid-template-columns: 1fr;
 	}
-
-	.mcm.doc-img-container {
-		grid-column-gap: 3rem;
-	}
 }
 
 @media screen and (max-width: 35em) {
-	.mcm.doc-img-container {
-		grid-template-columns: 12rem 12rem;
-		grid-column-gap: 1rem;
-	}
-
 	#swatches-checkboxes .two-pattern-grid {
 		grid-template-columns: 1fr;
 		grid-template-rows: 2fr;

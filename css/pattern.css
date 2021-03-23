@@ -319,6 +319,7 @@ pre, code {
 	outline: none;
 	transition: 0.4s;
 	font-size: 1.1rem;
+	position: relative;
 }
 
 /* padding for content within the accordion */
@@ -340,15 +341,26 @@ pre, code {
 	margin-top: 0;
 }
 
+/* accordion button states */
+.accordion span {
+  all: initial;
+
+  color: #C98F7D;
+  font-weight: bold;
+  margin: 0 0 0 0.8rem;
+  position: absolute;
+  right: 17px;
+  top: 32%;
+}
+
 .accordion-after {
   /*content: '\002B';*/
   color: #C98F7D;
   font-weight: bold;
-  float: right;
-/*  margin-left: 0.8rem;
-  margin-top: 0;
-  margin-bottom: 0;*/
   margin: 0 0 0 0.8rem;
+  position: absolute;
+  right: 17px;
+  top: 32%;
 }
 
 .active:after {
@@ -1068,6 +1080,12 @@ input::-webkit-inner-spin-button {
 	}
 }
 
+@media screen and (max-width: 96em) {
+	#product-listing .product-finish .cust {
+		display: block;
+	}
+}
+
 @media screen and (max-width: 93em) {
 	#order-summary .order-sum-ex h2 {
 		padding: 2rem 2rem;
@@ -1082,19 +1100,15 @@ input::-webkit-inner-spin-button {
 	.product-finish .cust {
 	  display: block;
 	}
+
+	#product-listing.product-finish .cust {
+
+	}
 }
 
-@media screen and (max-width: 89em) {
-	/*#breadcrumb-bar li {
-    	margin: 0 12vw 0 14vw;
-	}*/
-}
+
 
 @media screen and (max-width: 80em) {
-	/*#breadcrumb-bar li {
-   		margin: 0 14vw 0 14vw;
-	}*/
-
 	.product-finish .cust {
 	  display: inline-block;
 	}
@@ -1109,6 +1123,10 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 66em) {
 	.product-finish .cust {
 	  display: inline-block;
+	}
+
+	#product-listing .product-finish .cust {
+		display: inline-block;
 	}
 }
 

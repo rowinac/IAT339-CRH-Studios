@@ -4,35 +4,24 @@
 var numOfAccs = document.getElementsByClassName('accordion');
 var i;
 
-var accordionToggle = document.querySelector(".accordion-toggle");
-var current = this.accordionToggle;
-var button = document.activeElement.tagName;
-
 for (i = 0; i < numOfAccs.length; i++) {
   numOfAccs[i].addEventListener("click", function() {
-  
+    this.classList.toggle("active");
+
     var panel = this.nextElementSibling;
-    // var button = this.activeElement;
-    var toggle = this.classList.toggle("active");
-    // buttonToggle = button.accordionToggle;
-    console.log(button);
-    
-    // change the button depending on state of accordion
-    if (toggle) {
-        // when it's open
-         // button.innerHTML = "-";
-     } else if (!toggle) {
-        // when it's closed
-        // button.innerHTML = "+";
-     }
+    var toggle = this.firstElementChild;
 
     // slide down animation 
     if (panel.style.maxHeight) {
-        // closed
       panel.style.maxHeight = null;
+
+      // change the button state when the element is closed
+       toggle.innerHTML = "+";
     } else {
-        // open
       panel.style.maxHeight = panel.scrollHeight + "px";
+
+      // change the button state when the element is opem
+      toggle.innerHTML = "-";
     }
   });
 }

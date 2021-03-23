@@ -300,6 +300,15 @@ hr.style2 {
 	}
 }
 
+
+@media screen and (max-width: 30em) {
+	.meet-the-artists {
+		text-align: right;
+		padding: 1rem 0 0rem 0;
+
+	}
+}
+
 @media screen and (max-width: 27em) {
 	.quote h2 {
 	  padding: 3rem 20% 3rem 0;

@@ -99,6 +99,7 @@ footer a.social {
 /* font weight for footer subheadings*/
 .footer-heading {
 	font-weight: 700;
+	font-size: 1.2rem;
 }
 
 /* contact info in footer */
@@ -110,6 +111,10 @@ footer a.social {
 /* contact info in footer */
 .footer-line-height {
 	line-height: 1.5rem;
+}
+
+.footer-text {
+	font-size: 1rem;
 }
 
 /* social media icons in the footer */

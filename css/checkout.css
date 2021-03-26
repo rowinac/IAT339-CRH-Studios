@@ -53,6 +53,10 @@ form {
     border-bottom: 0.5px solid #6D716F;
 }
 
+.order-summary-labels p:last-child {
+    padding-bottom: 2rem;
+}
+
 /* main (grey) container for checkout */
 .checkout-container {
     grid-column: 2 / 8;
@@ -77,7 +81,7 @@ form {
 /* sticky position for order summary*/
 .first-pattern-ex {
     position: sticky;
-    top: 3rem;
+    top: 3.2rem;
 }
 
 /* container for checkout h2 */
@@ -168,10 +172,45 @@ form {
     grid-column: 5 / 7;
 }
 
+
+/* ----- PAYMENT OPTIONS ------ */
+
 /* for card images */
 .span-card-img {
-    width: 100%;
+    width: 60%;
+    margin-left: -2rem;
+    margin-right: -2rem;
 }
+
+.payment-options {
+    grid-column: 1 / 7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+[type=radio] + img {
+    cursor: pointer; 
+}
+
+[type=radio]:checked + img { 
+    border: 2px solid #C98F7D;
+    border-radius: 21px;
+}
+
+
+/* -----------------------------*/
 
 /* input boxes */
 input#fname-input, input#lname-input, input#address-input, input#phone-input, input#email-input, input#city-input, input#province-input, input#postal-input, input#card-name-input, input#card-num-input, input#month-input, input#year-input, input#cvc-input {
@@ -339,8 +378,11 @@ form input{
     }
 
     .order-summary-con {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        /*padding-left: 3rem;
+        padding-right: 3rem;*/
+
+        padding-left: 11%;
+        padding-right: 11%;
     }
 
 
@@ -382,6 +424,12 @@ form input{
         padding: 0;
     }
 
+    .billing.half-span-forms-right {
+        grid-column: 1 / 8;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
     .full-span-forms {
         grid-column: 1 / 8;
     }
@@ -399,14 +447,27 @@ form input{
     }
 
     .span-card-img {
-        width: 130%;
+        width: 100%;
+    }
+
+    .payment-options {
+        grid-column-gap: 1rem;
     }
 }
 
-@media (max-width: 28rem) {
-    .span-card-img {
-        width: 140%;
+@media (max-width: 24rem) {
+    .order-summary-grid {
+        grid-column-gap: 2.75rem;
+    }
+
+    .order-summary-labels p {
+        font-size: 1rem;
+    }
+
+    .order-summary-prices p {
+         font-size: 1rem;
     }
 }
+
 
 /* ---------- END OF MEDIA QUERIES ----------- */

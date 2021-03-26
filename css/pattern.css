@@ -673,7 +673,7 @@ https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 .cust-heading {
 	color: #7E7E7E;
 	font-size: 1.1rem;
-	margin: 0.6rem 0;
+	margin: 0.9rem 0;
 }
 
 /* CUSTOM RADIO BUTTONS REFERENCED FROM
@@ -1164,13 +1164,13 @@ input::-webkit-inner-spin-button {
 	/* left line */
 	li.breadcrumb a::before {
 	    top: 1.7rem;
-	    width: 35vw;
+	    width: 37vw;
 	}
 
 	/* right line */
 	li.breadcrumb a::after {
 	    top: 1.7rem;
-	    width: 35vw;
+	    width: 37vw;
 	}
 }
 

@@ -138,8 +138,8 @@
 /* HR line for feature on homepage*/
 hr.style2 {
 	margin-top: 3.15rem;
-
-	border-top: solid 0.5px #A9A2A1;
+	border-style: none; 
+	border-top: solid 0.13rem #A9A2A1;
 }
 
 /* view all link character width*/
@@ -149,7 +149,7 @@ hr.style2 {
 
 /* featured items character width */
 .featured-items {
-	min-width: 13ch;
+	min-width: 12ch;
 }
 /*---------------------------------------*/
 

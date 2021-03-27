@@ -4,8 +4,8 @@
 
 	<head>
 		<meta charset="utf-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover">
+        
 		<title>Checkout</title>
 
 		<!-- CSS Style Sheets -->
@@ -152,27 +152,31 @@
 
                     <div class="payment-options">
                         <!-- mastercard -->
-                        <label>
-                            <input type="radio" name="payment-method" value="mastercard">
+                        <label for="mastercard">
+                            <input type="radio" name="payment-method" value="mastercard" id="mastercard" aria-label="mastercard" >
                             <img class="span-card-img" src="img/mastercard.png" alt="mastercard logo">
+                            <span class="hidden-name">Mastercard</span>
                         </label>
 
                         <!-- paypal -->
-                         <label>
-                            <input type="radio" name="payment-method" value="paypal">
+                         <label for="paypal">
+                            <input type="radio" name="payment-method" value="paypal" id="paypal" aria-label="paypal">
                             <img class="span-card-img" src="img/pay-pal.png" alt="paypal logo">
+                            <span class="hidden-name">Paypal</span>
                         </label>
 
                         <!-- visa -->
-                        <label>
-                            <input type="radio" name="payment-method" value="visa">
+                        <label for="visa">
+                            <input type="radio" name="payment-method" value="visa"id="visa" aria-label="visa">
                             <img class="span-card-img" src="img/visa.png" alt="visa logo">
+                            <span class="hidden-name">Visa</span>
                         </label>
 
                         <!-- apple pay -->
-                         <label>
-                            <input type="radio" name="payment-method" value="apple-pay">
+                         <label for="apple-pay">
+                            <input type="radio" name="payment-method" value="apple-pay" id="apple-pay" aria-label="apple pay">
                             <img class="span-card-img" src="img/apple-pay.png" alt="applep pay logo">
+                            <span class="hidden-name">Apple Pay</span>
                         </label>
                     </div>
 

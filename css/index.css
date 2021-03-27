@@ -20,7 +20,10 @@
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
+
+    -webkit-background-size: cover;
 }
+
 
 .header-section h1 {
 	/* 57.6px to rem */
@@ -139,7 +142,7 @@
 hr.style2 {
 	margin-top: 3.15rem;
 	border-style: none; 
-	border-top: solid 0.13rem #A9A2A1;
+	border-top: solid 0.1rem #A9A2A1;
 }
 
 /* view all link character width*/
@@ -253,6 +256,8 @@ hr.style2 {
 @media screen and (max-width: 46em) {
 	.header-section {
 		background-image: url(../img/home-page-small.png);
+		-webkit-background-size: cover;
+		background-attachment: scroll;
 	}
 
 	.header-section h1 {
@@ -282,6 +287,7 @@ hr.style2 {
 	}
 }
 
+/* WIDTH MEDIA QUERY */
 @media screen and (max-width: 32em) {
 	.home-hero-title h1 {
 		font-size: 2.5rem;
@@ -291,6 +297,22 @@ hr.style2 {
 	.home-line {
 		display: none;
 	}
+}
+
+/* HEIGHT MEDIA QUERY */
+@media screen and (max-height: 32em) {
+	.home-hero-title h1 {
+		font-size: 2rem;
+		margin-top: 1rem;
+		padding-top: 0rem;
+	}
+
+	.header-section {
+		background-image: url(../img/home-page-small-landscape.png);
+		-webkit-background-size: cover;
+		background-attachment: scroll;
+	}
+
 }
 
 @media screen and (max-width: 30em) {
@@ -304,7 +326,7 @@ hr.style2 {
 @media screen and (max-width: 30em) {
 	.meet-the-artists {
 		text-align: right;
-		padding: 1rem 0 0rem 0;
+		padding: 0;
 
 	}
 }
@@ -319,6 +341,7 @@ hr.style2 {
 @media screen and (max-width: 24em) {
 	.header-section {
 		background-image: url(../img/ceramic-home-mobile.png);
+		background-attachment: scroll;
 	}
 }
 

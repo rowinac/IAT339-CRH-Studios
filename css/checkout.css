@@ -182,6 +182,11 @@ form {
     margin-right: -2rem;
 }
 
+/* payment labels - substituted with aria-labels */
+.hidden-name {
+    display: none;
+}
+
 .payment-options {
     grid-column: 1 / 7;
     display: grid;
@@ -190,8 +195,6 @@ form {
     margin-bottom: 1rem;
     text-align: center;
 }
-
-
 
 [type=radio] {
     position: absolute;

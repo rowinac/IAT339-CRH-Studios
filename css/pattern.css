@@ -1100,10 +1100,6 @@ input::-webkit-inner-spin-button {
 	.product-finish .cust {
 	  display: block;
 	}
-
-	#product-listing.product-finish .cust {
-
-	}
 }
 
 
@@ -1126,7 +1122,7 @@ input::-webkit-inner-spin-button {
 	}
 
 	#product-listing .product-finish .cust {
-		display: inline-block;
+		display: block;
 	}
 }
 

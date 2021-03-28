@@ -231,6 +231,24 @@
 	grid-row-gap: 1rem;
 }
 
+#product-listing .product-listing-grid {
+	display: block;
+	grid-column: 4/ 13;
+	grid-template-columns: repeat(9, 1fr);
+	grid-column-gap: 4rem;
+	grid-row-gap: 1rem;
+}
+
+#product .product-listing-grid {
+	display: block;
+	grid-column: 4/ 13;
+	grid-template-columns: repeat(9, 1fr);
+	grid-column-gap: 4rem;
+	grid-row-gap: 1rem;
+}
+
+
+
 /* ---------- END OF GENERAL GRIDS FOR STYLE GUIDE ---------  */
 
 

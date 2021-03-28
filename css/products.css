@@ -59,7 +59,41 @@
 
 @media screen and (max-width: 66rem) {
 	.product-finish .cust {
-	  display: inline-block;
+	 	display: inline-block;
+	}
+
+	.artist-name {
+		margin-top: 1rem;
+	}
+
+	.product-info h1 {
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 37rem) {
+	.product-info h1 {
+		margin-top: 1rem;
+	}
+
+	.artist-name {
+		margin-top: 2rem;
+	}
+
+	.product-info h2 {
+		margin-bottom: 0rem;
+	}
+}
+
+@media screen and (max-width: 27rem) {
+	.quantity input {
+		padding: 0 22vw 0 40vw;
+		max-width: none;
+		width: 100%;
+	}
+
+	.quantity {
+    	margin: 3rem 0 1rem 0;
 	}
 }
 	

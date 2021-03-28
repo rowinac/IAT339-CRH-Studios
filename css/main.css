@@ -259,5 +259,12 @@ a.product-link:hover img, a.product-link:focus img, a.product-link:active img {
 	}
 }
 
+@media screen and (max-width: 21em) {
+	#nav-bar .logo {
+		padding-right: 0.2rem;
+		margin-top: 0.1rem;
+	}
+}
+
 /* --------- END OF MEDIA QUERIES ------- */
 

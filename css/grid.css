@@ -233,10 +233,6 @@
 
 #product-listing .product-listing-grid {
 	display: grid;
-	grid-column: 4/ 13;
-	grid-template-columns: repeat(9, 1fr);
-	grid-column-gap: 4rem;
-	grid-row-gap: 1rem;
 }
 
 #product .product-listing-grid {
@@ -950,6 +946,10 @@
 		grid-column: 1 / 2;
 		grid-row: 3 / 4;
 		/*grid-area: none;*/
+	}
+
+	#product-listing .product-listing-grid {
+		display: block;
 	}
 
 

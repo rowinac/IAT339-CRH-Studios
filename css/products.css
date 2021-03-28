@@ -62,16 +62,16 @@
 	 	display: inline-block;
 	}
 
-	.artist-name {
+/*	.artist-name {
 		margin-top: 1rem;
 	}
 
 	.product-info h1 {
 		margin-top: 1rem;
-	}
+	}*/
 }
 
-@media screen and (max-width: 37rem) {
+/*@media screen and (max-width: 37rem) {
 	.product-info h1 {
 		margin-top: 1rem;
 	}
@@ -83,7 +83,7 @@
 	.product-info h2 {
 		margin-bottom: 0rem;
 	}
-}
+}*/
 
 @media screen and (max-width: 27rem) {
 	.quantity input {

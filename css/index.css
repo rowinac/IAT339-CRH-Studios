@@ -255,7 +255,7 @@ hr.style2 {
 
 @media screen and (max-width: 46em) {
 	.header-section {
-		background-image: url(../img/home-page-small.png);
+		background-image: url(../img/ceramic-home1.png);
 		-webkit-background-size: cover;
 		background-attachment: scroll;
 	}

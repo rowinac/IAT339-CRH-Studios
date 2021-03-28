@@ -240,7 +240,7 @@
 }
 
 #product .product-listing-grid {
-	display: block;
+	display: grid;
 	grid-column: 4/ 13;
 	grid-template-columns: repeat(9, 1fr);
 	grid-column-gap: 4rem;
@@ -607,6 +607,10 @@
 		grid-template-rows: 1fr;
 		grid-row-gap: 1rem;
 		grid-column: 1 / 10;
+	}
+
+	#product .product-listing-grid {
+		display: block;
 	}
 
 	/* image gallery for product listing */

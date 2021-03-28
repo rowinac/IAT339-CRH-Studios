@@ -311,6 +311,12 @@ https://stackoverflow.com/questions/43186015/css-hide-scroll-bar-but-have-elemen
 	}
 }
 
+@media (max-width: 23em){
+	#conventions-pg h1{
+		font-size: 2.5rem;
+	}
+}
+
 @media screen and (max-width: 39em) {
 	.menu-tgl {
 	  left: -1rem;

@@ -242,130 +242,134 @@
 				</div>
 
 				<!-- Sample code for breadcrumb bar-->
-				<div class="text-container">
-					<h3>CODE SNIPPET</h3>
-					<pre>
-						<code>
-							<!-- HTML code snippet -->
-							&lt;--HTML code snippet--&gt;
-							&lt;div id="breadcrumb-bar"&gt;
-				                &lt;ul&gt;
-				                    &lt;li class="breadcrumb active-page"&gt;
-				                       &lt;a href=""&gt;1&lt;/a&gt;
-				                        &lt;p class="first-breadcrumb-label"&gt;Checkout&lt;/p&gt;
-				                    &lt;/li&gt;
-				                    &lt;li class="breadcrumb"&gt;
-				                        &lt;a href=""&gt;2&lt;/a&gt;
-				                        &lt;p class="second-breadcrumb-label"&gt;Review&lt;/p&gt;
-				                    &lt;/li&gt;
-				                &lt;/ul&gt;
-				            &lt;/div&gt;
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+						<h3>CODE SNIPPET</h3>
+						<pre>
+							<code>
+								<!-- HTML code snippet -->
+								&lt;--HTML code snippet--&gt;
+								&lt;div id="breadcrumb-bar"&gt;
+					                &lt;ul&gt;
+					                    &lt;li class="breadcrumb active-page"&gt;
+					                       &lt;a href=""&gt;1&lt;/a&gt;
+					                        &lt;p class="first-breadcrumb-label"&gt;Checkout&lt;/p&gt;
+					                    &lt;/li&gt;
+					                    &lt;li class="breadcrumb"&gt;
+					                        &lt;a href=""&gt;2&lt;/a&gt;
+					                        &lt;p class="second-breadcrumb-label"&gt;Review&lt;/p&gt;
+					                    &lt;/li&gt;
+					                &lt;/ul&gt;
+					            &lt;/div&gt;
 
-				            <!-- CSS code snippet -->
-				            /*---- CSS Code Snippet ----*/
-				            #breadcrumb-bar {
-							    grid-column: 4 / 12;
-							    display: flex;
-							    flex-direction: row;
-							    justify-content: center;
-							}
+					            <!-- CSS code snippet -->
+					            /*---- CSS Code Snippet ----*/
+					            #breadcrumb-bar {
+								    grid-column: 4 / 12;
+								    display: flex;
+								    flex-direction: row;
+								    justify-content: center;
+								}
 
-							#breadcrumb-bar ul {
-							    padding-left: 0.3rem;
-							    list-style: none;
-							}
+								#breadcrumb-bar ul {
+								    padding-left: 0.3rem;
+								    list-style: none;
+								}
 
-							#breadcrumb-bar li {
-							    display: inline-block;
-							}
+								#breadcrumb-bar li {
+								    display: inline-block;
+								}
 
-							.first-breadcrumb-label {
-								text-align: left;
-								margin-left: -0.5rem;
-								margin-bottom: 0;
-							}
+								.first-breadcrumb-label {
+									text-align: left;
+									margin-left: -0.5rem;
+									margin-bottom: 0;
+								}
 
-							.second-breadcrumb-label {
-								text-align: right;
-								margin-right: 0.3rem;
-								margin-bottom: 0;
-							}
+								.second-breadcrumb-label {
+									text-align: right;
+									margin-right: 0.3rem;
+									margin-bottom: 0;
+								}
 
-							li.breadcrumb a {
-							    position: relative;
-							    display: inline-block;
-							    
-							    border: 2px solid #A9A2A1;
-							    border-radius: 50%;
-							    background-color: white; 
-							   
-							    width: 4rem;
-							    height: 4rem;
+								li.breadcrumb a {
+								    position: relative;
+								    display: inline-block;
+								    
+								    border: 2px solid #A9A2A1;
+								    border-radius: 50%;
+								    background-color: white; 
+								   
+								    width: 4rem;
+								    height: 4rem;
 
-							    padding-top: 0.9rem;
-							    margin: 0 18vw;
+								    padding-top: 0.9rem;
+								    margin: 0 18vw;
 
-							    font-size: 1.8rem;
-							    font-weight: 700;
-							    text-align: center;
-							}
+								    font-size: 1.8rem;
+								    font-weight: 700;
+								    text-align: center;
+								}
 
-							/* left line */
-							li.breadcrumb a::before {
-							    content: '';
-							    position: absolute;
-							    top: 2rem;
-							    width: 35vw;
-							    right: 0;
-							    height: 0.12rem;
-							    background: #A9A2A1;
-							    z-index: -1;
-							}
+								/* left line */
+								li.breadcrumb a::before {
+								    content: '';
+								    position: absolute;
+								    top: 2rem;
+								    width: 35vw;
+								    right: 0;
+								    height: 0.12rem;
+								    background: #A9A2A1;
+								    z-index: -1;
+								}
 
-							/* right line */
-							li.breadcrumb a::after {
-							    content: '';
-							    position: absolute;
-							    top: 2rem;
-							    width: 35vw;
-							    left: 0;
-							    height: 0.12rem;
-							    background: #A9A2A1;
-							    z-index: -1;
-							}
+								/* right line */
+								li.breadcrumb a::after {
+								    content: '';
+								    position: absolute;
+								    top: 2rem;
+								    width: 35vw;
+								    left: 0;
+								    height: 0.12rem;
+								    background: #A9A2A1;
+								    z-index: -1;
+								}
 
-							li.breadcrumb:first-child a {
-							     margin-left: 0;
-							}
+								li.breadcrumb:first-child a {
+								     margin-left: 0;
+								}
 
-							li.breadcrumb:last-child a {
-							     margin-right: 0;
-							}
+								li.breadcrumb:last-child a {
+								     margin-right: 0;
+								}
 
-							/* hide the line of the first element of the breadcrumb */
-							li.breadcrumb:first-child a::before {
-							     display: none;
-							}
+								/* hide the line of the first element of the breadcrumb */
+								li.breadcrumb:first-child a::before {
+								     display: none;
+								}
 
-							/* hide the line of the last element of the breadcrumb */
-							li.breadcrumb:last-child a::after {
-							     display: none;
-							}
+								/* hide the line of the last element of the breadcrumb */
+								li.breadcrumb:last-child a::after {
+								     display: none;
+								}
 
-							li.breadcrumb a:hover, li.breadcrumb a:active, li.breadcrumb a:focus {
-							     background: #C98F7D;
-							     color: #FFFFFF;
-							     text-decoration: none;
-							}
+								li.breadcrumb a:hover, li.breadcrumb a:active, li.breadcrumb a:focus {
+								     background: #C98F7D;
+								     color: #FFFFFF;
+								     text-decoration: none;
+								}
 
-							/* active button for current page in breadcrumb*/
-							li.active-page a {
-								background: #C98F7D;
-							    color: #FFFFFF;
-							    text-decoration: none;
-							}
-						</code>
-					</pre>
+								/* active button for current page in breadcrumb*/
+								li.active-page a {
+									background: #C98F7D;
+								    color: #FFFFFF;
+								    text-decoration: none;
+								}
+							</code>
+						</pre>
+					</div>
+				</div>
 				</div>
 			</section>
 
@@ -641,46 +645,50 @@
 				</div>
 
 				<!-- Sample code for form implementation -->
-				<div class="text-container">
-					<h3>CODE SNIPPET</h3>
-					<pre>
-						<code>
-							&lt;--HTML code snippet--&gt;
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+							<h3>CODE SNIPPET</h3>
+							<pre>
+								<code>
+									&lt;--HTML code snippet--&gt;
 
-							&lt;!-- Text Label & Input --&gt;
-							&lt;label for="name"&gt;First Name&lt;/label&gt;
-							&lt;input type="text" id="fname" name="fname"&gt;
+									&lt;!-- Text Label & Input --&gt;
+									&lt;label for="name"&gt;First Name&lt;/label&gt;
+									&lt;input type="text" id="fname" name="fname"&gt;
 
-							&lt;!-- Drop-down --&gt;
-							&lt;label for="country"&gt;Country&lt;/label&gt;
-							&lt;select id="country" name="country"&gt;
-							&lt;option value="canada"&gt;Canada&lt;/option&gt;
-							&lt;/select&gt;
+									&lt;!-- Drop-down --&gt;
+									&lt;label for="country"&gt;Country&lt;/label&gt;
+									&lt;select id="country" name="country"&gt;
+									&lt;option value="canada"&gt;Canada&lt;/option&gt;
+									&lt;/select&gt;
 
-							&lt;!-- Submit Button --&gt;
-							&lt;input type="submit" value="Submit"&gt;
+									&lt;!-- Submit Button --&gt;
+									&lt;input type="submit" value="Submit"&gt;
 
-							/*---- CSS code snippet ----*/
-							form {
-								background-color: #F4F4F4;
-								padding: 2rem 4rem;
-							}
+									/*---- CSS code snippet ----*/
+									form {
+										background-color: #F4F4F4;
+										padding: 2rem 4rem;
+									}
 
-							label {
-								display: inline-block;
-								color: #7E7E7E;
-								margin: 0.3rem 0;
-							}
+									label {
+										display: inline-block;
+										color: #7E7E7E;
+										margin: 0.3rem 0;
+									}
 
-							form input{
-								width: 100%;
-								border-radius: 0.5rem;
-								border: 1.8px solid #A9A2A1;
-								padding-bottom: 0.5rem;
-								margin-bottom: 1rem;
-							}
-						</code>
-					</pre>
+									form input{
+										width: 100%;
+										border-radius: 0.5rem;
+										border: 1.8px solid #A9A2A1;
+										padding-bottom: 0.5rem;
+										margin-bottom: 1rem;
+									}
+								</code>
+							</pre>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -721,66 +729,70 @@
 				</div>
 
 				<!-- Sample code for form implementation -->
-				<div class="text-container">
-					<h3>CODE SNIPPET</h3>
-					<pre>
-						<code>
-							&lt;---- HTML code snippet ----&gt;
-							&lt;nav&gt;
-								&lt;a href="index.html"&gt;&lt;img src="img/grey-logo.png" alt="grey CRH Studios logo"&gt;&lt;/a&gt;
-								&lt;a href="index.html"&gt;HOME&lt;/a&gt;
-								&lt;a href="ceramics.html"&gt;CERAMIC&lt;/a&gt;
-								&lt;a href="about.html"&gt;ABOUT&lt;/a&gt;
-								&lt;a href="" class="iconbtn fas fa-shopping-cart" aria-label="cart"&gt;&lt;/a&gt;
-							&lt;/nav&gt;
+				<div class="overflow-scroll-gradient"> 
+					<div class="text-container">
+						<div class="overflow-scroll-gradient-scroller">
+							<h3>CODE SNIPPET</h3>
+							<pre>
+								<code>
+									&lt;---- HTML code snippet ----&gt;
+									&lt;nav&gt;
+										&lt;a href="index.html"&gt;&lt;img src="img/grey-logo.png" alt="grey CRH Studios logo"&gt;&lt;/a&gt;
+										&lt;a href="index.html"&gt;HOME&lt;/a&gt;
+										&lt;a href="ceramics.html"&gt;CERAMIC&lt;/a&gt;
+										&lt;a href="about.html"&gt;ABOUT&lt;/a&gt;
+										&lt;a href="" class="iconbtn fas fa-shopping-cart" aria-label="cart"&gt;&lt;/a&gt;
+									&lt;/nav&gt;
 
-							/*---- CSS code snippet ----*/
-							nav a {
-								display: inline-block;
-								color: #6D716F;
-								text-decoration: none;
-								padding: 2rem 1.5rem 0.7rem 1.5rem;
-								box-sizing: border-box;
-							}
+									/*---- CSS code snippet ----*/
+									nav a {
+										display: inline-block;
+										color: #6D716F;
+										text-decoration: none;
+										padding: 2rem 1.5rem 0.7rem 1.5rem;
+										box-sizing: border-box;
+									}
 
-							nav a:hover, nav a:active, nav a:focus {
-								text-decoration: none;
-								font-weight: 600;
-								transition-property: color; 
-								color: #C98F7D;
-								transition-duration: 0.1s; 
-								transition-timing-function: ease-out;
-							}
+									nav a:hover, nav a:active, nav a:focus {
+										text-decoration: none;
+										font-weight: 600;
+										transition-property: color; 
+										color: #C98F7D;
+										transition-duration: 0.1s; 
+										transition-timing-function: ease-out;
+									}
 
-							#nav-bar nav {
-								background-color: #FFFFFF;
-								/*border: 1px solid #F4F4F4;*/
-								display: flex;
-								flex-direction: row;
-								align-items: center;
-								flex-wrap: nowrap;
-								justify-content: flex-end;
-								margin-bottom: 1rem;
-							}
+									#nav-bar nav {
+										background-color: #FFFFFF;
+										/*border: 1px solid #F4F4F4;*/
+										display: flex;
+										flex-direction: row;
+										align-items: center;
+										flex-wrap: nowrap;
+										justify-content: flex-end;
+										margin-bottom: 1rem;
+									}
 
-							/* images within the nav bar; ie: logo + cart */
-							#nav-bar img {
-								width: 80%;
-								height: auto;
-							}
+									/* images within the nav bar; ie: logo + cart */
+									#nav-bar img {
+										width: 80%;
+										height: auto;
+									}
 
-							/* positioning for logo in site nav example */
-							#nav-bar .logo {
-								margin-right: auto;
-								padding-left: 0;
-							}
+									/* positioning for logo in site nav example */
+									#nav-bar .logo {
+										margin-right: auto;
+										padding-left: 0;
+									}
 
-							/* cart icon */
-							a.fas { 
-								padding-right: 0;
-							}
-						</code>
-					</pre>
+									/* cart icon */
+									a.fas { 
+										padding-right: 0;
+									}
+								</code>
+							</pre>
+						</div>
+					</div>
 				</div>
 			</section>
 

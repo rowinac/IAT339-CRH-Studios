@@ -191,5 +191,14 @@ a.cart{
 	}
 }
 
+/* iPhone 5/SE responsiveness*/
+@media (max-width: 23rem) {
+	.tab button {
+		font-size: 0.68rem;
+		padding: 0.9rem 0.5rem 0.6rem 0.75rem;
+	}
+}
+
+
 
 /* ----------- END OF MEDIA QUERIES ------------ */

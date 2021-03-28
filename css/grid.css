@@ -232,7 +232,7 @@
 }
 
 #product-listing .product-listing-grid {
-	display: block;
+	display: grid;
 	grid-column: 4/ 13;
 	grid-template-columns: repeat(9, 1fr);
 	grid-column-gap: 4rem;
@@ -800,7 +800,6 @@
 		grid-template-rows: auto auto;
 		grid-row-gap: 0;
 	}
-
 }
 
 @media screen and (max-width: 47rem) {
